@@ -1,0 +1,9 @@
+Important guidelines
+
+>> This will NOT contain the level files, but rather the building blocks used to generate these levels
+>> A tileset is unique to a certain area in the game, and is a png file containing equally spaced 32x32 tiles (with no space in between)
+on top of an alpha channel
+>> Uploader should record the number of rows, columns, and images belonging to a tileset to the list below
+
+TILESET DATA RECORD:
+  (0) FILENAME, ROWS, COLUMNS, IMAGES
