@@ -1,0 +1,1550 @@
+﻿<process name="Excel Pasting VBO" version="1.0" bpversion="5.0.24.0" narrative="Simply allows you to paste from clipboard into an excel document manually" type="object" runmode="Exclusive" preferredid="29d2320c-8a25-4168-9385-db910d6c48b1">
+  <appdef>
+    <element name="Excel Pasting VBO">
+      <id>4274fc99-fdb4-4247-9893-367cfb889c51</id>
+      <region-container name="Top Window">
+        <id>2c057abc-6cea-401b-b2ce-92b770895cd2</id>
+        <region name="Paste">
+          <container>2c057abc-6cea-401b-b2ce-92b770895cd2</container>
+          <id>b871c65d-c194-4ac8-97a4-8a0fb1060fe1</id>
+          <type>WindowRect</type>
+          <basetype>WindowRect</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="NetUIHWND" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="Y" inuse="True">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="1184" />
+            </attribute>
+            <attribute name="Height" inuse="True">
+              <ProcessValue datatype="number" value="148" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="3" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value=" Ribbon Ribbon  Book1 - Excel &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="6" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="NetUIHWND" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:49,239,386,1232" />
+            </attribute>
+            <attribute name="pWindowText">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="NUIPane" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="1184" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="148" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="StartX" inuse="True">
+              <ProcessValue datatype="number" value="5" />
+            </attribute>
+            <attribute name="StartY" inuse="True">
+              <ProcessValue datatype="number" value="59" />
+            </attribute>
+            <attribute name="EndX" inuse="True">
+              <ProcessValue datatype="number" value="46" />
+            </attribute>
+            <attribute name="EndY" inuse="True">
+              <ProcessValue datatype="number" value="111" />
+            </attribute>
+            <attribute name="RetainImage" system="True">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="ElementSnapshot" inuse="True" system="True">
+              <ProcessValue datatype="image" value="" />
+            </attribute>
+            <attribute name="FontName" inuse="True" system="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+          </attributes>
+        </region>
+        <region name="Save">
+          <container>2c057abc-6cea-401b-b2ce-92b770895cd2</container>
+          <id>46969ba7-1138-4553-aa88-b9e59cfb2e79</id>
+          <type>WindowRect</type>
+          <basetype>WindowRect</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="NetUIHWND" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="Y" inuse="True">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="1184" />
+            </attribute>
+            <attribute name="Height" inuse="True">
+              <ProcessValue datatype="number" value="148" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="3" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value=" Ribbon Ribbon  Book1 - Excel &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="6" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="NetUIHWND" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:49,239,386,1232" />
+            </attribute>
+            <attribute name="pWindowText">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="NUIPane" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="1184" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="148" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="StartX" inuse="True">
+              <ProcessValue datatype="number" value="35" />
+            </attribute>
+            <attribute name="StartY" inuse="True">
+              <ProcessValue datatype="number" value="5" />
+            </attribute>
+            <attribute name="EndX" inuse="True">
+              <ProcessValue datatype="number" value="58" />
+            </attribute>
+            <attribute name="EndY" inuse="True">
+              <ProcessValue datatype="number" value="26" />
+            </attribute>
+            <attribute name="RetainImage" system="True">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="ElementSnapshot" inuse="True" system="True">
+              <ProcessValue datatype="image" value="" />
+            </attribute>
+            <attribute name="FontName" inuse="True" system="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+          </attributes>
+        </region>
+        <region name="Format">
+          <container>2c057abc-6cea-401b-b2ce-92b770895cd2</container>
+          <id>0add9d8a-8432-474b-a7fa-ab4f97a831c3</id>
+          <type>WindowRect</type>
+          <basetype>WindowRect</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="NetUIHWND" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="Y" inuse="True">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="1184" />
+            </attribute>
+            <attribute name="Height" inuse="True">
+              <ProcessValue datatype="number" value="148" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="3" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value=" Ribbon Ribbon  Book1 - Excel &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="6" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="NetUIHWND" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:49,239,386,1232" />
+            </attribute>
+            <attribute name="pWindowText">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="NUIPane" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="1184" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="148" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="StartX" inuse="True">
+              <ProcessValue datatype="number" value="965" />
+            </attribute>
+            <attribute name="StartY" inuse="True">
+              <ProcessValue datatype="number" value="57" />
+            </attribute>
+            <attribute name="EndX" inuse="True">
+              <ProcessValue datatype="number" value="1008" />
+            </attribute>
+            <attribute name="EndY" inuse="True">
+              <ProcessValue datatype="number" value="111" />
+            </attribute>
+            <attribute name="RetainImage" system="True">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="ElementSnapshot" inuse="True" system="True">
+              <ProcessValue datatype="image" value="" />
+            </attribute>
+            <attribute name="FontName" inuse="True" system="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+          </attributes>
+        </region>
+        <type>Window</type>
+        <basetype>Window</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="WindowText" inuse="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="ClassName" inuse="True">
+            <ProcessValue datatype="text" value="NetUIHWND" />
+          </attribute>
+          <attribute name="CtrlID">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="X">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="Y" inuse="True">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="Width">
+            <ProcessValue datatype="number" value="1184" />
+          </attribute>
+          <attribute name="Height" inuse="True">
+            <ProcessValue datatype="number" value="148" />
+          </attribute>
+          <attribute name="Visible" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="ScreenVisible" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Enabled" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Active">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="Ordinal">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="ChildCount">
+            <ProcessValue datatype="number" value="3" />
+          </attribute>
+          <attribute name="AncestorsText">
+            <ProcessValue datatype="text" value=" Ribbon Ribbon  Book1 - Excel &lt;UNKNOWN&gt; " />
+          </attribute>
+          <attribute name="AncestorCount">
+            <ProcessValue datatype="number" value="6" />
+          </attribute>
+          <attribute name="TypeName">
+            <ProcessValue datatype="text" value="NetUIHWND" />
+          </attribute>
+          <attribute name="ScreenBounds">
+            <ProcessValue datatype="text" value="RECT:49,239,386,1232" />
+          </attribute>
+          <attribute name="pWindowText">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="pClassName">
+            <ProcessValue datatype="text" value="NUIPane" />
+          </attribute>
+          <attribute name="pCtrlID">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="pX">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="pY">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="pWidth">
+            <ProcessValue datatype="number" value="1184" />
+          </attribute>
+          <attribute name="pHeight">
+            <ProcessValue datatype="number" value="148" />
+          </attribute>
+          <attribute name="pVisible">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="pScreenVisible">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="pEnabled">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="pActive">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="pOrdinal">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="pChildCount">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="MatchReverse">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Screenshot">
+            <ProcessValue datatype="image" value="1183,147,137224,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" />
+          </attribute>
+        </attributes>
+      </region-container>
+      <element name="Cell Window">
+        <id>f21229a8-9836-489f-81e5-7405bb2a82ac</id>
+        <type>Window</type>
+        <basetype>Window</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="WindowText" inuse="True">
+            <ProcessValue datatype="text" value="Book1" />
+          </attribute>
+          <attribute name="ClassName" inuse="True">
+            <ProcessValue datatype="text" value="EXCEL7" />
+          </attribute>
+          <attribute name="CtrlID">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="X">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="Y">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="Width">
+            <ProcessValue datatype="number" value="1184" />
+          </attribute>
+          <attribute name="Height">
+            <ProcessValue datatype="number" value="599" />
+          </attribute>
+          <attribute name="Visible" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="ScreenVisible" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Enabled" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Active">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="Ordinal">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="ChildCount">
+            <ProcessValue datatype="number" value="5" />
+          </attribute>
+          <attribute name="AncestorsText">
+            <ProcessValue datatype="text" value=" Book1 - Excel &lt;UNKNOWN&gt; " />
+          </attribute>
+          <attribute name="AncestorCount">
+            <ProcessValue datatype="number" value="3" />
+          </attribute>
+          <attribute name="TypeName">
+            <ProcessValue datatype="text" value="EXCEL7" />
+          </attribute>
+          <attribute name="ScreenBounds">
+            <ProcessValue datatype="text" value="RECT:498,425,1023,1681" />
+          </attribute>
+          <attribute name="pWindowText">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="pClassName">
+            <ProcessValue datatype="text" value="XLDESK" />
+          </attribute>
+          <attribute name="pCtrlID">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="pX">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="pY">
+            <ProcessValue datatype="number" value="193" />
+          </attribute>
+          <attribute name="pWidth">
+            <ProcessValue datatype="number" value="1184" />
+          </attribute>
+          <attribute name="pHeight">
+            <ProcessValue datatype="number" value="599" />
+          </attribute>
+          <attribute name="pVisible">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="pScreenVisible">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="pEnabled">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="pActive">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="pOrdinal">
+            <ProcessValue datatype="number" value="11" />
+          </attribute>
+          <attribute name="pChildCount">
+            <ProcessValue datatype="number" value="2" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="MatchReverse">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+        </attributes>
+      </element>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+    <apptypeinfo>
+      <id>Win32Launch</id>
+      <parameters>
+        <parameter>
+          <name>Path</name>
+          <value>C:\Program Files\Microsoft Office\Office15\EXCEL.EXE</value>
+        </parameter>
+        <parameter>
+          <name>CommandLineParams</name>
+          <value>
+          </value>
+        </parameter>
+        <parameter>
+          <name>WorkingDirectory</name>
+          <value>
+          </value>
+        </parameter>
+        <parameter>
+          <name>NonInvasive</name>
+          <value>True</value>
+        </parameter>
+        <parameter>
+          <name>ProcessMode</name>
+          <value>Internal</value>
+        </parameter>
+        <parameter>
+          <name>ExternalProcessTimeout</name>
+          <value>0</value>
+        </parameter>
+      </parameters>
+    </apptypeinfo>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="2ddf4629-ad66-4874-a594-c865cd1ef765" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="9014e328-0cd9-4562-8f72-601c80e6aea4" type="Normal" published="True">
+    <name>Launch</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="2e0a9e68-7b32-4041-9760-a0c0c743cc56" type="Normal" published="True">
+    <name>Launch Specific</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="a9bb01e9-358f-4ea2-9583-349bbbb8446a" type="Normal" published="True">
+    <name>Close</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="0e260e85-8a1e-4824-a1c0-03c714a9d641" type="Normal" published="True">
+    <name>Paste From Clipboard</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="2cd19327-6d3c-470c-a782-5f1909ea24a5" type="Normal" published="True">
+    <name>Save Button</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>105</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="2b5c6036-370e-46ce-a28e-5d1c4f733974" type="Normal" published="True">
+    <name>Format Autowidth</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>42</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="73a35c14-ce0a-4940-b680-a769efbb0f5e" name="Start" type="Start">
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>04dbe600-8225-4210-beb0-7ac9fac32480</onsuccess>
+  </stage>
+  <stage stageid="04dbe600-8225-4210-beb0-7ac9fac32480" name="End" type="End">
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="f1f7ab0f-b856-449d-9737-ca6aa4168832" name="Stage1" type="ProcessInfo">
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <references>
+      <reference>System.dll</reference>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+    </imports>
+    <language>visualbasic</language>
+    <globalcode><![CDATA[]]></globalcode>
+    <code><![CDATA[]]></code>
+  </stage>
+  <stage stageid="6294aa0c-d75b-4709-ac9d-47c5d823745f" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>2ddf4629-ad66-4874-a594-c865cd1ef765</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="c6eb9b8f-0b24-413e-a227-2ce2417dc50d" name="Start" type="Start">
+    <subsheetid>2ddf4629-ad66-4874-a594-c865cd1ef765</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>498062fb-d3e6-4139-b55c-e2ca19db2c03</onsuccess>
+  </stage>
+  <stage stageid="498062fb-d3e6-4139-b55c-e2ca19db2c03" name="End" type="End">
+    <subsheetid>2ddf4629-ad66-4874-a594-c865cd1ef765</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="50f8ae0a-976b-4480-a25b-ed981d21ef51" name="Launch" type="SubSheetInfo">
+    <subsheetid>9014e328-0cd9-4562-8f72-601c80e6aea4</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="9ac8b8c3-08d7-4a78-883a-fb392981299f" name="Start" type="Start">
+    <subsheetid>9014e328-0cd9-4562-8f72-601c80e6aea4</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>a93fa8b9-7f3a-4e1f-9127-77f5dc733790</onsuccess>
+  </stage>
+  <stage stageid="469daa47-95f7-4508-93cc-374423c30c12" name="End" type="End">
+    <subsheetid>9014e328-0cd9-4562-8f72-601c80e6aea4</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="fecc0e66-d91c-48dd-bf16-b5de5da99572" name="Note1" type="Note">
+    <subsheetid>2ddf4629-ad66-4874-a594-c865cd1ef765</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <displayx>-180</displayx>
+    <displayy>60</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>230</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="cb6c0bfc-bfd0-442f-a63f-357d1b754000" name="Note2" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <displayx>-180</displayx>
+    <displayy>60</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>230</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="e640b987-d589-4869-8e9e-443671d5f62a" name="Close" type="SubSheetInfo">
+    <subsheetid>a9bb01e9-358f-4ea2-9583-349bbbb8446a</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="c5b47c89-90e3-402a-8227-0ca0022f3c92" name="Start" type="Start">
+    <subsheetid>a9bb01e9-358f-4ea2-9583-349bbbb8446a</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>64427480-baad-4cbe-9c65-4222273125c5</onsuccess>
+  </stage>
+  <stage stageid="92714ab3-3511-4604-abd4-5d1f84d1aaed" name="End" type="End">
+    <subsheetid>a9bb01e9-358f-4ea2-9583-349bbbb8446a</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="97b46245-98d5-4335-9c42-deb38e209766" name="Paste From Clipboard" type="SubSheetInfo">
+    <subsheetid>0e260e85-8a1e-4824-a1c0-03c714a9d641</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="1dc49df7-8f92-4be5-9d91-1504b8f8545d" name="Start" type="Start">
+    <subsheetid>0e260e85-8a1e-4824-a1c0-03c714a9d641</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>847f7eb5-3653-4c0e-aa98-c2afcf8de7a4</onsuccess>
+  </stage>
+  <stage stageid="4e6ad743-83ba-43c6-9e93-d25834d907e4" name="End" type="End">
+    <subsheetid>0e260e85-8a1e-4824-a1c0-03c714a9d641</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="a93fa8b9-7f3a-4e1f-9127-77f5dc733790" name="Launch" type="Navigate">
+    <subsheetid>9014e328-0cd9-4562-8f72-601c80e6aea4</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>469daa47-95f7-4508-93cc-374423c30c12</onsuccess>
+    <step>
+      <element id="4274fc99-fdb4-4247-9893-367cfb889c51" />
+      <action>
+        <id>Launch</id>
+        <arguments>
+          <argument>
+            <id>Path</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>CommandLineParams</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>WorkingDirectory</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>NonInvasive</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ProcessMode</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="d7ab39a2-f947-4c8a-a2ae-b07960cf9fd7" name="Launch Specific" type="SubSheetInfo">
+    <subsheetid>2e0a9e68-7b32-4041-9760-a0c0c743cc56</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="c397f124-9cfa-47db-b61c-642600c0584b" name="Start" type="Start">
+    <subsheetid>2e0a9e68-7b32-4041-9760-a0c0c743cc56</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Path" stage="File Path" />
+    </inputs>
+    <onsuccess>9dbab2b0-6c1b-4df4-a2e5-be2f71d85c9d</onsuccess>
+  </stage>
+  <stage stageid="f317f1bf-2efb-43c7-b433-0ee6577b7620" name="End" type="End">
+    <subsheetid>2e0a9e68-7b32-4041-9760-a0c0c743cc56</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="9dbab2b0-6c1b-4df4-a2e5-be2f71d85c9d" name="Launch Specific" type="Navigate">
+    <subsheetid>2e0a9e68-7b32-4041-9760-a0c0c743cc56</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>f317f1bf-2efb-43c7-b433-0ee6577b7620</onsuccess>
+    <step>
+      <element id="4274fc99-fdb4-4247-9893-367cfb889c51" />
+      <action>
+        <id>Launch</id>
+        <arguments>
+          <argument>
+            <id>Path</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>CommandLineParams</id>
+            <value>[File Path]</value>
+          </argument>
+          <argument>
+            <id>WorkingDirectory</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>NonInvasive</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ProcessMode</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="6a110a86-5031-4289-9afc-e5fe22e52948" name="File Path" type="Data">
+    <subsheetid>2e0a9e68-7b32-4041-9760-a0c0c743cc56</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="41ff55a2-244c-436e-893d-b61dbf6c7615" name="Close" type="Navigate">
+    <subsheetid>a9bb01e9-358f-4ea2-9583-349bbbb8446a</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>92714ab3-3511-4604-abd4-5d1f84d1aaed</onsuccess>
+    <step>
+      <element id="4274fc99-fdb4-4247-9893-367cfb889c51" />
+      <action>
+        <id>Terminate</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="9e1c22b6-4a6e-42d2-99d5-07bc741611f9" name="Block1" type="Block">
+    <subsheetid>0e260e85-8a1e-4824-a1c0-03c714a9d641</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-90</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>285</displaywidth>
+    <displayheight>75</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="847f7eb5-3653-4c0e-aa98-c2afcf8de7a4" name="Attempt Attach" type="Navigate">
+    <subsheetid>0e260e85-8a1e-4824-a1c0-03c714a9d641</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>6a863e9a-8230-46d4-9dbe-790993fd0eaa</onsuccess>
+    <step>
+      <element id="4274fc99-fdb4-4247-9893-367cfb889c51" />
+      <action>
+        <id>AttachApplication</id>
+        <arguments>
+          <argument>
+            <id>WindowTitlesCollection</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>WindowTitle</id>
+            <value>"*Excel"</value>
+          </argument>
+          <argument>
+            <id>ProcessName</id>
+            <value>"EXCEL"</value>
+          </argument>
+          <argument>
+            <id>ChildIndex</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="569ce290-6a4a-4465-8fcd-41b0c1c75c61" name="Recover1" type="Recover">
+    <subsheetid>0e260e85-8a1e-4824-a1c0-03c714a9d641</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>c45443a4-07aa-4142-aba4-73c7877baf16</onsuccess>
+  </stage>
+  <stage stageid="c45443a4-07aa-4142-aba4-73c7877baf16" name="Resume1" type="Resume">
+    <subsheetid>0e260e85-8a1e-4824-a1c0-03c714a9d641</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>6a863e9a-8230-46d4-9dbe-790993fd0eaa</onsuccess>
+  </stage>
+  <stage stageid="6708dba6-cc08-4e1b-aa78-99d68f08f932" name="Time Out - Check for Window" type="WaitEnd">
+    <subsheetid>0e260e85-8a1e-4824-a1c0-03c714a9d641</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>150</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>4e6ad743-83ba-43c6-9e93-d25834d907e4</onsuccess>
+    <groupid>bbc318b2-e1aa-4bfe-b501-094d7a1dcc4e</groupid>
+  </stage>
+  <stage stageid="6a863e9a-8230-46d4-9dbe-790993fd0eaa" name="Check for Window" type="WaitStart">
+    <subsheetid>0e260e85-8a1e-4824-a1c0-03c714a9d641</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <groupid>bbc318b2-e1aa-4bfe-b501-094d7a1dcc4e</groupid>
+    <choices>
+      <choice reply="True">
+        <name>Top Window Check Exists</name>
+        <distance>75</distance>
+        <ontrue>1ecce402-2cb2-46b7-acde-275f5c0d6b1f</ontrue>
+        <element id="2c057abc-6cea-401b-b2ce-92b770895cd2" />
+        <condition>
+          <id>CheckExists</id>
+        </condition>
+        <comparetype>Equal</comparetype>
+      </choice>
+    </choices>
+    <timeout>10</timeout>
+  </stage>
+  <stage stageid="1ecce402-2cb2-46b7-acde-275f5c0d6b1f" name="Click Paste" type="Navigate">
+    <subsheetid>0e260e85-8a1e-4824-a1c0-03c714a9d641</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>4e6ad743-83ba-43c6-9e93-d25834d907e4</onsuccess>
+    <step>
+      <element id="2c057abc-6cea-401b-b2ce-92b770895cd2" />
+      <action>
+        <id>ClickWindow</id>
+        <arguments>
+          <argument>
+            <id>targx</id>
+            <value>10</value>
+          </argument>
+          <argument>
+            <id>targy</id>
+            <value>65</value>
+          </argument>
+          <argument>
+            <id>newtext</id>
+            <value>"Left"</value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="e8aa3e62-573e-46c3-9df0-dbcefaac531d" name="Save Button" type="SubSheetInfo">
+    <subsheetid>2cd19327-6d3c-470c-a782-5f1909ea24a5</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="43396ade-49a3-41b0-a71d-d386bfda2f10" name="Start" type="Start">
+    <subsheetid>2cd19327-6d3c-470c-a782-5f1909ea24a5</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>ca1ee6c9-b341-458f-9330-6bb8c039e904</onsuccess>
+  </stage>
+  <stage stageid="86d3eb6e-6ea4-405a-8497-cd0797db1841" name="End" type="End">
+    <subsheetid>2cd19327-6d3c-470c-a782-5f1909ea24a5</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>240</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="8f5bbb0a-aeda-42bd-922d-a4317cdb0220" name="Block1" type="Block">
+    <subsheetid>2cd19327-6d3c-470c-a782-5f1909ea24a5</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-90</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>285</displaywidth>
+    <displayheight>75</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="ca1ee6c9-b341-458f-9330-6bb8c039e904" name="Attempt Attach" type="Navigate">
+    <subsheetid>2cd19327-6d3c-470c-a782-5f1909ea24a5</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>a1e17fa0-eb15-4a7e-865c-16f9e61f4cd9</onsuccess>
+    <step>
+      <element id="4274fc99-fdb4-4247-9893-367cfb889c51" />
+      <action>
+        <id>AttachApplication</id>
+        <arguments>
+          <argument>
+            <id>WindowTitlesCollection</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>WindowTitle</id>
+            <value>"*.Excel"</value>
+          </argument>
+          <argument>
+            <id>ProcessName</id>
+            <value>"EXCEL"</value>
+          </argument>
+          <argument>
+            <id>ChildIndex</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="5aed0091-5fb8-4e5c-98f9-84d6f97af3e6" name="Recover1" type="Recover">
+    <subsheetid>2cd19327-6d3c-470c-a782-5f1909ea24a5</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>88b4b8f3-84da-403d-a28d-4147e6b2bb58</onsuccess>
+  </stage>
+  <stage stageid="88b4b8f3-84da-403d-a28d-4147e6b2bb58" name="Resume2" type="Resume">
+    <subsheetid>2cd19327-6d3c-470c-a782-5f1909ea24a5</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>a1e17fa0-eb15-4a7e-865c-16f9e61f4cd9</onsuccess>
+  </stage>
+  <stage stageid="d2c50539-eed8-47b6-90bb-e5fc1b554c25" name="Click Save" type="Navigate">
+    <subsheetid>2cd19327-6d3c-470c-a782-5f1909ea24a5</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>180</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>86d3eb6e-6ea4-405a-8497-cd0797db1841</onsuccess>
+    <step>
+      <element id="2c057abc-6cea-401b-b2ce-92b770895cd2" />
+      <action>
+        <id>ClickWindow</id>
+        <arguments>
+          <argument>
+            <id>targx</id>
+            <value>40</value>
+          </argument>
+          <argument>
+            <id>targy</id>
+            <value>10</value>
+          </argument>
+          <argument>
+            <id>newtext</id>
+            <value>"Left"</value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="7712c2d2-1669-4730-8140-809f62a75ee0" name="Time Out - Throttle" type="WaitEnd">
+    <subsheetid>2cd19327-6d3c-470c-a782-5f1909ea24a5</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>75</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>c5a1a764-7141-4c0e-87f3-00661848b09a</onsuccess>
+    <groupid>adfc3aed-30cb-4464-a1cd-735927cd3db7</groupid>
+  </stage>
+  <stage stageid="a1e17fa0-eb15-4a7e-865c-16f9e61f4cd9" name="Throttle" type="WaitStart">
+    <subsheetid>2cd19327-6d3c-470c-a782-5f1909ea24a5</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>45</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <groupid>adfc3aed-30cb-4464-a1cd-735927cd3db7</groupid>
+    <choices />
+    <timeout>2</timeout>
+  </stage>
+  <stage stageid="3cd5b4e3-455b-474b-af40-52af3b2742ce" name="Time Out - Throttle" type="WaitEnd">
+    <subsheetid>a9bb01e9-358f-4ea2-9583-349bbbb8446a</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>41ff55a2-244c-436e-893d-b61dbf6c7615</onsuccess>
+    <groupid>dcb3bfe2-876a-4dde-85be-cbd50e264f9b</groupid>
+  </stage>
+  <stage stageid="64427480-baad-4cbe-9c65-4222273125c5" name="Throttle" type="WaitStart">
+    <subsheetid>a9bb01e9-358f-4ea2-9583-349bbbb8446a</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <groupid>dcb3bfe2-876a-4dde-85be-cbd50e264f9b</groupid>
+    <choices />
+    <timeout>2</timeout>
+  </stage>
+  <stage stageid="c8288c04-4dd1-4443-a615-25f757b61852" name="Format Autowidth" type="SubSheetInfo">
+    <subsheetid>2b5c6036-370e-46ce-a28e-5d1c4f733974</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="d886f07c-cbfc-4911-8bac-e1676801f3bb" name="Start" type="Start">
+    <subsheetid>2b5c6036-370e-46ce-a28e-5d1c4f733974</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>98b44293-babf-4cce-af3c-504edc5ac58a</onsuccess>
+  </stage>
+  <stage stageid="f10bd268-ce54-4999-8c46-8426290aa6ff" name="Press Format Button" type="Navigate">
+    <subsheetid>2b5c6036-370e-46ce-a28e-5d1c4f733974</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>a13895ab-86be-4721-870d-6c305c98b544</onsuccess>
+    <step>
+      <element id="0add9d8a-8432-474b-a7fa-ab4f97a831c3" />
+      <action>
+        <id>RegionMouseClickCentre</id>
+        <arguments>
+          <argument>
+            <id>newtext</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="b201277e-eff5-43a4-afe7-c39ceff5b463" name="End1" type="End">
+    <subsheetid>2b5c6036-370e-46ce-a28e-5d1c4f733974</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>195</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="d4799418-27dd-41e4-8ebb-7608ab4d0804" name="Click Autoformat Width" type="Navigate">
+    <subsheetid>2b5c6036-370e-46ce-a28e-5d1c4f733974</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>b201277e-eff5-43a4-afe7-c39ceff5b463</onsuccess>
+    <step>
+      <element id="2c057abc-6cea-401b-b2ce-92b770895cd2" />
+      <action>
+        <id>MouseClick</id>
+        <arguments>
+          <argument>
+            <id>targx</id>
+            <value>1000</value>
+          </argument>
+          <argument>
+            <id>targy</id>
+            <value>245</value>
+          </argument>
+          <argument>
+            <id>newtext</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="98b44293-babf-4cce-af3c-504edc5ac58a" name="Activate" type="Navigate">
+    <subsheetid>2b5c6036-370e-46ce-a28e-5d1c4f733974</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>f10bd268-ce54-4999-8c46-8426290aa6ff</onsuccess>
+    <step>
+      <element id="2c057abc-6cea-401b-b2ce-92b770895cd2" />
+      <action>
+        <id>ActivateApp</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="4aa730c3-1430-4751-8451-8656da8e6732" name="Time Out - Throttle" type="WaitEnd">
+    <subsheetid>2b5c6036-370e-46ce-a28e-5d1c4f733974</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>75</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>d4799418-27dd-41e4-8ebb-7608ab4d0804</onsuccess>
+    <groupid>6c25bf5d-acf0-4742-b7dd-af5c99f32cfc</groupid>
+  </stage>
+  <stage stageid="a13895ab-86be-4721-870d-6c305c98b544" name="Throttle" type="WaitStart">
+    <subsheetid>2b5c6036-370e-46ce-a28e-5d1c4f733974</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>45</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <groupid>6c25bf5d-acf0-4742-b7dd-af5c99f32cfc</groupid>
+    <choices />
+    <timeout>2</timeout>
+  </stage>
+  <stage stageid="c5a1a764-7141-4c0e-87f3-00661848b09a" name="Activate" type="Navigate">
+    <subsheetid>2cd19327-6d3c-470c-a782-5f1909ea24a5</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>d2c50539-eed8-47b6-90bb-e5fc1b554c25</onsuccess>
+    <step>
+      <element id="2c057abc-6cea-401b-b2ce-92b770895cd2" />
+      <action>
+        <id>ActivateApp</id>
+      </action>
+    </step>
+  </stage>
+</process>

@@ -1,0 +1,777 @@
+﻿<process name="ExPRS Test Claims Intake Process" version="1.0" bpversion="5.0.24.0" narrative="Takes test cases stored in text files and pushes them to the Intake Process via PuTTY" preferredid="92b279fe-1d51-480b-b751-8bec0199797d">
+  <view>
+    <camerax>45</camerax>
+    <cameray>105</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="9957b3eb-e017-4195-895e-0ce877a74373" name="Start" type="Start">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-165</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="User ID" stage="User ID" />
+      <input type="password" name="Password" stage="Password" />
+      <input type="text" name="Working Directory (absolute path to Intake_Files folder)" narrative="Path to Intake_Files folder" stage="Working Directory" />
+      <input type="text" name="Date (mmddyy) (ex. 072617)" stage="Date" />
+    </inputs>
+    <onsuccess>bf4dd722-38cb-42da-a85b-e9910778e433</onsuccess>
+  </stage>
+  <stage stageid="cb36272b-17cc-4c90-9883-3910fd8a7fb0" name="Stage1" type="ProcessInfo">
+    <narrative>
+    </narrative>
+    <displayx>-240</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="78f63e3e-e85c-4d02-8d38-1f51ef024031" name="User ID" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-60</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="4b8e4d83-09af-41d0-b090-1fc514c3f009" name="Password" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>165</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>password</datatype>
+    <initialvalueenc>
+    </initialvalueenc>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="4a523c87-e294-4a41-b11a-f528c907218f" name="Launch PuTTY" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>a8125be3-0289-420b-8209-4f45c1339eb3</onsuccess>
+    <resource object="PuTTY Configuration" action="Launch" />
+  </stage>
+  <stage stageid="a8125be3-0289-420b-8209-4f45c1339eb3" name="Configure PuTTY" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Host Name" expr="[Host Name]" />
+    </inputs>
+    <onsuccess>1f2c4dbf-e991-44aa-a589-6511c516063e</onsuccess>
+    <resource object="PuTTY Configuration" action="Connect to Host" />
+  </stage>
+  <stage stageid="b94c6b07-115b-4be9-968b-8caba69e89b9" name="Host Name" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-60</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">pm02kdc</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b2c0969b-d4c0-4442-84b0-60083a2cb772" name="Input User ID" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Message" narrative="Text you want inputted into the console" expr="[User ID]" />
+    </inputs>
+    <onsuccess>469827df-f697-4167-a297-71fff2bc26bd</onsuccess>
+    <resource object="PuTTY Console" action="Input Message" />
+  </stage>
+  <stage stageid="469827df-f697-4167-a297-71fff2bc26bd" name="Enter" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>a2c87d77-73fc-4e10-b915-dbc432818173</onsuccess>
+    <resource object="PuTTY Console" action="Hit Enter" />
+  </stage>
+  <stage stageid="a2c87d77-73fc-4e10-b915-dbc432818173" name="Input Password" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Message" narrative="Text you want inputted into the console" expr="[Password]" />
+    </inputs>
+    <onsuccess>87409619-67c4-4744-894c-626a1b11de91</onsuccess>
+    <resource object="PuTTY Console" action="Input Message" />
+  </stage>
+  <stage stageid="87409619-67c4-4744-894c-626a1b11de91" name="Enter" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>af858a64-8deb-476f-ad07-534c3c22a452</onsuccess>
+    <resource object="PuTTY Console" action="Hit Enter" />
+  </stage>
+  <stage stageid="1f2c4dbf-e991-44aa-a589-6511c516063e" name="Attach" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>cdcd7a5e-c7d0-4e73-bbc5-64d2c3211732</onsuccess>
+    <resource object="PuTTY Console" action="Attach" />
+  </stage>
+  <stage stageid="89ab8353-1b9e-4e0d-98a6-b2053f97b7d6" name="Home Directory Command" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>255</displayx>
+    <displayy>225</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">cd /home/</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="af858a64-8deb-476f-ad07-534c3c22a452" name="Calculate Home Directory Command" type="Calculation">
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>150</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>7226f0c1-4530-4402-8d18-8699941f3a7d</onsuccess>
+    <calculation expression="[Home Directory Command] &amp; [User ID]" stage="Home Directory Command" />
+  </stage>
+  <stage stageid="d37c57a2-ea29-4da7-9e32-6a42251f1b1b" name="Input Home Command" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>270</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Message" narrative="Text you want inputted into the console" expr="[Home Directory Command]" />
+    </inputs>
+    <onsuccess>434147d0-73ca-4990-ab59-139ce0279da1</onsuccess>
+    <resource object="PuTTY Console" action="Input Message" />
+  </stage>
+  <stage stageid="434147d0-73ca-4990-ab59-139ce0279da1" name="Enter" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>330</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>99b57a00-ebf5-4e7f-b7ad-aa10bc876bbb</onsuccess>
+    <resource object="PuTTY Console" action="Hit Enter" />
+  </stage>
+  <stage stageid="ef1ab2a7-2e12-4497-a465-986b6600dc79" name="Calculate File Name Command" type="Calculation">
+    <narrative>
+    </narrative>
+    <displayx>270</displayx>
+    <displayy>375</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>85a59e1b-164f-4bba-9b4d-e9978a0afd2f</onsuccess>
+    <calculation expression="[New File Command] &amp; &quot;D&quot; &amp; [Date] &amp; &quot;0000.&quot; &amp; Replace([Files.Name], &quot;.txt&quot;, &quot;&quot;) &amp; &quot;.01&quot;" stage="New File Command" />
+  </stage>
+  <stage stageid="7cb1891c-96da-4b04-9b1a-f6dcc1f7dd42" name="New File Command" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>345</displayx>
+    <displayy>375</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">vi </initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="cea4f783-a3b3-4595-a678-b69365175b07" name="Insert Mode Command" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>420</displayx>
+    <displayy>510</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">i</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f6614669-ded3-4769-b3c6-0ae714bbd68b" name="Exit Command" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>645</displayx>
+    <displayy>780</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">wq!</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="5db22fc4-298c-4751-9af7-a7deda309603" name="Input Create File" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>270</displayx>
+    <displayy>465</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Message" narrative="Text you want inputted into the console" expr="[New File Command]" />
+    </inputs>
+    <onsuccess>7576c006-be0e-455f-89f7-93ecdea680fe</onsuccess>
+    <resource object="PuTTY Console" action="Input Message" />
+  </stage>
+  <stage stageid="7576c006-be0e-455f-89f7-93ecdea680fe" name="Enter" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>270</displayx>
+    <displayy>510</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>6998a160-5af7-4c56-bd6a-99ae9038624f</onsuccess>
+    <resource object="PuTTY Console" action="Hit Enter" />
+  </stage>
+  <stage stageid="7226f0c1-4530-4402-8d18-8699941f3a7d" name="Login Throttle" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>210</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Seconds" expr="5" />
+    </inputs>
+    <onsuccess>d37c57a2-ea29-4da7-9e32-6a42251f1b1b</onsuccess>
+    <resource object="PuTTY Console" action="Throttle" />
+  </stage>
+  <stage stageid="6998a160-5af7-4c56-bd6a-99ae9038624f" name="Input Insert Mode Command" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>345</displayx>
+    <displayy>510</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Message" narrative="Text you want inputted into the console" expr="[Insert Mode Command]" />
+    </inputs>
+    <onsuccess>9549e2f9-fea1-4585-9d99-5f6b6791ec1f</onsuccess>
+    <resource object="PuTTY Console" action="Input Message" />
+  </stage>
+  <stage stageid="9549e2f9-fea1-4585-9d99-5f6b6791ec1f" name="Launch Notepad for File" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>420</displayx>
+    <displayy>555</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Command Line Arguments" expr="[Text File]" />
+      <input type="text" name="Working Directory" expr="[Working Directory]" />
+    </inputs>
+    <onsuccess>18f5c07e-c515-4251-8dc8-0474f788123e</onsuccess>
+    <resource object="Notepad" action="Launch" />
+  </stage>
+  <stage stageid="1321d110-4564-4605-90d9-f6f0ab4d113e" name="Terminate Notepad" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>420</displayx>
+    <displayy>690</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>c933c9b3-9f2e-44df-8ebb-adc1afe399d4</onsuccess>
+    <resource object="Notepad" action="Exit" />
+  </stage>
+  <stage stageid="dc4a33e1-e023-4412-80a7-db73dfe41b38" name="Text File" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>510</displayx>
+    <displayy>555</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">/A DevHapPath_1.txt</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8c369f6b-3a87-4a77-8a66-8a1571ef7511" name="Working Directory" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>570</displayx>
+    <displayy>555</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">C:/Users/n0286782/Documents/Intake_Files</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c933c9b3-9f2e-44df-8ebb-adc1afe399d4" name="Activate PuTTY" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>495</displayx>
+    <displayy>690</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>6e8ecffc-9487-49fc-b19e-f66550795b7e</onsuccess>
+    <resource object="PuTTY Console" action="Attach" />
+  </stage>
+  <stage stageid="6e8ecffc-9487-49fc-b19e-f66550795b7e" name="Paste Into PuTTY" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>495</displayx>
+    <displayy>735</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>2619735c-9425-4756-b6bf-391636202811</onsuccess>
+    <resource object="PuTTY Console" action="Paste" />
+  </stage>
+  <stage stageid="18f5c07e-c515-4251-8dc8-0474f788123e" name="Select All" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>420</displayx>
+    <displayy>600</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>1d1ba426-d9d4-46b6-863e-1906c6b4ccc7</onsuccess>
+    <resource object="Notepad Global" action="Select All" />
+  </stage>
+  <stage stageid="cda59bef-04a4-4ce5-bd22-0fe0eac26d3b" name="Hit Escape" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>570</displayx>
+    <displayy>735</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>01847f31-ffb8-4bb4-a447-06a7183e13a9</onsuccess>
+    <resource object="PuTTY Console" action="Hit Escape" />
+  </stage>
+  <stage stageid="bf4dd722-38cb-42da-a85b-e9910778e433" name="Get Text Files" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" narrative="The folder in which to look for files" expr="[Working Directory]" />
+      <input type="text" name="Patterns CSV" narrative="The comma seperated list of wildcard patterns" expr="&quot;*.txt&quot;" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Success" narrative="True if successful" stage="Success" />
+      <output type="text" name="Message" narrative="A message if unsuccessful" stage="Message" />
+      <output type="collection" name="Files" narrative="The collection of files found" stage="Files" />
+    </outputs>
+    <onsuccess>4a523c87-e294-4a41-b11a-f528c907218f</onsuccess>
+    <resource object="Utility - File Management" action="Get Files" />
+  </stage>
+  <stage stageid="7e2e1938-9bfa-4679-a948-cbe25607484f" name="Success" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-60</displayx>
+    <displayy>-165</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="5fb54c6a-6d72-4855-92ac-3e04229a6283" name="Message" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-120</displayx>
+    <displayy>-165</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="6e3ec757-db31-45d2-8288-5592b3c635c3" name="Files" type="Collection">
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="Path" type="text" />
+      <field name="Folder" type="text" />
+      <field name="Name" type="text" />
+      <field name="Extension" type="text" />
+      <field name="Created" type="datetime" />
+      <field name="Last Accessed" type="datetime" />
+      <field name="Last Written" type="datetime" />
+      <field name="Read Only" type="flag" />
+      <field name="Bytes" type="number" />
+    </collectioninfo>
+  </stage>
+  <stage stageid="99b57a00-ebf5-4e7f-b7ad-aa10bc876bbb" name="For Each File" type="LoopStart">
+    <narrative>
+    </narrative>
+    <displayx>270</displayx>
+    <displayy>270</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>65f2fb65-84b0-4f04-a338-a965bd2e4625</onsuccess>
+    <groupid>5834eb4a-6817-48bd-be76-f5fa3d1cdddd</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>Files</loopdata>
+  </stage>
+  <stage stageid="ba1314ef-ae8f-4256-ba96-302d3d0c8c02" name="For Each File" type="LoopEnd">
+    <narrative>
+    </narrative>
+    <displayx>720</displayx>
+    <displayy>990</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>4c013cef-0bd2-4d39-bfa0-009434a090fb</onsuccess>
+    <groupid>5834eb4a-6817-48bd-be76-f5fa3d1cdddd</groupid>
+  </stage>
+  <stage stageid="85a59e1b-164f-4bba-9b4d-e9978a0afd2f" name="Calculate Text File Name" type="Calculation">
+    <narrative>
+    </narrative>
+    <displayx>270</displayx>
+    <displayy>420</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>5db22fc4-298c-4751-9af7-a7deda309603</onsuccess>
+    <calculation expression="&quot;/A &quot; &amp; [Files.Name]" stage="Text File" />
+  </stage>
+  <stage stageid="dd916914-cf58-44a8-91f4-2191da82c6dc" name="Navigate to Load_As Folder Command" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>795</displayx>
+    <displayy>1095</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">cd /downloads/intake/load_as</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="62692500-6411-4016-a8c2-a0e87fe1604a" name="Pull Over Files Command" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>795</displayx>
+    <displayy>1230</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+  </stage>
+  <stage stageid="fdb18a8e-b1cb-41e4-8ad1-baf76b5333f2" name="Calculate Pull Over Files Command" type="Calculation">
+    <narrative>
+    </narrative>
+    <displayx>720</displayx>
+    <displayy>1185</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>02953bf3-1a98-4e50-9ef2-c7b019708a1f</onsuccess>
+    <calculation expression="&quot;cp /home/&quot; &amp; [User ID] &amp; &quot;/D&quot; &amp; [Date] &amp; &quot;*&quot; &amp; &quot; .&quot;" stage="Pull Over Files Command" />
+  </stage>
+  <stage stageid="e7f901b3-3bd0-4929-8a27-9ac379e0d007" name="Save and Exit File Input" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>570</displayx>
+    <displayy>900</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Message" narrative="Text you want inputted into the console" expr="[Exit Command]" />
+    </inputs>
+    <onsuccess>82a17768-8f93-49bf-bb62-2077da882702</onsuccess>
+    <resource object="PuTTY Console" action="Input Message" />
+  </stage>
+  <stage stageid="82a17768-8f93-49bf-bb62-2077da882702" name="Enter" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>570</displayx>
+    <displayy>945</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>5e969b01-9f6e-464b-bdcc-90aa65b04a39</onsuccess>
+    <resource object="PuTTY Console" action="Hit Enter" />
+  </stage>
+  <stage stageid="3ca353bb-cd01-4cd1-84d3-869047f63c4b" name="Navigate to Load As Input" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>720</displayx>
+    <displayy>1095</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Message" narrative="Text you want inputted into the console" expr="[Navigate to Load_As Folder Command]" />
+    </inputs>
+    <onsuccess>ee5d2a5d-486a-4772-b0af-906c569f9a86</onsuccess>
+    <resource object="PuTTY Console" action="Input Message" />
+  </stage>
+  <stage stageid="ee5d2a5d-486a-4772-b0af-906c569f9a86" name="Enter" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>720</displayx>
+    <displayy>1140</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>fdb18a8e-b1cb-41e4-8ad1-baf76b5333f2</onsuccess>
+    <resource object="PuTTY Console" action="Hit Enter" />
+  </stage>
+  <stage stageid="02953bf3-1a98-4e50-9ef2-c7b019708a1f" name="Pull Over Files Command Input" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>720</displayx>
+    <displayy>1230</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Message" narrative="Text you want inputted into the console" expr="[Pull Over Files Command]" />
+    </inputs>
+    <onsuccess>76d68707-9dc5-4f13-b96e-b4edfccddb63</onsuccess>
+    <resource object="PuTTY Console" action="Input Message" />
+  </stage>
+  <stage stageid="76d68707-9dc5-4f13-b96e-b4edfccddb63" name="Enter" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>720</displayx>
+    <displayy>1275</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>e0e7d4db-3ca6-4839-88c6-d0e7026559ff</onsuccess>
+    <resource object="PuTTY Console" action="Hit Enter" />
+  </stage>
+  <stage stageid="e0e7d4db-3ca6-4839-88c6-d0e7026559ff" name="End1" type="End">
+    <narrative>
+    </narrative>
+    <displayx>720</displayx>
+    <displayy>1335</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="cdcd7a5e-c7d0-4e73-bbc5-64d2c3211732" name="Throttle" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Seconds" expr="5" />
+    </inputs>
+    <onsuccess>b2c0969b-d4c0-4442-84b0-60083a2cb772</onsuccess>
+    <resource object="PuTTY Console" action="Throttle" />
+  </stage>
+  <stage stageid="1d1ba426-d9d4-46b6-863e-1906c6b4ccc7" name="Copy" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>420</displayx>
+    <displayy>645</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>1321d110-4564-4605-90d9-f6f0ab4d113e</onsuccess>
+    <resource object="Notepad Global" action="Copy" />
+  </stage>
+  <stage stageid="2619735c-9425-4756-b6bf-391636202811" name="Pasting Throttle" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>570</displayx>
+    <displayy>690</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Seconds" expr="2" />
+    </inputs>
+    <onsuccess>cda59bef-04a4-4ce5-bd22-0fe0eac26d3b</onsuccess>
+    <resource object="PuTTY Console" action="Throttle" />
+  </stage>
+  <stage stageid="01847f31-ffb8-4bb4-a447-06a7183e13a9" name="Throttle" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>570</displayx>
+    <displayy>780</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Seconds" expr="2" />
+    </inputs>
+    <onsuccess>ca1837a5-b103-4337-812f-04899a6f08e7</onsuccess>
+    <resource object="PuTTY Console" action="Throttle" />
+  </stage>
+  <stage stageid="1b6f81b5-2f14-4c56-b5cd-cc4ddc71d6d2" name="Date" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>330</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">072617</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ca1837a5-b103-4337-812f-04899a6f08e7" name="Shift Colon Send" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>570</displayx>
+    <displayy>840</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>e7f901b3-3bd0-4929-8a27-9ac379e0d007</onsuccess>
+    <resource object="PuTTY Console" action="Start VI Command" />
+  </stage>
+  <stage stageid="5e969b01-9f6e-464b-bdcc-90aa65b04a39" name="Throttle" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>570</displayx>
+    <displayy>990</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Seconds" expr="2" />
+    </inputs>
+    <onsuccess>ba1314ef-ae8f-4256-ba96-302d3d0c8c02</onsuccess>
+    <resource object="PuTTY Console" action="Throttle" />
+  </stage>
+  <stage stageid="65f2fb65-84b0-4f04-a338-a965bd2e4625" name="Reset File Name Command" type="Calculation">
+    <narrative>
+    </narrative>
+    <displayx>270</displayx>
+    <displayy>330</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>ef1ab2a7-2e12-4497-a465-986b6600dc79</onsuccess>
+    <calculation expression="&quot;vi &quot;" stage="New File Command" />
+  </stage>
+  <stage stageid="4c013cef-0bd2-4d39-bfa0-009434a090fb" name="Throttle" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>720</displayx>
+    <displayy>1035</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Seconds" expr="2" />
+    </inputs>
+    <onsuccess>3ca353bb-cd01-4cd1-84d3-869047f63c4b</onsuccess>
+    <resource object="PuTTY Console" action="Throttle" />
+  </stage>
+  <stage stageid="39e846dc-4a74-4944-a14f-f5a24a338390" name="Block1" type="Block">
+    <narrative>
+    </narrative>
+    <displayx>-150</displayx>
+    <displayy>0</displayy>
+    <displaywidth>210</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="8d290ea0-f324-4a26-8f7b-c9d5d89a66a5" name="Recover1" type="Recover">
+    <narrative>
+    </narrative>
+    <displayx>-75</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>db553267-6799-4840-a271-a732aa183199</onsuccess>
+  </stage>
+  <stage stageid="db553267-6799-4840-a271-a732aa183199" name="Resume1" type="Resume">
+    <narrative>
+    </narrative>
+    <displayx>-75</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>cdcd7a5e-c7d0-4e73-bbc5-64d2c3211732</onsuccess>
+  </stage>
+</process>

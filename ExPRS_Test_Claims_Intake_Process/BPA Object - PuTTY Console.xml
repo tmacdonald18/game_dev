@@ -1,0 +1,1416 @@
+﻿<process name="PuTTY Console" version="1.0" bpversion="5.0.24.0" narrative="Navigate and input into the Putty Console" type="object" runmode="Exclusive" preferredid="30c5998a-61da-4a8c-97ee-317d9b0ae0cb">
+  <appdef>
+    <element name="PuTTY Console">
+      <id>999665d0-7577-48f5-8442-7692952e7fd6</id>
+      <element name="Window">
+        <id>15f07a58-4a02-4c48-a4a9-93d1b87375f6</id>
+        <element name="Console">
+          <id>91a55960-a1a8-4db8-8e6d-15d9b8377586</id>
+          <type>AAElement</type>
+          <basetype>AAElement</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText">
+              <ProcessValue datatype="text" value="pm02kdc.lmig.com - PuTTY" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="PuTTY" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="50" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="50" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="676" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="425" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="&lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="PuTTY" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:58,80,466,700" />
+            </attribute>
+            <attribute name="aX">
+              <ProcessValue datatype="number" value="8" />
+            </attribute>
+            <attribute name="aY">
+              <ProcessValue datatype="number" value="30" />
+            </attribute>
+            <attribute name="aWidth">
+              <ProcessValue datatype="number" value="642" />
+            </attribute>
+            <attribute name="aHeight">
+              <ProcessValue datatype="number" value="386" />
+            </attribute>
+            <attribute name="Name" comparisontype="Wildcard" inuse="True">
+              <ProcessValue datatype="text" value="*PuTTY" />
+            </attribute>
+            <attribute name="Description" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="Role" inuse="True">
+              <ProcessValue datatype="text" value="Client" />
+            </attribute>
+            <attribute name="ID" inuse="True">
+              <ProcessValue datatype="text" value="Self" />
+            </attribute>
+            <attribute name="State">
+              <ProcessValue datatype="text" value="focusable" />
+            </attribute>
+            <attribute name="Value2" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="KeyboardShortcut" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="DefaultAction" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ElementCount" inuse="True">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="aAncestorCount">
+              <ProcessValue datatype="number" value="3" />
+            </attribute>
+            <attribute name="Unavailable">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Selected">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Focused">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Pressed">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="aChecked">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Mixed">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="ReadOnly">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Hottracked">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Default">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Expanded">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Collapsed">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Busy">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Floating">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Marqueed">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Animated">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Invisible">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Offscreen">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Sizeable">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Moveable">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="SelfVoicing">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Focusable">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Selectable">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Linked">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Traversed">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Multiselectable">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Extselectable">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Alert_low">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Alert_medium">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Alert_high">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:58,80,466,700" />
+            </attribute>
+            <attribute name="paX">
+              <ProcessValue datatype="number" value="50" />
+            </attribute>
+            <attribute name="paY">
+              <ProcessValue datatype="number" value="50" />
+            </attribute>
+            <attribute name="paWidth">
+              <ProcessValue datatype="number" value="675" />
+            </attribute>
+            <attribute name="paHeight">
+              <ProcessValue datatype="number" value="424" />
+            </attribute>
+            <attribute name="pName" comparisontype="Wildcard" inuse="True">
+              <ProcessValue datatype="text" value="*PuTTY" />
+            </attribute>
+            <attribute name="pDescription" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="pRole" inuse="True">
+              <ProcessValue datatype="text" value="Window" />
+            </attribute>
+            <attribute name="pID" inuse="True">
+              <ProcessValue datatype="text" value="Self" />
+            </attribute>
+            <attribute name="pState">
+              <ProcessValue datatype="text" value="focusable" />
+            </attribute>
+            <attribute name="pValue2" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="pKeyboardShortcut" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="pDefaultAction" inuse="True">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="pElementCount">
+              <ProcessValue datatype="number" value="7" />
+            </attribute>
+            <attribute name="pUnavailable">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pSelected">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pFocused">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pPressed">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="paChecked">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pMixed">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pReadOnly">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pHottracked">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pDefault">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pExpanded">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pCollapsed">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pBusy">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pFloating">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pMarqueed">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pAnimated">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pInvisible">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pOffscreen">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pSizeable">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pMoveable">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pSelfVoicing">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pFocusable">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pSelectable">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pLinked">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pTraversed">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pMultiselectable">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pExtselectable">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pAlert_low">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pAlert_medium">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="pAlert_high">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <type>Window</type>
+        <basetype>Window</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="WindowText" comparisontype="Wildcard" inuse="True">
+            <ProcessValue datatype="text" value="*PuTTY" />
+          </attribute>
+          <attribute name="ClassName" inuse="True">
+            <ProcessValue datatype="text" value="PuTTY" />
+          </attribute>
+          <attribute name="CtrlID">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="X">
+            <ProcessValue datatype="number" value="63" />
+          </attribute>
+          <attribute name="Y">
+            <ProcessValue datatype="number" value="416" />
+          </attribute>
+          <attribute name="Width">
+            <ProcessValue datatype="number" value="676" />
+          </attribute>
+          <attribute name="Height">
+            <ProcessValue datatype="number" value="425" />
+          </attribute>
+          <attribute name="Visible" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="ScreenVisible" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Enabled" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Active">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Ordinal">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="ChildCount">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="AncestorsText">
+            <ProcessValue datatype="text" value="&lt;UNKNOWN&gt; " />
+          </attribute>
+          <attribute name="AncestorCount">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="TypeName">
+            <ProcessValue datatype="text" value="PuTTY" />
+          </attribute>
+          <attribute name="ScreenBounds">
+            <ProcessValue datatype="text" value="RECT:71,446,832,713" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="MatchReverse">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+        </attributes>
+      </element>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+    <apptypeinfo>
+      <id>Win32Attach</id>
+      <parameters>
+        <parameter>
+          <name>WindowTitle</name>
+          <value>*PuTTY</value>
+        </parameter>
+        <parameter>
+          <name>ProcessName</name>
+          <value>putty60</value>
+        </parameter>
+        <parameter>
+          <name>Path</name>
+          <value>
+          </value>
+        </parameter>
+        <parameter>
+          <name>CommandLineParams</name>
+          <value>
+          </value>
+        </parameter>
+        <parameter>
+          <name>NonInvasive</name>
+          <value>True</value>
+        </parameter>
+        <parameter>
+          <name>ProcessMode</name>
+          <value>Internal</value>
+        </parameter>
+        <parameter>
+          <name>ExternalProcessTimeout</name>
+          <value>0</value>
+        </parameter>
+      </parameters>
+    </apptypeinfo>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="4d90e785-8204-4408-aa7b-28a634974f63" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="03d8b55d-40f6-4456-a9c8-2b012c4974ef" type="Normal" published="True">
+    <name>Input Message</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>-54</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="f65fae5a-ffda-426d-89a7-751d092e561e" type="Normal" published="True">
+    <name>Start VI Command</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="84f11afa-63d2-4a02-9807-9cb84750b612" type="Normal" published="True">
+    <name>Throttle</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="bef7253a-35ed-4ff4-9e1a-05794c5d9729" type="Normal" published="True">
+    <name>Attach</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>42</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="722d8db6-c1ce-4a45-b629-9fa2c5cc85fe" type="Normal" published="True">
+    <name>Hit Enter</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>-21</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="7a67ff8f-bc74-49cb-af07-668ab0b82909" type="Normal" published="True">
+    <name>Hit Escape</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="c3603e13-96cb-4931-a68b-f442d6dbff2a" type="Normal" published="True">
+    <name>Paste</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="dd6b7542-ff11-424b-8955-e9e445daba78" name="Start" type="Start">
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>0741d343-ce53-44d8-9c32-f6764b5a7f5d</onsuccess>
+  </stage>
+  <stage stageid="0741d343-ce53-44d8-9c32-f6764b5a7f5d" name="End" type="End">
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="5052ae08-313e-40a0-bd9c-f940bf8c5798" name="Stage1" type="ProcessInfo">
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <references>
+      <reference>System.dll</reference>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+    </imports>
+    <language>visualbasic</language>
+    <globalcode><![CDATA[]]></globalcode>
+    <code><![CDATA[]]></code>
+  </stage>
+  <stage stageid="9ce71165-b123-4dbb-8b13-69825cec8ecf" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>4d90e785-8204-4408-aa7b-28a634974f63</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="1bab82a9-401a-4ed8-9a05-2f93d0a48fdc" name="Start" type="Start">
+    <subsheetid>4d90e785-8204-4408-aa7b-28a634974f63</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>6c11c48d-256d-431a-a1fa-86523b452c17</onsuccess>
+  </stage>
+  <stage stageid="6c11c48d-256d-431a-a1fa-86523b452c17" name="End" type="End">
+    <subsheetid>4d90e785-8204-4408-aa7b-28a634974f63</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="edf4c662-248e-4ae1-9843-b4df9c856c92" name="Input Message" type="SubSheetInfo">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="ab1cd0ce-efcd-481b-9d84-0d409c93817b" name="Start" type="Start">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-30</displayx>
+    <displayy>-255</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Message" narrative="Text you want inputted into the console" stage="Message" />
+    </inputs>
+    <onsuccess>8e34f8a4-769f-4608-a12a-314772b77311</onsuccess>
+  </stage>
+  <stage stageid="be18ec0b-6a6e-4f4f-9431-4ef3a3e4d0e1" name="End" type="End">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-75</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="3c07fb7f-3544-4199-b701-09a0a7f3e956" name="Note1" type="Note">
+    <subsheetid>4d90e785-8204-4408-aa7b-28a634974f63</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <displayx>-180</displayx>
+    <displayy>60</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>230</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="6636b7ed-41da-46f6-a2ba-6f9345605a80" name="Note2" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <displayx>-180</displayx>
+    <displayy>60</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>230</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="2329ac30-4463-4f5e-87bb-30715597b8e7" name="Message" type="Data">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>75</displayx>
+    <displayy>-255</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">D0706170000.R4Test2_33.01 :1 wq! i *</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b1ed844a-d7d6-442e-b00a-30fc21f9ebc5" name="Get Length of Message" type="Calculation">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>77c8ffb6-f3e8-4427-bea3-14b4dc17fca2</onsuccess>
+    <calculation expression="Len([Message])" stage="Length" />
+  </stage>
+  <stage stageid="4158aa2e-6391-4d88-bde4-b08153e02754" name="Length" type="Data">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="77c8ffb6-f3e8-4427-bea3-14b4dc17fca2" name="Done Sending?" type="Decision">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[Count]=[Length]" />
+    <ontrue>be18ec0b-6a6e-4f4f-9431-4ef3a3e4d0e1</ontrue>
+    <onfalse>265244ea-ac1f-4a5c-b9d8-60a959e2b157</onfalse>
+  </stage>
+  <stage stageid="09f41361-a6af-4246-8898-f0b759cbe8e0" name="Count" type="Data">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>165</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="265244ea-ac1f-4a5c-b9d8-60a959e2b157" name="Get First Letter" type="Calculation">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>2281ce08-2781-418f-82fd-aff6b0960231</onsuccess>
+    <calculation expression="Left([Message], 1)" stage="Letter" />
+  </stage>
+  <stage stageid="aa289dce-8c85-449d-9940-9e7c2f3bbb86" name="Letter" type="Data">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-75</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e2826828-b5d1-41d7-a158-90777f535633" name="Format SendKey" type="Calculation">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>255</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>3adbd037-36cb-4495-85ae-1eae9afc7e8c</onsuccess>
+    <calculation expression="&quot;{&quot; &amp; [Letter] &amp; &quot;}&quot;" stage="SendKey Value" />
+  </stage>
+  <stage stageid="f546be7e-4f3d-4377-a201-9c4367ad9e45" name="SendKey Value" type="Data">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>255</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3adbd037-36cb-4495-85ae-1eae9afc7e8c" name="Send Key" type="Navigate">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>255</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>0e20233f-4fff-45eb-82cf-0d904271129a</onsuccess>
+    <step>
+      <element id="91a55960-a1a8-4db8-8e6d-15d9b8377586" />
+      <action>
+        <id>AASendKeys</id>
+        <arguments>
+          <argument>
+            <id>newtext</id>
+            <value>[SendKey Value]</value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="0e20233f-4fff-45eb-82cf-0d904271129a" name="Increment Count" type="Calculation">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>165</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>58e6a5fc-6d54-49b4-a56b-8cead5227c76</onsuccess>
+    <calculation expression="[Count] + 1" stage="Count" />
+  </stage>
+  <stage stageid="58e6a5fc-6d54-49b4-a56b-8cead5227c76" name="Update Message" type="Calculation">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>77c8ffb6-f3e8-4427-bea3-14b4dc17fca2</onsuccess>
+    <calculation expression="Right([Message], Len([Message]) - 1)" stage="Message" />
+  </stage>
+  <stage stageid="2281ce08-2781-418f-82fd-aff6b0960231" name="What type of character?" type="ChoiceStart">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <groupid>bdbdc289-a8df-49a7-9b8e-3494d2a9773a</groupid>
+    <choices>
+      <choice expression="[Letter]=&quot; &quot;">
+        <name>Space</name>
+        <distance>60</distance>
+        <ontrue>1de79488-2e99-4cf1-801c-6c9a17ad7950</ontrue>
+      </choice>
+    </choices>
+  </stage>
+  <stage stageid="07509d87-5cd8-4c91-afc1-9bd437fb0d4e" name="Otherwise1" type="ChoiceEnd">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>240</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>c4106083-6ceb-4d11-aac9-2b988914fd1c</onsuccess>
+    <groupid>bdbdc289-a8df-49a7-9b8e-3494d2a9773a</groupid>
+  </stage>
+  <stage stageid="1de79488-2e99-4cf1-801c-6c9a17ad7950" name="Convert to space" type="Calculation">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>165</displayx>
+    <displayy>180</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>1a878380-2d35-45d5-9943-65ce38400dd0</onsuccess>
+    <calculation expression="&quot;&quot;&quot; &quot;&quot;&quot;" stage="Letter" />
+  </stage>
+  <stage stageid="c4106083-6ceb-4d11-aac9-2b988914fd1c" name="Anchor1" type="Anchor">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>255</displayx>
+    <displayy>240</displayy>
+    <displaywidth>10</displaywidth>
+    <displayheight>10</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>e2826828-b5d1-41d7-a158-90777f535633</onsuccess>
+  </stage>
+  <stage stageid="1a878380-2d35-45d5-9943-65ce38400dd0" name="Send Space" type="Navigate">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>165</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>0e20233f-4fff-45eb-82cf-0d904271129a</onsuccess>
+    <step>
+      <element id="91a55960-a1a8-4db8-8e6d-15d9b8377586" />
+      <action>
+        <id>AASendKeys</id>
+        <arguments>
+          <argument>
+            <id>newtext</id>
+            <value>" "</value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="c0dada1a-f33d-4635-93cf-fd572034a8cb" name="Hit Enter" type="SubSheetInfo">
+    <subsheetid>722d8db6-c1ce-4a45-b629-9fa2c5cc85fe</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="aea86902-93cf-4189-ac8a-f59d06215d37" name="Start" type="Start">
+    <subsheetid>722d8db6-c1ce-4a45-b629-9fa2c5cc85fe</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>a2bbf3e2-4633-4cdc-a2e1-2a842e27015e</onsuccess>
+  </stage>
+  <stage stageid="44c7be7d-a3a7-4165-b8b6-c45d53041509" name="End" type="End">
+    <subsheetid>722d8db6-c1ce-4a45-b629-9fa2c5cc85fe</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="a2bbf3e2-4633-4cdc-a2e1-2a842e27015e" name="Hit Enter" type="Navigate">
+    <subsheetid>722d8db6-c1ce-4a45-b629-9fa2c5cc85fe</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>1a8194f1-13e4-49dd-a02a-c46754b9453e</onsuccess>
+    <step>
+      <element id="91a55960-a1a8-4db8-8e6d-15d9b8377586" />
+      <action>
+        <id>AASendKeys</id>
+        <arguments>
+          <argument>
+            <id>newtext</id>
+            <value>"{Enter}"</value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="61c04ab4-fa42-44c2-ad51-97ddbb26ce1a" name="Time Out - Activated?" type="WaitEnd">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>60</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>d32f2a7d-5dfb-45d5-ba5b-1871a70e0460</onsuccess>
+    <groupid>94ddf9e8-0682-4f47-8f12-277d2380253a</groupid>
+  </stage>
+  <stage stageid="8e34f8a4-769f-4608-a12a-314772b77311" name="Activated?" type="WaitStart">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-30</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <groupid>94ddf9e8-0682-4f47-8f12-277d2380253a</groupid>
+    <choices>
+      <choice reply="True">
+        <name>Window Check Window Active</name>
+        <distance>45</distance>
+        <ontrue>b1ed844a-d7d6-442e-b00a-30fc21f9ebc5</ontrue>
+        <element id="15f07a58-4a02-4c48-a4a9-93d1b87375f6" />
+        <condition>
+          <id>CheckWindowActive</id>
+        </condition>
+        <comparetype>Equal</comparetype>
+      </choice>
+    </choices>
+    <timeout>1</timeout>
+  </stage>
+  <stage stageid="d32f2a7d-5dfb-45d5-ba5b-1871a70e0460" name="Activate" type="Navigate">
+    <subsheetid>03d8b55d-40f6-4456-a9c8-2b012c4974ef</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>b1ed844a-d7d6-442e-b00a-30fc21f9ebc5</onsuccess>
+    <step>
+      <element id="15f07a58-4a02-4c48-a4a9-93d1b87375f6" />
+      <action>
+        <id>ActivateApp</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="2e6de4a6-9c6b-4dc4-8100-e82c0b808600" name="Attach" type="SubSheetInfo">
+    <subsheetid>bef7253a-35ed-4ff4-9e1a-05794c5d9729</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="a5d6060e-4a03-49a0-b883-67d95393bcf1" name="Start" type="Start">
+    <subsheetid>bef7253a-35ed-4ff4-9e1a-05794c5d9729</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>b0f56bf6-b9f9-4206-bc1d-f4992daaf466</onsuccess>
+  </stage>
+  <stage stageid="b0abbf1d-d20d-49a7-98f3-6d1cf0cc1604" name="End" type="End">
+    <subsheetid>bef7253a-35ed-4ff4-9e1a-05794c5d9729</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="b0f56bf6-b9f9-4206-bc1d-f4992daaf466" name="Attach" type="Navigate">
+    <subsheetid>bef7253a-35ed-4ff4-9e1a-05794c5d9729</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>dad0bc01-4905-4d79-941a-88ff81e55e6b</onsuccess>
+    <step>
+      <element id="999665d0-7577-48f5-8442-7692952e7fd6" />
+      <action>
+        <id>AttachApplication</id>
+        <arguments>
+          <argument>
+            <id>WindowTitlesCollection</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>WindowTitle</id>
+            <value>"*Putty"</value>
+          </argument>
+          <argument>
+            <id>ProcessName</id>
+            <value>"putty60"</value>
+          </argument>
+          <argument>
+            <id>ChildIndex</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="682cd4d9-b0ab-4215-9bb6-2bee2fe55ec2" name="Hit Escape" type="SubSheetInfo">
+    <subsheetid>7a67ff8f-bc74-49cb-af07-668ab0b82909</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="93475115-d42e-4813-81f2-108ed3a535bb" name="Start" type="Start">
+    <subsheetid>7a67ff8f-bc74-49cb-af07-668ab0b82909</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>d6e8fb38-1514-4db0-ac78-10b0f21d0e27</onsuccess>
+  </stage>
+  <stage stageid="9b92d031-6c22-4a80-8549-d4da7c5dbbba" name="End" type="End">
+    <subsheetid>7a67ff8f-bc74-49cb-af07-668ab0b82909</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="d6e8fb38-1514-4db0-ac78-10b0f21d0e27" name="Hit Escape" type="Navigate">
+    <subsheetid>7a67ff8f-bc74-49cb-af07-668ab0b82909</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>9b92d031-6c22-4a80-8549-d4da7c5dbbba</onsuccess>
+    <step>
+      <element id="91a55960-a1a8-4db8-8e6d-15d9b8377586" />
+      <action>
+        <id>AASendKeys</id>
+        <arguments>
+          <argument>
+            <id>newtext</id>
+            <value>"{ESC}"</value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="e44aa8c2-b053-4a1e-b3d7-61de9f014f0a" name="Throttle" type="SubSheetInfo">
+    <subsheetid>84f11afa-63d2-4a02-9807-9cb84750b612</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="ab71ab53-a55d-4c96-a5f4-23e58b9c426f" name="Start" type="Start">
+    <subsheetid>84f11afa-63d2-4a02-9807-9cb84750b612</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Seconds" stage="Seconds" />
+    </inputs>
+    <onsuccess>4131c7c8-8ca0-4a72-8935-8f6357b96702</onsuccess>
+  </stage>
+  <stage stageid="1f7efffc-22a2-443c-96c0-39ecceb44382" name="End" type="End">
+    <subsheetid>84f11afa-63d2-4a02-9807-9cb84750b612</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="14618556-5b46-4c8c-969e-820f89032f9e" name="Time Out1" type="WaitEnd">
+    <subsheetid>84f11afa-63d2-4a02-9807-9cb84750b612</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>1f7efffc-22a2-443c-96c0-39ecceb44382</onsuccess>
+    <groupid>18ff3e83-b8fd-40f6-9a06-674c36658cfb</groupid>
+  </stage>
+  <stage stageid="4131c7c8-8ca0-4a72-8935-8f6357b96702" name="Wait1" type="WaitStart">
+    <subsheetid>84f11afa-63d2-4a02-9807-9cb84750b612</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <groupid>18ff3e83-b8fd-40f6-9a06-674c36658cfb</groupid>
+    <choices />
+    <timeout>[Seconds]</timeout>
+  </stage>
+  <stage stageid="3baaed30-b273-4346-869d-66092d4e1dd6" name="Seconds" type="Data">
+    <subsheetid>84f11afa-63d2-4a02-9807-9cb84750b612</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="9f92d6af-fa31-4055-89c8-368ca27281a7" name="Time Out - Throttle" type="WaitEnd">
+    <subsheetid>722d8db6-c1ce-4a45-b629-9fa2c5cc85fe</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>45</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>44c7be7d-a3a7-4165-b8b6-c45d53041509</onsuccess>
+    <groupid>716fc11c-65ca-4421-90e3-3656e314bac9</groupid>
+  </stage>
+  <stage stageid="1a8194f1-13e4-49dd-a02a-c46754b9453e" name="Throttle" type="WaitStart">
+    <subsheetid>722d8db6-c1ce-4a45-b629-9fa2c5cc85fe</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>0</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <groupid>716fc11c-65ca-4421-90e3-3656e314bac9</groupid>
+    <choices />
+    <timeout>2</timeout>
+  </stage>
+  <stage stageid="ca328748-7e8c-4e92-a38a-3311dad661e7" name="Paste" type="SubSheetInfo">
+    <subsheetid>c3603e13-96cb-4931-a68b-f442d6dbff2a</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="08644e19-2957-49ec-9b9a-5416be377f94" name="Start" type="Start">
+    <subsheetid>c3603e13-96cb-4931-a68b-f442d6dbff2a</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>7a18f60b-ac53-4ee4-a355-56f66ce05f1d</onsuccess>
+  </stage>
+  <stage stageid="cfa85bd1-b91a-4b46-b75a-d68679010d42" name="End" type="End">
+    <subsheetid>c3603e13-96cb-4931-a68b-f442d6dbff2a</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="7a18f60b-ac53-4ee4-a355-56f66ce05f1d" name="Right Click Centre" type="Navigate">
+    <subsheetid>c3603e13-96cb-4931-a68b-f442d6dbff2a</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>cfa85bd1-b91a-4b46-b75a-d68679010d42</onsuccess>
+    <step>
+      <element id="91a55960-a1a8-4db8-8e6d-15d9b8377586" />
+      <action>
+        <id>AAClickCentre</id>
+        <arguments>
+          <argument>
+            <id>newtext</id>
+            <value>"Right"</value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="dad0bc01-4905-4d79-941a-88ff81e55e6b" name="Activate" type="Navigate">
+    <subsheetid>bef7253a-35ed-4ff4-9e1a-05794c5d9729</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>b0abbf1d-d20d-49a7-98f3-6d1cf0cc1604</onsuccess>
+    <step>
+      <element id="15f07a58-4a02-4c48-a4a9-93d1b87375f6" />
+      <action>
+        <id>ActivateApp</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="c7921bcf-d4a6-4ce5-bae8-66d999e04ccb" name="Block1" type="Block">
+    <subsheetid>bef7253a-35ed-4ff4-9e1a-05794c5d9729</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-30</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>300</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="464b59ec-cb20-4ede-97fd-87506b03095e" name="Recover1" type="Recover">
+    <subsheetid>bef7253a-35ed-4ff4-9e1a-05794c5d9729</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>165</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>ea84afbc-f76e-4de0-be1d-fa23c9761cf9</onsuccess>
+  </stage>
+  <stage stageid="ea84afbc-f76e-4de0-be1d-fa23c9761cf9" name="Resume1" type="Resume">
+    <subsheetid>bef7253a-35ed-4ff4-9e1a-05794c5d9729</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>165</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>dad0bc01-4905-4d79-941a-88ff81e55e6b</onsuccess>
+  </stage>
+  <stage stageid="9b15d146-a426-44bd-a54e-ff67f0a866c7" name="Start VI Command" type="SubSheetInfo">
+    <subsheetid>f65fae5a-ffda-426d-89a7-751d092e561e</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="780801bd-2bdb-4ea1-b415-af768db915a9" name="Start" type="Start">
+    <subsheetid>f65fae5a-ffda-426d-89a7-751d092e561e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>8f82bca4-8a73-4b68-8d47-d95640fc53cb</onsuccess>
+  </stage>
+  <stage stageid="6b2cd8bf-76c7-4e98-a0af-bb20d307d170" name="End" type="End">
+    <subsheetid>f65fae5a-ffda-426d-89a7-751d092e561e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="8f82bca4-8a73-4b68-8d47-d95640fc53cb" name="Shift colon" type="Navigate">
+    <subsheetid>f65fae5a-ffda-426d-89a7-751d092e561e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>6b2cd8bf-76c7-4e98-a0af-bb20d307d170</onsuccess>
+    <step>
+      <element id="91a55960-a1a8-4db8-8e6d-15d9b8377586" />
+      <action>
+        <id>AASendKeys</id>
+        <arguments>
+          <argument>
+            <id>newtext</id>
+            <value>"+:"</value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+</process>

@@ -1,0 +1,3709 @@
+﻿<process name="Utility - File Management" version="5.0.24" bpversion="5.0.24.0" narrative="Utility methods for interacting with the file System." type="object" runmode="Background" preferredid="3a5f7760-1621-4a03-bd1e-c7477b5a6de4">
+  <appdef>
+    <element name="Application Root">
+      <id>b30f5d67-5c3c-49c9-8f9b-66d573097498</id>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="9a74af4c-280a-4e30-bdbb-21295b6256ca" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>149</camerax>
+      <cameray>42</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="1e3c209b-a109-46a0-9ff0-e2dc6b8791fb" type="Normal" published="True">
+    <name>Configure</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="8043916d-2ef9-45b8-ab66-f4c20ef1b8e3" type="Normal" published="False">
+    <name>Raise Exception If Appropriate</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="d7b21a3e-52ee-4632-b2e4-88c0e1ff0dea" type="Normal" published="True">
+    <name>Download File</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="3a12dbad-57fd-45a4-b859-62df514a34d3" type="Normal" published="True">
+    <name>Get Files</name>
+    <view>
+      <camerax>106</camerax>
+      <cameray>16</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="0bafee17-a81a-40f0-9b6b-80b78142dd87" type="Normal" published="True">
+    <name>Get Folders</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="60b8a01d-1f74-4169-b192-5e363a7b5e61" type="Normal" published="True">
+    <name>File Exists</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="20e6a636-d89b-4c08-b90d-8852894005a4" type="Normal" published="True">
+    <name>Directory Exists</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="1ff30a41-e177-40c5-a756-a6b466004f32" type="Normal" published="True">
+    <name>Create Directory</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="d68f192f-eeb7-420e-b156-9636503b6082" type="Normal" published="True">
+    <name>Delete Directory</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="0bad9bbd-7a9f-4791-b6a8-ff5a2c4c39b8" type="Normal" published="True">
+    <name>Sub Directory Exists</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="b3050915-ad2e-446e-a1d6-99d11506f55e" type="Normal" published="True">
+    <name>Split Path</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="c80dea92-57e8-4e2e-8df4-f3ee6ceeb717" type="Normal" published="True">
+    <name>Combine Path</name>
+    <view>
+      <camerax>202</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="ed509af2-4b4a-447d-8196-18105ed12739" type="Normal" published="True">
+    <name>Delete Files</name>
+    <view>
+      <camerax>106</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="70940cba-8680-4eb9-8066-9e383fc5b39b" type="Normal" published="True">
+    <name>Delete File</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="e9dd304c-7d26-40f5-b193-eef36f0a370c" type="Normal" published="True">
+    <name>Copy File</name>
+    <view>
+      <camerax>49</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="85156833-c61c-4c78-916f-0b75a9a83e8d" type="Normal" published="True">
+    <name>Move File</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="7ca00106-fe4e-46c0-bffc-0dda1561434f" type="Normal" published="True">
+    <name>Get File Size</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="d2530b0d-5530-4692-8a60-1f91d1c5a9c9" type="Normal" published="True">
+    <name>Append to Text File</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="8eb61369-ddab-4205-9a55-81054c2e4afb" type="Normal" published="True">
+    <name>Read All Text from File</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="6a9cff0d-c7c5-440a-bd8d-0007e15eae4d" type="Normal" published="True">
+    <name>Read Lines From File</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="602b7aad-2626-40ba-8c4b-1ec926ae9098" type="Normal" published="True">
+    <name>Write Text File</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="842c79f8-aa64-4781-ad18-3982e21f0fd1" type="Normal" published="True">
+    <name>Write Binary Data</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="f7fa43ec-67e2-4acb-8d13-ced3c5027761" type="Normal" published="True">
+    <name>Get CSV Text As Collection</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="40c6e605-9948-429a-ac84-d2810bca75fc" type="Normal" published="True">
+    <name>Get Special Folder Path</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="d8c547cc-60d0-459b-876f-90bf696a5757" name="Start" type="Start">
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>807e7d33-91e2-4241-a85e-ea0718fc487d</onsuccess>
+  </stage>
+  <stage stageid="807e7d33-91e2-4241-a85e-ea0718fc487d" name="End" type="End">
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="1a8c9ebd-54e1-442f-a6c7-e87df3b59232" name="Stage1" type="ProcessInfo">
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <references>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+      <import>System.IO</import>
+      <import>System.XML</import>
+      <import>System.Diagnostics</import>
+      <import>Microsoft.VisualBasic</import>
+      <import>System.Data</import>
+      <import>system.text.regularexpressions</import>
+      <import>System.Data.OleDB</import>
+    </imports>
+    <language>visualbasic</language>
+    <globalcode><![CDATA[
+]]></globalcode>
+    <code><![CDATA[Public Function GetDataTable(ByVal ColumnNamesCSV As String, ByVal ColumnTypesCSV As String) As DataTable
+
+	Dim objTable As DataTable
+	Dim objColumn As DataColumn
+	Dim aColumnNames As String() = ColumnNamesCSV.Split(",")
+	Dim aColumnTypes As String() = ColumnTypesCSV.Split(",")
+
+	Try
+		objTable = New DataTable
+		For i As Integer = 0 To aColumnNames.Length - 1
+			objColumn = New DataColumn 
+			objColumn.DataType = System.Type.GetType(aColumnTypes(i).Trim)
+			objColumn.ColumnName = aColumnNames(i).Trim
+			objTable.Columns.Add(objColumn)
+		Next
+		
+	Catch e As Exception
+		objTable = nothing	
+	End Try
+
+	Return objTable
+
+End Function
+
+]]></code>
+  </stage>
+  <stage stageid="0bf7814a-647b-4bcb-b6a6-3d24dfd5b736" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>9a74af4c-280a-4e30-bdbb-21295b6256ca</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="0c56e2f8-68ce-48a3-97ad-81e1f076e9ce" name="new" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <displayx>-180</displayx>
+    <displayy>60</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>230</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="07048754-58c7-4201-9869-e206f1d6c32a" name="Get Files" type="SubSheetInfo">
+    <subsheetid>3a12dbad-57fd-45a4-b859-62df514a34d3</subsheetid>
+    <narrative>Gets all files in the specified folder matching the supplied file type pattern string.
+
+Patterns - A comma-separated list of file patterns identifying the type(s) of files sought. Eg "*.jpg, *.png" retrieves all jpg and png files. The pattern "*.*" will return all files. It does not matter whether you leave a space between each pattern, or not. Where a comma is required in a file pattern it should be escaped out using the backslash character, e.g. a pattern of "*\,November.xlsx" will return all files that end with ",November.xlsx"</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="8448350e-b6a9-4a15-a3d0-501c4967c0f9" name="Start" type="Start">
+    <subsheetid>3a12dbad-57fd-45a4-b859-62df514a34d3</subsheetid>
+    <loginhibit />
+    <preconditions>
+      <condition narrative="None." />
+    </preconditions>
+    <postconditions>
+      <condition narrative="All matching files will be returned." />
+    </postconditions>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" narrative="The folder in which to look for files" stage="Folder" />
+      <input type="text" name="Patterns CSV" narrative="The comma seperated list of wildcard patterns" stage="Patterns CSV" />
+    </inputs>
+    <onsuccess>acbbbddf-8b42-4353-8b0a-83eaeb216a63</onsuccess>
+  </stage>
+  <stage stageid="acbbbddf-8b42-4353-8b0a-83eaeb216a63" name="Get Files" type="Code">
+    <subsheetid>3a12dbad-57fd-45a4-b859-62df514a34d3</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" expr="[Folder]" />
+      <input type="text" name="Patterns CSV" expr="[Patterns CSV]" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="Files" stage="Files" />
+      <output type="flag" name="Success" stage="Success" />
+      <output type="text" name="Message" stage="Message" />
+    </outputs>
+    <onsuccess>9cdf0f78-05d1-44d4-80a0-9f78ca0b22ae</onsuccess>
+    <code><![CDATA[
+Dim objTable As DataTable
+Dim objRow As DataRow
+Dim aFiles As FileInfo()
+Dim aPatterns As String()
+Dim oDirectory As New DirectoryInfo(Folder)
+
+Try
+
+	'Create a data table to output as a collection
+	objTable = GetDataTable( _
+		"Path," _
+		& "Folder," _
+		& "Name," _
+		& "Extension," _
+		& "Created," _
+		& "Last Accessed," _
+		& "Last Written," _
+		& "Read Only," _
+		& "Bytes", _
+		"System.String," _
+		& "System.String," _
+		& "System.String," _
+		& "System.String," _
+		& "System.DateTime," _
+		& "System.DateTime," _
+		& "System.DateTime," _
+		& "System.Boolean," _
+		& "System.Double")
+		
+	Patterns_CSV = Patterns_CSV.replace("\,", "?")
+	aPatterns = Patterns_CSV.split(",")
+
+	For each sPattern As String in aPatterns
+		sPattern = sPattern.replace("?", ",")
+		aFiles = oDirectory.GetFiles(sPattern.Trim)
+		For each oFile as FileInfo in aFiles
+			objRow = objTable.NewRow()
+			objRow("Path") = oFile.FullName
+			objRow("Folder") = oFile.DirectoryName
+			objRow("Name") = oFile.Name
+			objRow("Extension") = oFile.Extension
+			objRow("Created") = oFile.CreationTimeUtc
+			objRow("Last Accessed") = oFile.LastAccessTimeUtc
+			objRow("Last Written") = oFile.LastWriteTimeUtc
+			objRow("Read Only") = oFile.IsReadOnly
+			objRow("Bytes") = oFile.Length
+
+			objTable.Rows.Add(objRow)
+		Next
+	Next
+
+	objTable = objTable.DefaultView.ToTable(True, _
+		"Path", _
+		"Folder", _
+		"Name", _
+		"Extension", _
+		"Created", _
+		"Last Accessed", _
+		"Last Written", _
+		"Read Only", _
+		"Bytes")
+
+	Files = objTable
+	Success = True
+	Message = ""
+Catch e As Exception
+	Success = False
+	Message = e.Message
+End Try]]></code>
+  </stage>
+  <stage stageid="913867cd-7535-4857-b6b9-1b1ead2bc67f" name="Folder" type="Data">
+    <subsheetid>3a12dbad-57fd-45a4-b859-62df514a34d3</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">C:\temp</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="624240c2-02c8-48c3-9040-e9388fddf1b1" name="Patterns CSV" type="Data">
+    <subsheetid>3a12dbad-57fd-45a4-b859-62df514a34d3</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>15</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">*.jpg</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="95f234d2-8c1a-466c-b8a6-fb7dc34de936" name="Files" type="Collection">
+    <subsheetid>3a12dbad-57fd-45a4-b859-62df514a34d3</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>75</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3764ae17-85d7-4ebb-99b5-502b95d7abd6" name="End" type="End">
+    <subsheetid>3a12dbad-57fd-45a4-b859-62df514a34d3</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Success" narrative="True if successful" stage="Success" />
+      <output type="text" name="Message" narrative="A message if unsuccessful" stage="Message" />
+      <output type="collection" name="Files" narrative="The collection of files found" stage="Files" />
+    </outputs>
+  </stage>
+  <stage stageid="8e80cc1d-27ed-43d9-985e-90d828191fb7" name="Success" type="Data">
+    <subsheetid>3a12dbad-57fd-45a4-b859-62df514a34d3</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>135</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="950111b1-7b05-4076-a673-b07166b76cdb" name="Message" type="Data">
+    <subsheetid>3a12dbad-57fd-45a4-b859-62df514a34d3</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>165</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="32964141-871e-474a-a1f8-eea0b10c5df2" name="Delete Files" type="SubSheetInfo">
+    <subsheetid>ed509af2-4b4a-447d-8196-18105ed12739</subsheetid>
+    <narrative>Deletes all files in the specified folder, matching the supplied file extension pattern.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="82b919fe-64b2-4c2b-8173-5706f671c5ce" name="End" type="End">
+    <subsheetid>ed509af2-4b4a-447d-8196-18105ed12739</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="ea337dc4-4fd9-4d31-8cc6-23da41cd5665" name="Start" type="Start">
+    <subsheetid>ed509af2-4b4a-447d-8196-18105ed12739</subsheetid>
+    <loginhibit />
+    <preconditions>
+      <condition narrative="The named folder must exist." />
+    </preconditions>
+    <postconditions>
+      <condition narrative="All files within the named folder which match the supplied pattern will have been deleted." />
+    </postconditions>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" narrative="The path from which to delete the files" stage="Folder" />
+      <input type="text" name="Pattern" narrative="The wildcard pattern of files to delete" stage="Pattern" />
+    </inputs>
+    <onsuccess>202c81a6-fd90-46ed-9eee-73c24863b69b</onsuccess>
+  </stage>
+  <stage stageid="202c81a6-fd90-46ed-9eee-73c24863b69b" name="Delete Files" type="Code">
+    <subsheetid>ed509af2-4b4a-447d-8196-18105ed12739</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" expr="[Folder]" />
+      <input type="text" name="Pattern" expr="[Pattern]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Success" stage="Success" />
+      <output type="text" name="Message" stage="Message" />
+    </outputs>
+    <onsuccess>d0021635-222d-46f1-93ad-a7435640cf9f</onsuccess>
+    <code><![CDATA[Dim aFiles As String()
+
+Try
+
+	aFiles = Directory.GetFiles(Folder, Pattern)
+
+	For each f as String in aFiles
+		File.Delete(f)
+	Next
+
+	Success = True
+	Message = ""
+Catch e As Exception
+	Success = False
+	Message = e.Message
+End Try
+]]></code>
+  </stage>
+  <stage stageid="119002ff-ee61-4f32-b096-f3953ad107e1" name="Folder" type="Data">
+    <subsheetid>ed509af2-4b4a-447d-8196-18105ed12739</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">C:\temp\Blue Prism</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="121b4fd7-a9da-4498-a8d5-6a0ab2dae758" name="Pattern" type="Data">
+    <subsheetid>ed509af2-4b4a-447d-8196-18105ed12739</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>15</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">*.TIF</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="623ad5b5-f965-4f97-9d46-435717e70b25" name="Success" type="Data">
+    <subsheetid>ed509af2-4b4a-447d-8196-18105ed12739</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>60</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="77c8238b-c415-496f-87c3-50033ec4d2a5" name="Message" type="Data">
+    <subsheetid>ed509af2-4b4a-447d-8196-18105ed12739</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>90</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="7891b89f-2307-4444-8b6e-17e25e53501f" name="Append to Text File" type="SubSheetInfo">
+    <subsheetid>d2530b0d-5530-4692-8a60-1f91d1c5a9c9</subsheetid>
+    <narrative>Appends some text to the specified file.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="83010bd2-019e-4b04-af0b-b401efe8d128" name="Start" type="Start">
+    <subsheetid>d2530b0d-5530-4692-8a60-1f91d1c5a9c9</subsheetid>
+    <loginhibit />
+    <preconditions>
+      <condition narrative="There must be sufficient disk space to accommodate the new data. The destination file need not exist already. If it does not exist then it will be created." />
+    </preconditions>
+    <postconditions>
+      <condition narrative="The supplied text will have been appended." />
+    </postconditions>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Name" narrative="The full path of the text file to append to" stage="File Name" />
+      <input type="text" name="Text" narrative="The text to append to the file" stage="Text" />
+    </inputs>
+    <onsuccess>eeb7f0eb-73fc-4849-96a9-35f410bbde67</onsuccess>
+  </stage>
+  <stage stageid="39862014-df78-414b-9ccd-5c0d392aa282" name="End" type="End">
+    <subsheetid>d2530b0d-5530-4692-8a60-1f91d1c5a9c9</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Success" narrative="True if successful" stage="Success" />
+      <output type="text" name="Message" narrative="An error message if unsuccessful" stage="Message" />
+    </outputs>
+  </stage>
+  <stage stageid="f9d3e8a1-7f67-4991-b9f1-e8ec160de075" name="Success" type="Data">
+    <subsheetid>d2530b0d-5530-4692-8a60-1f91d1c5a9c9</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>45</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue>False</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2ef09390-e450-4d10-a32b-4448a65b0aaf" name="Message" type="Data">
+    <subsheetid>d2530b0d-5530-4692-8a60-1f91d1c5a9c9</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>75</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="4e77fcf2-8d12-4f3b-acf3-e15dccb8e90a" name="Text" type="Data">
+    <subsheetid>d2530b0d-5530-4692-8a60-1f91d1c5a9c9</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>0</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f599b6ac-5574-438b-8617-8821d9800cf7" name="File Name" type="Data">
+    <subsheetid>d2530b0d-5530-4692-8a60-1f91d1c5a9c9</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="eeb7f0eb-73fc-4849-96a9-35f410bbde67" name="Append" type="Code">
+    <subsheetid>d2530b0d-5530-4692-8a60-1f91d1c5a9c9</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Name" expr="[File Name]" />
+      <input type="text" name="Text" expr="[Text]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Success" stage="Success" />
+      <output type="text" name="Message" stage="Message" />
+    </outputs>
+    <onsuccess>1e441202-3878-4eb6-b156-6f517be6de00</onsuccess>
+    <code><![CDATA[Try
+
+	Dim sw As StreamWriter
+
+	If File.Exists(File_Name) = False Then
+		sw = File.CreateText(File_Name)
+	Else
+		sw = File.AppendText(File_Name)
+	End If
+
+	sw.WriteLine(Text)
+	sw.Flush()
+	sw.Close()
+	
+	Success = True
+	Message = ""
+Catch e As Exception
+	Success = False
+	Message = e.Message
+End Try]]></code>
+  </stage>
+  <stage stageid="6428e7b4-8ed6-4930-bc8f-636cc71e955a" name="Read All Text from File" type="SubSheetInfo">
+    <subsheetid>8eb61369-ddab-4205-9a55-81054c2e4afb</subsheetid>
+    <narrative>Reads the entire contents of a file as text.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="a783ee6f-6425-4420-9b9f-759c781f3544" name="Start" type="Start">
+    <subsheetid>8eb61369-ddab-4205-9a55-81054c2e4afb</subsheetid>
+    <loginhibit />
+    <preconditions>
+      <condition narrative="The file must exist." />
+    </preconditions>
+    <postconditions>
+      <condition narrative="The full text of the file will be read." />
+    </postconditions>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Name" narrative="The full path the file to read the text from" stage="File Name" />
+    </inputs>
+    <onsuccess>8107f164-7ef3-4164-8a2c-500055c7b374</onsuccess>
+  </stage>
+  <stage stageid="0a76495e-bc0d-4cea-bae0-85da1e15c74f" name="End" type="End">
+    <subsheetid>8eb61369-ddab-4205-9a55-81054c2e4afb</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Success" narrative="True if successful" stage="Success" />
+      <output type="text" name="Message" narrative="An error message if unsuccessful" stage="Message" />
+      <output type="text" name="Text" narrative="The text of the file" stage="Text" />
+    </outputs>
+  </stage>
+  <stage stageid="995662eb-baf3-436e-a2c1-2cc3ccfcf8fb" name="Success" type="Data">
+    <subsheetid>8eb61369-ddab-4205-9a55-81054c2e4afb</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>45</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue>False</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ee454760-e4c3-44cc-b071-30cdafbe8355" name="Message" type="Data">
+    <subsheetid>8eb61369-ddab-4205-9a55-81054c2e4afb</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>75</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2dbbbe6e-0b94-4d90-940a-c99f9671b774" name="Text" type="Data">
+    <subsheetid>8eb61369-ddab-4205-9a55-81054c2e4afb</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>0</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="265e14ba-8649-477d-9d21-092a9bc9ad2d" name="File Name" type="Data">
+    <subsheetid>8eb61369-ddab-4205-9a55-81054c2e4afb</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8107f164-7ef3-4164-8a2c-500055c7b374" name="Read Text" type="Code">
+    <subsheetid>8eb61369-ddab-4205-9a55-81054c2e4afb</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Name" expr="[File Name]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Text" stage="Text" />
+      <output type="flag" name="Success" stage="Success" />
+      <output type="text" name="Message" stage="Message" />
+    </outputs>
+    <onsuccess>7419fb71-5c79-4fb6-9e59-b9fbc1d63e45</onsuccess>
+    <code><![CDATA[Try
+   If File.Exists(File_Name) Then
+   	Dim sr As New StreamReader(File_Name)
+   	Text = sr.ReadToEnd
+   	sr.Close()
+   	Success = True
+   	Message = ""
+   Else
+      Throw New ApplicationException("The file at " & File_Name & " does not exist")
+   End If
+Catch e As Exception
+	Success = False
+	Message = e.Message
+End Try]]></code>
+  </stage>
+  <stage stageid="a3f9a500-e2f0-4f48-9bb2-38ad1a4592b9" name="Write Text File" type="SubSheetInfo">
+    <subsheetid>602b7aad-2626-40ba-8c4b-1ec926ae9098</subsheetid>
+    <narrative>Writes text to a file. Any existing text in the file (if it exists) will be replaced.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="3f408f78-c150-49f6-9f52-a3fb59ce307e" name="Start" type="Start">
+    <subsheetid>602b7aad-2626-40ba-8c4b-1ec926ae9098</subsheetid>
+    <loginhibit />
+    <preconditions>
+      <condition narrative="There must be sufficient disk space to accommodate the new data." />
+    </preconditions>
+    <postconditions>
+      <condition narrative="The supplied text will have been written to the destination file." />
+    </postconditions>
+    <narrative>
+    </narrative>
+    <displayx>-30</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Name" narrative="The full path to the file to write the text to" stage="File Name" />
+      <input type="text" name="Text" narrative="The text to write to the file" stage="Text" />
+    </inputs>
+    <onsuccess>7d5efe35-64fc-48a0-b5a7-a5b787e90578</onsuccess>
+  </stage>
+  <stage stageid="1aab3a10-a813-470b-97c8-57938a0d0024" name="End" type="End">
+    <subsheetid>602b7aad-2626-40ba-8c4b-1ec926ae9098</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-30</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Success" narrative="True if successful" stage="Success" />
+      <output type="text" name="Message" narrative="An error message if unsuccessful" stage="Message" />
+    </outputs>
+  </stage>
+  <stage stageid="e85add3f-f65a-47dd-8be7-5ee764878dee" name="Success" type="Data">
+    <subsheetid>602b7aad-2626-40ba-8c4b-1ec926ae9098</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>45</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue>False</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3ba21666-440e-40ea-80e4-bb02ff535775" name="Message" type="Data">
+    <subsheetid>602b7aad-2626-40ba-8c4b-1ec926ae9098</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>75</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="951ed278-f157-450e-90d0-06cc330e358c" name="Text" type="Data">
+    <subsheetid>602b7aad-2626-40ba-8c4b-1ec926ae9098</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>0</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="20ca70ee-ce56-4594-90ca-a03ba1934f47" name="File Name" type="Data">
+    <subsheetid>602b7aad-2626-40ba-8c4b-1ec926ae9098</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="7d5efe35-64fc-48a0-b5a7-a5b787e90578" name="Write" type="Code">
+    <subsheetid>602b7aad-2626-40ba-8c4b-1ec926ae9098</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-30</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Name" expr="[File Name]" />
+      <input type="text" name="Text" expr="[Text]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Success" stage="Success" />
+      <output type="text" name="Message" stage="Message" />
+    </outputs>
+    <onsuccess>9219c3c4-effd-4dfc-9020-8dafd054ea8f</onsuccess>
+    <code><![CDATA[Try
+	File.WriteAllText(File_Name, Text)
+	Success = True
+	Message = ""
+Catch e As Exception
+	Success = False
+	Message = e.Message
+End Try]]></code>
+  </stage>
+  <stage stageid="7dfd4754-e49a-447b-b9c3-c36266dfa2e8" name="File Exists" type="SubSheetInfo">
+    <subsheetid>60b8a01d-1f74-4169-b192-5e363a7b5e61</subsheetid>
+    <narrative>Determines whether the specified file exsts. The full path must be specified.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="da1de8a5-b06c-4fc0-b316-2fec1a802056" name="End" type="End">
+    <subsheetid>60b8a01d-1f74-4169-b192-5e363a7b5e61</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-60</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Exists" narrative="True if the file exists" stage="Exists" />
+    </outputs>
+  </stage>
+  <stage stageid="6b0d4683-2748-485e-88ed-cdf57c76992d" name="Start" type="Start">
+    <subsheetid>60b8a01d-1f74-4169-b192-5e363a7b5e61</subsheetid>
+    <loginhibit />
+    <preconditions>
+      <condition narrative="None." />
+    </preconditions>
+    <postconditions>
+      <condition narrative="The existence of the file of interest will have been determined." />
+    </postconditions>
+    <narrative>
+    </narrative>
+    <displayx>-60</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Name" narrative="The name of the file to check" stage="File Name" />
+    </inputs>
+    <onsuccess>7cc66b68-5ab8-4f99-95fa-fde9dbfa38ed</onsuccess>
+  </stage>
+  <stage stageid="f92a43a8-74e6-4f49-bf65-dc7663017f2b" name="File Name" type="Data">
+    <subsheetid>60b8a01d-1f74-4169-b192-5e363a7b5e61</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="7cc66b68-5ab8-4f99-95fa-fde9dbfa38ed" name="File Exists" type="Code">
+    <subsheetid>60b8a01d-1f74-4169-b192-5e363a7b5e61</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-60</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Name" expr="[File Name]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Exists" stage="Exists" />
+    </outputs>
+    <onsuccess>da1de8a5-b06c-4fc0-b316-2fec1a802056</onsuccess>
+    <code><![CDATA[Try
+	Exists = File.Exists(File_Name)
+Catch
+	Exists = False
+End Try]]></code>
+  </stage>
+  <stage stageid="817167f9-bb73-4622-9254-e249dff5369f" name="Exists" type="Data">
+    <subsheetid>60b8a01d-1f74-4169-b192-5e363a7b5e61</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>0</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue>False</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2271a79e-27e5-4434-b5be-146e02946317" name="new" type="Note">
+    <subsheetid>9a74af4c-280a-4e30-bdbb-21295b6256ca</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <displayx>-180</displayx>
+    <displayy>60</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>230</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="c50578e4-df15-4b21-8a4c-469dae40724d" name="Copy File" type="SubSheetInfo">
+    <subsheetid>e9dd304c-7d26-40f5-b193-eef36f0a370c</subsheetid>
+    <narrative>Copies a file to the named destination.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="30f8df38-bbc1-4b94-916b-ce06a40b630c" name="Start" type="Start">
+    <subsheetid>e9dd304c-7d26-40f5-b193-eef36f0a370c</subsheetid>
+    <loginhibit />
+    <preconditions>
+      <condition narrative="The file to be copied must exist. The full destination path must be specified. There must be sufficient free disk space to complete the operation." />
+    </preconditions>
+    <postconditions>
+      <condition narrative="The file will have been copied to the specified destination." />
+      <condition narrative="" />
+    </postconditions>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Path" narrative="The full path to the file to be copied" stage="File Path" />
+      <input type="text" name="Destination Path" narrative="The path of the directory to copy the file to" stage="Destination Path" />
+    </inputs>
+    <onsuccess>8de7d816-2984-4b8f-a1f0-dfdf25b3f108</onsuccess>
+  </stage>
+  <stage stageid="53e1058f-89a5-4172-b9b5-89530de8ef51" name="Success" type="Data">
+    <subsheetid>e9dd304c-7d26-40f5-b193-eef36f0a370c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>45</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue>False</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="471fd171-54c1-4c9b-aa1d-6f471b939942" name="Message" type="Data">
+    <subsheetid>e9dd304c-7d26-40f5-b193-eef36f0a370c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>75</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8de7d816-2984-4b8f-a1f0-dfdf25b3f108" name="Copy" type="Code">
+    <subsheetid>e9dd304c-7d26-40f5-b193-eef36f0a370c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Path" expr="[File Path]" />
+      <input type="text" name="Destination" expr="[Destination Path]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Success" stage="Success" />
+      <output type="text" name="Message" stage="Message" />
+    </outputs>
+    <onsuccess>acf72cc7-cf73-466f-8c22-9fb633ed3c24</onsuccess>
+    <code><![CDATA[Try
+
+	Dim sSourceFolder As String = Mid(File_Path, 1, File_Path.LastIndexOf("\") + 1)
+	Dim sSourceFileName As String = Mid(File_Path, File_Path.LastIndexOf("\") + 2)
+ 
+	Dim sDestinationFolder As String
+	Dim sDestinationFile As String
+	If Directory.Exists(Destination) Then
+		sDestinationFolder = Destination
+		If Not sDestinationFolder.EndsWith("\") Then
+			sDestinationFolder &= "\"
+		End If
+		sDestinationFile = ""
+	Else
+		sDestinationFolder = ""
+		sDestinationFile = Destination
+	End If
+ 
+	Dim objDirectoryInfo As DirectoryInfo = New DirectoryInfo(sSourceFolder)
+	Dim aFiles As FileInfo() = objDirectoryInfo.GetFiles(sSourceFileName)
+
+	For Each oFile As FileInfo In aFiles
+		If sDestinationFolder = "" Then
+			oFile.CopyTo(sDestinationFile, True)
+		Else
+			oFile.CopyTo(sDestinationFolder & oFile.Name, True)
+		End If
+	Next
+
+	Success = True
+	Message = ""
+Catch e As Exception
+	Success = False
+	Message = e.Message
+End Try]]></code>
+  </stage>
+  <stage stageid="f12e4bba-1185-469f-aea9-0b8954cbed77" name="File Path" type="Data">
+    <subsheetid>e9dd304c-7d26-40f5-b193-eef36f0a370c</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="30982d9d-8e54-4d64-af7e-2a7df861c94f" name="Destination Path" type="Data">
+    <subsheetid>e9dd304c-7d26-40f5-b193-eef36f0a370c</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>0</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="6d608807-5c80-49f5-a177-05a15f6d0ff7" name="Get File Size" type="SubSheetInfo">
+    <subsheetid>7ca00106-fe4e-46c0-bffc-0dda1561434f</subsheetid>
+    <narrative>Gets the size of the specified file.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="d07f9435-79c9-4cd5-b803-1cde78f5262c" name="End" type="End">
+    <subsheetid>7ca00106-fe4e-46c0-bffc-0dda1561434f</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="number" name="Size" narrative="The size of the file in bytes" stage="Bytes" />
+    </outputs>
+  </stage>
+  <stage stageid="d573bf14-6cce-4455-ae05-908d9a527dcb" name="Start" type="Start">
+    <subsheetid>7ca00106-fe4e-46c0-bffc-0dda1561434f</subsheetid>
+    <loginhibit />
+    <preconditions>
+      <condition narrative="The specified file must exist." />
+    </preconditions>
+    <postconditions>
+      <condition narrative="The file size will have been determined." />
+    </postconditions>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Path" narrative="Full path to the file to get the file size" stage="File Path" />
+    </inputs>
+    <onsuccess>6543595a-59fb-4304-b9f3-1acf662a1237</onsuccess>
+  </stage>
+  <stage stageid="0c8b0631-90f5-4646-b0cf-8fab74f80999" name="File Path" type="Data">
+    <subsheetid>7ca00106-fe4e-46c0-bffc-0dda1561434f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="6543595a-59fb-4304-b9f3-1acf662a1237" name="Get Byte Count" type="Code">
+    <subsheetid>7ca00106-fe4e-46c0-bffc-0dda1561434f</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Path" expr="[File Path]" />
+    </inputs>
+    <outputs>
+      <output type="number" name="Bytes" stage="Bytes" />
+    </outputs>
+    <onsuccess>d07f9435-79c9-4cd5-b803-1cde78f5262c</onsuccess>
+    <code><![CDATA[Try
+
+	Bytes = File.ReadAllBytes(File_Path).Length
+
+Catch e As Exception
+	Bytes = 0
+End Try]]></code>
+  </stage>
+  <stage stageid="3eb7673c-2193-4d7f-ac06-85b1da9ce046" name="Bytes" type="Data">
+    <subsheetid>7ca00106-fe4e-46c0-bffc-0dda1561434f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>15</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="36451c72-b274-4817-a153-beb1e8a6e76a" name="Start" type="Start">
+    <subsheetid>9a74af4c-280a-4e30-bdbb-21295b6256ca</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>30</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>9a8c4505-8606-4a0c-b118-09a6b9932b3b</onsuccess>
+  </stage>
+  <stage stageid="9a8c4505-8606-4a0c-b118-09a6b9932b3b" name="End" type="End">
+    <subsheetid>9a74af4c-280a-4e30-bdbb-21295b6256ca</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>30</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="d1f13191-1583-4a03-865c-3f0758139ca3" name="Delete File" type="SubSheetInfo">
+    <subsheetid>70940cba-8680-4eb9-8066-9e383fc5b39b</subsheetid>
+    <narrative>Deletes a single file from the file system.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="31d32d9a-4f5c-4793-afc7-d84f096922b9" name="Start" type="Start">
+    <subsheetid>70940cba-8680-4eb9-8066-9e383fc5b39b</subsheetid>
+    <loginhibit />
+    <preconditions>
+      <condition narrative="The file to be deleted must exist." />
+    </preconditions>
+    <postconditions>
+      <condition narrative="The named file will have been deleted." />
+    </postconditions>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Name" narrative="The full path to the file to delete" stage="File Name" />
+    </inputs>
+    <onsuccess>b6262d8e-0c7b-459d-b177-37ae4d226ddf</onsuccess>
+  </stage>
+  <stage stageid="cd763cbc-81c0-42b1-9d9d-b2b7d325235d" name="File Name" type="Data">
+    <subsheetid>70940cba-8680-4eb9-8066-9e383fc5b39b</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b6262d8e-0c7b-459d-b177-37ae4d226ddf" name="Delete File" type="Code">
+    <subsheetid>70940cba-8680-4eb9-8066-9e383fc5b39b</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Name" expr="[File Name]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Success" stage="Success" />
+      <output type="text" name="Message" stage="Message" />
+    </outputs>
+    <onsuccess>249acd28-3283-498f-aca8-76c67cb2295c</onsuccess>
+    <code><![CDATA[Try
+   If Not File.Exists(File_Name) Then
+      Throw New ApplicationException("The specified file at " & File_Name & " does not exist.")
+   Else
+	   File.Delete(File_Name)
+	   Success = True
+   End If
+Catch e As Exception
+	Success = False
+	Message = e.Message
+End Try]]></code>
+  </stage>
+  <stage stageid="1cd4abb9-4dc3-494c-86a7-d85877a1827a" name="Success" type="Data">
+    <subsheetid>70940cba-8680-4eb9-8066-9e383fc5b39b</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>30</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="bc5b5c19-fe76-4278-95d2-f89c3588893c" name="Message" type="Data">
+    <subsheetid>70940cba-8680-4eb9-8066-9e383fc5b39b</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>0</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a7bae4fd-01fc-4447-8cf4-fbfd04353f72" name="End" type="End">
+    <subsheetid>e9dd304c-7d26-40f5-b193-eef36f0a370c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Success" narrative="True if successful" stage="Success" />
+      <output type="text" name="Message" narrative="An error message if unsuccessful" stage="Message" />
+    </outputs>
+  </stage>
+  <stage stageid="576295b9-757e-4588-948e-34aac5140c29" name="End" type="End">
+    <subsheetid>70940cba-8680-4eb9-8066-9e383fc5b39b</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Success" narrative="True if successful" stage="Success" />
+      <output type="text" name="Message" narrative="An error message if unsuccessful" stage="Message" />
+    </outputs>
+  </stage>
+  <stage stageid="cef63c98-a65d-4862-9d1d-ff02fbfc92f5" name="Get Folders" type="SubSheetInfo">
+    <subsheetid>0bafee17-a81a-40f0-9b6b-80b78142dd87</subsheetid>
+    <narrative>Gets a collection of all subfolders in the specified file system folder.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="f90df4f3-71ee-4470-b90b-1e8a0513cad8" name="Start" type="Start">
+    <subsheetid>0bafee17-a81a-40f0-9b6b-80b78142dd87</subsheetid>
+    <loginhibit />
+    <preconditions>
+      <condition narrative="The named folder must exist." />
+    </preconditions>
+    <postconditions>
+      <condition narrative="All sub-folders will be returned, if any exist." />
+    </postconditions>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" narrative="The folder in which to look for sub-folders" stage="Folder" />
+    </inputs>
+    <onsuccess>ff503eb2-2cb7-4dbb-90fe-2ab47a5e4a43</onsuccess>
+  </stage>
+  <stage stageid="ff503eb2-2cb7-4dbb-90fe-2ab47a5e4a43" name="Get Folders" type="Code">
+    <subsheetid>0bafee17-a81a-40f0-9b6b-80b78142dd87</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" expr="[Folder]" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="Folders" stage="Folders" />
+      <output type="flag" name="Success" stage="Success" />
+      <output type="text" name="Message" stage="Message" />
+    </outputs>
+    <onsuccess>3dde4f26-00a8-4e1a-af12-b8a14178d89c</onsuccess>
+    <code><![CDATA[
+Dim objTable As DataTable
+Dim objRow As DataRow
+Dim aFolders As DirectoryInfo()
+Dim oDirectory As New DirectoryInfo(Folder)
+
+Try
+
+	'Create a data table to output as a collection
+	objTable = GetDataTable( _
+		"Path," _
+		& "Name," _
+		& "Created," _
+		& "Last Accessed," _
+		& "Last Written", _
+		"System.String," _
+		& "System.String," _
+		& "System.DateTime," _
+		& "System.DateTime," _
+		& "System.DateTime")
+		
+	aFolders = oDirectory.GetDirectories()
+	For each oFolder as DirectoryInfo in aFolders
+		objRow = objTable.NewRow()
+		objRow("Path") = oFolder.FullName
+		objRow("Name") = oFolder.Name
+		objRow("Created") = oFolder.CreationTimeUtc
+		objRow("Last Accessed") = oFolder.LastAccessTimeUtc
+		objRow("Last Written") = oFolder.LastWriteTimeUtc
+
+		objTable.Rows.Add(objRow)
+	Next
+
+	Folders = objTable
+	Success = True
+	Message = ""
+Catch e As Exception
+	Success = False
+	Message = e.Message
+End Try]]></code>
+  </stage>
+  <stage stageid="f72d7f92-f944-412b-8890-737f3be3b0a1" name="Folder" type="Data">
+    <subsheetid>0bafee17-a81a-40f0-9b6b-80b78142dd87</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">C:\</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1384f5ee-e382-4900-9900-e2e2eb7a9a78" name="Folders" type="Collection">
+    <subsheetid>0bafee17-a81a-40f0-9b6b-80b78142dd87</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>75</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="aa67216d-b83f-4c14-9f71-5ec6df626c08" name="End" type="End">
+    <subsheetid>0bafee17-a81a-40f0-9b6b-80b78142dd87</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Success" narrative="True if successful" stage="Success" />
+      <output type="text" name="Message" narrative="An error message if unsuccessful" stage="Message" />
+      <output type="collection" name="Folders" narrative="A collection of the sub-folders found within the folder" stage="Folders" />
+    </outputs>
+  </stage>
+  <stage stageid="759f9ebb-96f6-432b-a21e-6673b71cac22" name="Success" type="Data">
+    <subsheetid>0bafee17-a81a-40f0-9b6b-80b78142dd87</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>135</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="5afbf383-4ea5-42f7-a298-d02bf6dc267a" name="Message" type="Data">
+    <subsheetid>0bafee17-a81a-40f0-9b6b-80b78142dd87</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>165</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="076db864-0743-4339-b606-174f056c63f9" name="Move File" type="SubSheetInfo">
+    <subsheetid>85156833-c61c-4c78-916f-0b75a9a83e8d</subsheetid>
+    <narrative>Moves the specified file to a new location.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="8c383fb0-b58b-44cd-8dec-c5934289e107" name="Start" type="Start">
+    <subsheetid>85156833-c61c-4c78-916f-0b75a9a83e8d</subsheetid>
+    <loginhibit />
+    <preconditions>
+      <condition narrative="The file to be moved must exist. There must be sufficient disk space to move the file." />
+    </preconditions>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Path" narrative="The full path to the file to move" stage="File Path" />
+      <input type="text" name="Destination Path" narrative="The path to the folder to move the file to" stage="Destination Path" />
+    </inputs>
+    <onsuccess>8cb5b945-a1c1-451f-b39e-fba3e2b5ab1b</onsuccess>
+  </stage>
+  <stage stageid="2c8abe9a-1466-4283-999a-c5c7838a0e27" name="End" type="End">
+    <subsheetid>85156833-c61c-4c78-916f-0b75a9a83e8d</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Success" narrative="True if successful" stage="Success" />
+      <output type="text" name="Message" narrative="An error message if unsuccessful" stage="Message" />
+    </outputs>
+  </stage>
+  <stage stageid="a980280c-98cd-41d0-8a54-734c9bfacc5c" name="Success" type="Data">
+    <subsheetid>85156833-c61c-4c78-916f-0b75a9a83e8d</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>45</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue>False</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="779e3dfa-a01e-47f9-98c4-9ac10fcd5a11" name="Message" type="Data">
+    <subsheetid>85156833-c61c-4c78-916f-0b75a9a83e8d</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>75</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8cb5b945-a1c1-451f-b39e-fba3e2b5ab1b" name="Move" type="Code">
+    <subsheetid>85156833-c61c-4c78-916f-0b75a9a83e8d</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Path" expr="[File Path]" />
+      <input type="text" name="Destination" expr="[Destination Path]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Success" stage="Success" />
+      <output type="text" name="Message" stage="Message" />
+    </outputs>
+    <onsuccess>acbc8cd8-d4ad-4eae-a7c3-ebbac1d3f4c7</onsuccess>
+    <code><![CDATA[Try
+
+	Dim sSourceFolder As String = Mid(File_Path, 1, File_Path.LastIndexOf("\") + 1)
+	Dim sSourceFileName As String = Mid(File_Path, File_Path.LastIndexOf("\") + 2)
+ 
+	Dim sDestinationFolder As String
+	Dim sDestinationFile As String
+	If Directory.Exists(Destination) Then
+		sDestinationFolder = Destination
+		If Not sDestinationFolder.EndsWith("\") Then
+			sDestinationFolder &= "\"
+		End If
+		sDestinationFile = ""
+	Else
+		sDestinationFolder = ""
+		sDestinationFile = Destination
+	End If
+ 
+	Dim objDirectoryInfo As DirectoryInfo = New DirectoryInfo(sSourceFolder)
+	Dim aFiles As FileInfo() = objDirectoryInfo.GetFiles(sSourceFileName)
+
+	For Each oFile As FileInfo In aFiles
+		If sDestinationFolder = "" Then
+			oFile.MoveTo(sDestinationFile)
+		Else
+			oFile.MoveTo(sDestinationFolder & oFile.Name)
+		End If
+	Next
+
+	Success = True
+	Message = ""
+Catch e As Exception
+	Success = False
+	Message = e.Message
+End Try]]></code>
+  </stage>
+  <stage stageid="ba83bbd5-0c51-49b0-ac63-de9e754aab48" name="File Path" type="Data">
+    <subsheetid>85156833-c61c-4c78-916f-0b75a9a83e8d</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="57b074ac-98b9-40d1-a342-36dc0a514f77" name="Destination Path" type="Data">
+    <subsheetid>85156833-c61c-4c78-916f-0b75a9a83e8d</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>0</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c83a23da-bc05-4aa4-8a8e-6c09524e2baf" name="Split Path" type="SubSheetInfo">
+    <subsheetid>b3050915-ad2e-446e-a1d6-99d11506f55e</subsheetid>
+    <narrative>Splits a file path into its component parts - the filename and the folder path. The trailing backslash is omitted from the directory part.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="6c655f85-fb96-448d-be05-5f6c833e1882" name="Start" type="Start">
+    <subsheetid>b3050915-ad2e-446e-a1d6-99d11506f55e</subsheetid>
+    <loginhibit />
+    <preconditions>
+      <condition narrative="The specified path must correspond to a file which exists on disk." />
+    </preconditions>
+    <postconditions>
+      <condition narrative="The path will have been separated." />
+    </postconditions>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Path" narrative="The path to split" stage="File Path" />
+    </inputs>
+    <onsuccess>138061d1-d866-403d-af52-37ea509c7e78</onsuccess>
+  </stage>
+  <stage stageid="138061d1-d866-403d-af52-37ea509c7e78" name="Split Path" type="Code">
+    <subsheetid>b3050915-ad2e-446e-a1d6-99d11506f55e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Path" expr="[File Path]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Folder" stage="Folder" />
+      <output type="text" name="File Name" stage="File Name" />
+    </outputs>
+    <onsuccess>0e35cb6c-257d-40a6-ba20-d661c3ad83fe</onsuccess>
+    <code><![CDATA[
+Folder = Path.GetDirectoryName(File_Path)
+File_Name = Path.GetFileName(File_Path)
+]]></code>
+  </stage>
+  <stage stageid="69bae4e1-98fe-460c-807d-30657ae18ebf" name="File Name" type="Data">
+    <subsheetid>b3050915-ad2e-446e-a1d6-99d11506f55e</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-120</displayx>
+    <displayy>60</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="de3608a3-9cb7-41c3-ae88-da3dad92053e" name="Folder" type="Data">
+    <subsheetid>b3050915-ad2e-446e-a1d6-99d11506f55e</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-120</displayx>
+    <displayy>30</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e0497cae-7418-46ec-a442-ac21369c7a2f" name="File Path" type="Data">
+    <subsheetid>b3050915-ad2e-446e-a1d6-99d11506f55e</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-120</displayx>
+    <displayy>0</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="0e35cb6c-257d-40a6-ba20-d661c3ad83fe" name="End" type="End">
+    <subsheetid>b3050915-ad2e-446e-a1d6-99d11506f55e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="File Name" narrative="The filename" stage="File Name" />
+      <output type="text" name="Folder" narrative="The folder" stage="Folder" />
+    </outputs>
+  </stage>
+  <stage stageid="3068b898-6d19-4469-8efd-f355853fda4e" name="Directory Exists" type="SubSheetInfo">
+    <subsheetid>20e6a636-d89b-4c08-b90d-8852894005a4</subsheetid>
+    <narrative>Determines whether the specified directory exsts. The full path must be specified.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="14e7b70b-4620-4b05-a9f8-5c31396209bd" name="Start" type="Start">
+    <subsheetid>20e6a636-d89b-4c08-b90d-8852894005a4</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-60</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Directory Name" narrative="The directory to check exists" stage="Directory Name" />
+    </inputs>
+    <onsuccess>50ef1149-8307-4080-9028-d6bec6eafd78</onsuccess>
+  </stage>
+  <stage stageid="4f5a5ea1-9bcf-4b0d-b58b-fb6b18580e44" name="End" type="End">
+    <subsheetid>20e6a636-d89b-4c08-b90d-8852894005a4</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-60</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Exists" narrative="True if the directory exists" stage="Exists" />
+    </outputs>
+  </stage>
+  <stage stageid="50ef1149-8307-4080-9028-d6bec6eafd78" name="Directory Exists" type="Code">
+    <subsheetid>20e6a636-d89b-4c08-b90d-8852894005a4</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-60</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Directory Name" expr="[Directory Name]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Exists" stage="Exists" />
+    </outputs>
+    <onsuccess>4f5a5ea1-9bcf-4b0d-b58b-fb6b18580e44</onsuccess>
+    <code><![CDATA[Try
+	Exists = Directory.Exists(Directory_Name)
+Catch
+	Exists = False
+End Try]]></code>
+  </stage>
+  <stage stageid="89cff60a-371d-476b-bc55-f0e56150ef45" name="Exists" type="Data">
+    <subsheetid>20e6a636-d89b-4c08-b90d-8852894005a4</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>30</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a9da119d-dbd9-4320-90e1-ca33fae50a91" name="Directory Name" type="Data">
+    <subsheetid>20e6a636-d89b-4c08-b90d-8852894005a4</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>30</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a1f89739-7f1c-4179-82ea-b123ecfc2854" name="Write Binary Data" type="SubSheetInfo">
+    <subsheetid>842c79f8-aa64-4781-ad18-3982e21f0fd1</subsheetid>
+    <narrative>Writes binary data to a file. Any existing data in the file (if it exists) will be replaced.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="067fe5ce-ad15-436e-92fa-11e920e00501" name="Start" type="Start">
+    <subsheetid>842c79f8-aa64-4781-ad18-3982e21f0fd1</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="binary" name="Binary Data" narrative="The data to write to the file" stage="Binary Data" />
+      <input type="text" name="File Name" narrative="The full path of the file to write to" stage="FileName" />
+    </inputs>
+    <onsuccess>48430903-e8af-4e4a-8544-8b04afc3478b</onsuccess>
+  </stage>
+  <stage stageid="83dc26e0-402d-403d-a18c-0d3ca147ba6d" name="Binary Data" type="Data">
+    <subsheetid>842c79f8-aa64-4781-ad18-3982e21f0fd1</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>binary</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="48430903-e8af-4e4a-8544-8b04afc3478b" name="Write Binary Data" type="Code">
+    <subsheetid>842c79f8-aa64-4781-ad18-3982e21f0fd1</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="binary" name="Binary Data" expr="[Binary Data]" />
+      <input type="text" name="FileName" expr="[FileName]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Success" stage="Success" />
+      <output type="text" name="Message" stage="Message" />
+    </outputs>
+    <onsuccess>aed480e9-2938-4d36-b400-a3bd2580921a</onsuccess>
+    <code><![CDATA[Try
+	File.WriteAllBytes(FileName, Binary_Data)
+	Success = True
+	Message = ""
+Catch e As Exception
+	Success = False
+	Message = e.Message
+End Try]]></code>
+  </stage>
+  <stage stageid="709d1a16-f19e-4504-ae79-4a48d1e058c7" name="End" type="End">
+    <subsheetid>842c79f8-aa64-4781-ad18-3982e21f0fd1</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Success" narrative="True if successful" stage="Success" />
+      <output type="text" name="Message" narrative="An error message if unsuccessful" stage="Message" />
+    </outputs>
+  </stage>
+  <stage stageid="43cbdbc2-6fdc-4080-b257-af95daad3fe4" name="Success" type="Data">
+    <subsheetid>842c79f8-aa64-4781-ad18-3982e21f0fd1</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-120</displayx>
+    <displayy>45</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue>False</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="0aebe753-5358-4cf3-982a-a9f0a9870be7" name="Message" type="Data">
+    <subsheetid>842c79f8-aa64-4781-ad18-3982e21f0fd1</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-120</displayx>
+    <displayy>75</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="5e035935-d499-4706-8ba0-78fdee0a782f" name="FileName" type="Data">
+    <subsheetid>842c79f8-aa64-4781-ad18-3982e21f0fd1</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-60</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c7604000-e2fb-4a03-b8b4-caac4c6b9f9b" name="Combine Path" type="SubSheetInfo">
+    <subsheetid>c80dea92-57e8-4e2e-8df4-f3ee6ceeb717</subsheetid>
+    <narrative>Takes a file and folder and combines them into a full path.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="71908284-0a93-418a-9205-32dc4780032c" name="Start" type="Start">
+    <subsheetid>c80dea92-57e8-4e2e-8df4-f3ee6ceeb717</subsheetid>
+    <loginhibit />
+    <preconditions>
+      <condition narrative="None." />
+    </preconditions>
+    <postconditions>
+      <condition narrative="The path will have been combined." />
+    </postconditions>
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" narrative="The folder to combine" stage="Folder" />
+      <input type="text" name="File Name" narrative="The file to combine" stage="File Name" />
+    </inputs>
+    <onsuccess>39d35633-fc08-4dd1-a13a-1bfc9a0a9bd1</onsuccess>
+  </stage>
+  <stage stageid="39d35633-fc08-4dd1-a13a-1bfc9a0a9bd1" name="Combine Path" type="Code">
+    <subsheetid>c80dea92-57e8-4e2e-8df4-f3ee6ceeb717</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" expr="[Folder]" />
+      <input type="text" name="File Name" expr="[File Name]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Path" stage="Path" />
+    </outputs>
+    <onsuccess>b4d82bcb-e011-4728-a3ec-4c052dcebaaf</onsuccess>
+    <code><![CDATA[
+Path = IO.Path.Combine(Folder, File_Name)
+]]></code>
+  </stage>
+  <stage stageid="dca04a3f-b696-45b1-95c8-63dce520abe3" name="File Name" type="Data">
+    <subsheetid>c80dea92-57e8-4e2e-8df4-f3ee6ceeb717</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-90</displayx>
+    <displayy>60</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e27e592f-8a2e-4df9-9453-1cdc8621051b" name="Folder" type="Data">
+    <subsheetid>c80dea92-57e8-4e2e-8df4-f3ee6ceeb717</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-90</displayx>
+    <displayy>30</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b4d82bcb-e011-4728-a3ec-4c052dcebaaf" name="End" type="End">
+    <subsheetid>c80dea92-57e8-4e2e-8df4-f3ee6ceeb717</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="Path" narrative="The combined full path" stage="Path" />
+    </outputs>
+  </stage>
+  <stage stageid="ef4fc19c-8897-431e-8688-11a52561113f" name="Path" type="Data">
+    <subsheetid>c80dea92-57e8-4e2e-8df4-f3ee6ceeb717</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>195</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a664d6c1-8951-4309-95b7-b7ae2edced0d" name="Create Directory" type="SubSheetInfo">
+    <subsheetid>1ff30a41-e177-40c5-a756-a6b466004f32</subsheetid>
+    <narrative>Creates a directory under the given path.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="82e63828-72ff-4705-8c88-89c3316aa73e" name="Start" type="Start">
+    <subsheetid>1ff30a41-e177-40c5-a756-a6b466004f32</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Directory Path" narrative="The path in which to create the directory" stage="Directory Path" />
+      <input type="flag" name="Error If Already Exists" narrative="True to generate an error if the directory already exists" stage="Error If Already Exists" />
+    </inputs>
+    <onsuccess>98af3f34-4ec7-49c5-a6cc-1cf6192b0e05</onsuccess>
+  </stage>
+  <stage stageid="e061382f-4149-485b-9668-f2fc0ca334bd" name="End" type="End">
+    <subsheetid>1ff30a41-e177-40c5-a756-a6b466004f32</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Success" narrative="True if successful" stage="Success" />
+      <output type="text" name="Message" narrative="An error message if unsuccessful" stage="Error Message" />
+    </outputs>
+  </stage>
+  <stage stageid="800212c5-6bfb-4df9-b501-39f55906a7b2" name="Directory Path" type="Data">
+    <subsheetid>1ff30a41-e177-40c5-a756-a6b466004f32</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e00501ce-6aa6-4616-9bf2-3904d515656c" name="Error If Already Exists" type="Data">
+    <subsheetid>1ff30a41-e177-40c5-a756-a6b466004f32</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue>False</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="98af3f34-4ec7-49c5-a6cc-1cf6192b0e05" name="Create Directory" type="Code">
+    <subsheetid>1ff30a41-e177-40c5-a756-a6b466004f32</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Directory Path" expr="[Directory Path]" />
+      <input type="flag" name="ErrorIfAlreadyExists" expr="[Error If Already Exists]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Success" stage="Success" />
+      <output type="text" name="Error Message" stage="Error Message" />
+    </outputs>
+    <onsuccess>060a1fdb-6243-40f1-96e0-1c0b54382bfa</onsuccess>
+    <code><![CDATA[Try
+   If Not Directory.Exists(Directory_Path) Then
+   	Directory.CreateDirectory(Directory_Path)
+   Else
+      If ErrorIfAlreadyExists Then Throw New ApplicationException("Directory already exists")
+   End If
+
+	Success = True
+Catch Ex as Exception
+	Success = False
+	Error_Message = Ex.ToString()
+End Try]]></code>
+  </stage>
+  <stage stageid="3b33d39b-1c7c-4664-ab8b-859aa2e15836" name="Success" type="Data">
+    <subsheetid>1ff30a41-e177-40c5-a756-a6b466004f32</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="9cbff7ae-931b-479f-b70f-7773ddda315c" name="Error Message" type="Data">
+    <subsheetid>1ff30a41-e177-40c5-a756-a6b466004f32</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="20cbacd9-1e17-4fc0-85de-64615b1f3d18" name="Delete Directory" type="SubSheetInfo">
+    <subsheetid>d68f192f-eeb7-420e-b156-9636503b6082</subsheetid>
+    <narrative>Deletes a directory and if Recursive is True will delete all subdirectories if present</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="df3458a7-2e7e-451c-b27a-efc3737c22a4" name="Start" type="Start">
+    <subsheetid>d68f192f-eeb7-420e-b156-9636503b6082</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-45</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Directory Path" narrative="The path of the directory to delete" stage="Directory Path" />
+      <input type="flag" name="Error If Not Exists" narrative="Set True to raise an error if the path does not exist" stage="Error If Not Exists" />
+      <input type="flag" name="Recursive" narrative="Set True to delete all sub-directories of the path aswell" stage="Recursive" />
+    </inputs>
+    <onsuccess>ef40ac3e-3a06-4ca9-a3be-daae97b8c700</onsuccess>
+  </stage>
+  <stage stageid="09677c01-2e36-4330-ae33-defa66a1e7b1" name="End" type="End">
+    <subsheetid>d68f192f-eeb7-420e-b156-9636503b6082</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-45</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Success" narrative="True if successful" stage="Success" />
+      <output type="text" name="Message" narrative="An error message if unsuccessful" stage="Error Message" />
+    </outputs>
+  </stage>
+  <stage stageid="3afa3efd-a788-4410-a16c-5e2ecfc599d8" name="Directory Path" type="Data">
+    <subsheetid>d68f192f-eeb7-420e-b156-9636503b6082</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>75</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ef40ac3e-3a06-4ca9-a3be-daae97b8c700" name="Delete Directory" type="Code">
+    <subsheetid>d68f192f-eeb7-420e-b156-9636503b6082</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-45</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Directory Path" expr="[Directory Path]" />
+      <input type="flag" name="Recursive" expr="[Recursive]" />
+      <input type="flag" name="ErrorIfNotExists" expr="[Error If Not Exists]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Success" stage="Success" />
+      <output type="text" name="Error Message" stage="Error Message" />
+    </outputs>
+    <onsuccess>8db31208-966a-494a-9315-8a4add93c64c</onsuccess>
+    <code><![CDATA[Try
+   If Directory.Exists(Directory_Path) Then
+
+		Dim SubDirectories As Boolean
+		SubDirectories = False
+
+		Dim SubdirectoryEntries As String() 
+		SubdirectoryEntries = Directory.GetDirectories(Directory_Path) 
+		
+		If SubdirectoryEntries.Length > 0 Then SubDirectories = True
+
+		If SubDirectories And Not Recursive Then Throw New ApplicationException("Directory has sub directories and will not be deleted")
+   	
+		Directory.Delete(Directory_Path, Recursive) 
+   
+Else
+      If ErrorIfNotExists Then Throw New ApplicationException("Directory does not exist")
+   End If
+
+	Success = True
+
+
+Catch UAEx as UnauthorizedAccessException
+	Success = False
+	Error_Message = "The caller does not have the required permission to delete this directory or sub directories"
+
+Catch ANEx as ArgumentNullException
+	Success = False
+	Error_Message = "Please check Directory Path parameter is not null"
+
+Catch AEx as ArgumentException
+	Success = False
+	Error_Message = "Please check Directory Path parameter is a valid string"
+
+Catch PTLEx as PathTooLongException
+	Success = False
+	Error_Message = "The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters."
+
+Catch Ex as Exception
+	Success = False
+	Error_Message = Ex.ToString()
+
+End Try]]></code>
+  </stage>
+  <stage stageid="1ea4ba58-4e52-4229-9f95-9f91c0fda672" name="Success" type="Data">
+    <subsheetid>d68f192f-eeb7-420e-b156-9636503b6082</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="cd89d345-b43b-43b1-a112-d69cd7b07387" name="Error Message" type="Data">
+    <subsheetid>d68f192f-eeb7-420e-b156-9636503b6082</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>240</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="498faab3-e919-4560-a284-8303f82f3c54" name="Recursive" type="Data">
+    <subsheetid>d68f192f-eeb7-420e-b156-9636503b6082</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue>True</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c7f09a8a-5e8c-4bd8-ae1c-03c88a61bc8b" name="Error If Not Exists" type="Data">
+    <subsheetid>d68f192f-eeb7-420e-b156-9636503b6082</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>285</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue>True</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1a001ca1-2f75-4d52-8668-8537da4738b3" name="Sub Directory Exists" type="SubSheetInfo">
+    <subsheetid>0bad9bbd-7a9f-4791-b6a8-ff5a2c4c39b8</subsheetid>
+    <narrative>Checks if a directory contains sub directories</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="9d21f26b-5ccc-4f2f-b6f3-3443cb23a95f" name="Start" type="Start">
+    <subsheetid>0bad9bbd-7a9f-4791-b6a8-ff5a2c4c39b8</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>-150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Directory Path" narrative="The path of the directory to check for sub directories" stage="Directory Path" />
+    </inputs>
+    <onsuccess>9bd1eb97-f903-4b5b-bdb0-9aa7d84feead</onsuccess>
+  </stage>
+  <stage stageid="167ee595-8609-4b40-9cbb-70394613201b" name="End" type="End">
+    <subsheetid>0bad9bbd-7a9f-4791-b6a8-ff5a2c4c39b8</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Exists" narrative="True if sub directories exist" stage="Exists" />
+      <output type="flag" name="Success" narrative="True if the check was successful" stage="Success" />
+      <output type="text" name="Message" narrative="An error message if unsuccessful" stage="Error Message" />
+    </outputs>
+  </stage>
+  <stage stageid="9bd1eb97-f903-4b5b-bdb0-9aa7d84feead" name="Get Sub Directories" type="Code">
+    <subsheetid>0bad9bbd-7a9f-4791-b6a8-ff5a2c4c39b8</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Directory Path" expr="[Directory Path]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Exists" stage="Exists" />
+      <output type="flag" name="Success" stage="Success" />
+      <output type="text" name="Error Message" stage="Error Message" />
+    </outputs>
+    <onsuccess>33ba9e06-b05b-4e51-baa6-7f6c9165c558</onsuccess>
+    <code><![CDATA[Try
+   
+Exists = False
+If Directory.Exists(Directory_Path) Then
+   	Dim subdirectoryEntries As String() 
+		
+		subdirectoryEntries = Directory.GetDirectories(Directory_Path) 
+		
+		If subdirectoryEntries.Length > 0 Then Exists = True
+
+   Else
+      Throw New ApplicationException("Directory does not exist")
+   End If
+
+	Success = True
+Catch Ex as Exception
+	Success = False
+	Error_Message = Ex.ToString()
+End Try
+]]></code>
+  </stage>
+  <stage stageid="50a0102e-8884-426d-b94f-ed07f6b9eb46" name="Exists" type="Data">
+    <subsheetid>0bad9bbd-7a9f-4791-b6a8-ff5a2c4c39b8</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c52a3808-5f20-4498-a5a6-6e8bd391e41c" name="Directory Path" type="Data">
+    <subsheetid>0bad9bbd-7a9f-4791-b6a8-ff5a2c4c39b8</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">C:\TEMP\Test Directory\A\c</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="227470b6-fe82-4351-a497-6094c99e4193" name="Success" type="Data">
+    <subsheetid>0bad9bbd-7a9f-4791-b6a8-ff5a2c4c39b8</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>330</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="586142aa-051e-4ec9-8b60-fe063eb60b77" name="Error Message" type="Data">
+    <subsheetid>0bad9bbd-7a9f-4791-b6a8-ff5a2c4c39b8</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>450</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="12caee97-e82e-461c-8b22-dabe4248d7a8" name="Get CSV Text As Collection" type="SubSheetInfo">
+    <subsheetid>f7fa43ec-67e2-4acb-8d13-ced3c5027761</subsheetid>
+    <narrative>Turns a comma seperated values file into a collection</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="939139f9-83c3-4076-85ca-1daa3e637601" name="Start" type="Start">
+    <subsheetid>f7fa43ec-67e2-4acb-8d13-ced3c5027761</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="CSV File Path" narrative="The full path to the CSV file" stage="CSV Location" />
+      <input type="flag" name="First Line Is Header" narrative="Set True if you want to treat the first line as a header" stage="First Line Is Header" />
+    </inputs>
+    <onsuccess>dd7efc8a-65d0-432e-a205-643037779b8d</onsuccess>
+  </stage>
+  <stage stageid="c85955cf-695f-4e82-acdb-72332a337fc7" name="End" type="End">
+    <subsheetid>f7fa43ec-67e2-4acb-8d13-ced3c5027761</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="collection" name="CSV Values" narrative="The collection populated with the values of the CSV file" stage="CSV Values" />
+    </outputs>
+  </stage>
+  <stage stageid="96016690-fb73-49d3-bcfc-56b25dd9d3db" name="CSV Location" type="Data">
+    <subsheetid>f7fa43ec-67e2-4acb-8d13-ced3c5027761</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>60</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">C:\BluePrism\Medalytix\iGrading\Test_Suite\ImagesIndex.csv</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="dd7efc8a-65d0-432e-a205-643037779b8d" name="Parse CSV" type="Code">
+    <subsheetid>f7fa43ec-67e2-4acb-8d13-ced3c5027761</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="CSV Location" expr="[CSV Location]" />
+      <input type="flag" name="First_Line_Is_Header" expr="[First Line Is Header]" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="Values" stage="CSV Values" />
+    </outputs>
+    <onsuccess>c85955cf-695f-4e82-acdb-72332a337fc7</onsuccess>
+    <code><![CDATA[Dim HDRString As String = "No"
+If First_Line_Is_Header Then HDRSTring = "Yes"
+
+
+Dim Folder as String = nothing
+Dim FileName As String = Nothing
+Split_Path(CSV_Location, Folder, Filename)
+
+Dim cn As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" & Folder & ";Extended Properties=""Text;HDR=" & HDRString & ";FMT=Delimited""")
+Dim da As New OleDbDataAdapter()
+Dim ds As New DataSet()
+Dim cd As New OleDbCommand("SELECT * FROM [" & Filename & "]", cn)
+
+cn.Open()
+da.SelectCommand = cd
+ds.Clear()
+da.Fill(ds, "CSV")
+Values = ds.Tables(0)
+cn.Close()]]></code>
+  </stage>
+  <stage stageid="5fe33334-21a0-4751-931d-92622545fe5d" name="CSV Values" type="Collection">
+    <subsheetid>f7fa43ec-67e2-4acb-8d13-ced3c5027761</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>75</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1dc002ef-16ce-4e9b-9eed-1c4c8a375f11" name="First Line Is Header" type="Data">
+    <subsheetid>f7fa43ec-67e2-4acb-8d13-ced3c5027761</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue>True</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e1836bd9-a0bc-45e9-9f62-2835fb1f6144" name="Get Special Folder Path" type="SubSheetInfo">
+    <subsheetid>40c6e605-9948-429a-ac84-d2810bca75fc</subsheetid>
+    <narrative>Gets the path of a special folder.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="984cc49d-2710-42f2-85cc-b02b1af6ff97" name="Start" type="Start">
+    <subsheetid>40c6e605-9948-429a-ac84-d2810bca75fc</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-30</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Special Folder Name" narrative="The name of the special folder. Supported values include ApplicationData, DesktopDirectory, MyDocuments, ProgramFiles. The values correspond to the .NET Environment.SpecialFolder enumeration." stage="Special Folder Name" />
+    </inputs>
+    <onsuccess>548052a7-4e77-4da0-a80e-07ce9d38ecba</onsuccess>
+  </stage>
+  <stage stageid="f77e4b56-0c20-4361-b1ac-7fbae4cebd0a" name="End" type="End">
+    <subsheetid>40c6e605-9948-429a-ac84-d2810bca75fc</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-30</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="Folder Path" narrative="The corresponding path of the requested special folder" stage="Folder Path" />
+    </outputs>
+  </stage>
+  <stage stageid="1eb8ae16-c4b3-4a26-9476-974fec0fb4c4" name="Special Folder Name" type="Data">
+    <subsheetid>40c6e605-9948-429a-ac84-d2810bca75fc</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>75</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">InternetCache</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="548052a7-4e77-4da0-a80e-07ce9d38ecba" name="Get Folder Path" type="Code">
+    <subsheetid>40c6e605-9948-429a-ac84-d2810bca75fc</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-30</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Special Folder" expr="[Special Folder Name]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Folder Path" stage="Folder Path" />
+    </outputs>
+    <onsuccess>f77e4b56-0c20-4361-b1ac-7fbae4cebd0a</onsuccess>
+    <code><![CDATA[Dim EnumVal as Environment.SpecialFolder
+Try
+	EnumVal = Ctype(System.Enum.Parse(GetType(Environment.SpecialFolder), Special_Folder), Environment.SpecialFolder)
+Catch Ex As Exception
+	Throw New ApplicationException("Value '" & Special_Folder & "' is not recognised as a special folder")
+End Try
+
+Folder_Path = Environment.GetFolderPath(EnumVal)]]></code>
+  </stage>
+  <stage stageid="394a43a7-79f9-4edb-887f-d051122fa5f0" name="Folder Path" type="Data">
+    <subsheetid>40c6e605-9948-429a-ac84-d2810bca75fc</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>75</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f9a81b69-65ad-4194-8361-a2e49aab6c2c" name="Download File" type="SubSheetInfo">
+    <subsheetid>d7b21a3e-52ee-4632-b2e4-88c0e1ff0dea</subsheetid>
+    <narrative>Downloads a file from a web URL and saves it in a folder on disk.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="ce6133ff-352a-4e74-b9a9-a2bb5d8c8858" name="Start" type="Start">
+    <subsheetid>d7b21a3e-52ee-4632-b2e4-88c0e1ff0dea</subsheetid>
+    <loginhibit />
+    <preconditions>
+      <condition narrative="None." />
+    </preconditions>
+    <narrative>
+    </narrative>
+    <displayx>0</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Source URL" narrative="The URL of the file that is to be downloaded" stage="Source URL" />
+      <input type="text" name="Destination Path" narrative="The location of the folder where the file is to be saved" stage="Destination Path" />
+    </inputs>
+    <onsuccess>a9bb95cf-84c0-42b2-9fac-e36252a56808</onsuccess>
+  </stage>
+  <stage stageid="00124bb2-c920-40c3-92e1-efb49b029dc0" name="End" type="End">
+    <subsheetid>d7b21a3e-52ee-4632-b2e4-88c0e1ff0dea</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>0</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="5b30cabb-184c-427b-860e-a315e03763ba" name="Destination Path" type="Data">
+    <subsheetid>d7b21a3e-52ee-4632-b2e4-88c0e1ff0dea</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>0</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1ee09d3b-a12d-48c7-89a2-7a947d431ac5" name="Source URL" type="Data">
+    <subsheetid>d7b21a3e-52ee-4632-b2e4-88c0e1ff0dea</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a9bb95cf-84c0-42b2-9fac-e36252a56808" name="Download File" type="Code">
+    <subsheetid>d7b21a3e-52ee-4632-b2e4-88c0e1ff0dea</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>0</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Url" expr="[Source URL]" />
+      <input type="text" name="Path" expr="[Destination Path]" />
+    </inputs>
+    <onsuccess>00124bb2-c920-40c3-92e1-efb49b029dc0</onsuccess>
+    <code><![CDATA[Using wc As New System.Net.WebClient()
+	wc.DownloadFile(Url, Path)
+End Using]]></code>
+  </stage>
+  <stage stageid="744e3f22-df5c-4d9e-984b-eceb276cbb95" name="Read Lines From File" type="SubSheetInfo">
+    <subsheetid>6a9cff0d-c7c5-440a-bd8d-0007e15eae4d</subsheetid>
+    <narrative>Reads a range of lines fom a text file</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="09ef75fb-7cbe-4b43-900b-bd0112866589" name="File Path" type="Data">
+    <subsheetid>6a9cff0d-c7c5-440a-bd8d-0007e15eae4d</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b3721f65-c0fd-4187-9e61-da35cecde126" name="Start Line" type="Data">
+    <subsheetid>6a9cff0d-c7c5-440a-bd8d-0007e15eae4d</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>0</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3444d260-8bd2-44b4-91c8-1f4dc3a07e1d" name="End Line" type="Data">
+    <subsheetid>6a9cff0d-c7c5-440a-bd8d-0007e15eae4d</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>30</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="de2f0517-71e7-4bfa-b20b-0f6049ee064d" name="EOF" type="Data">
+    <subsheetid>6a9cff0d-c7c5-440a-bd8d-0007e15eae4d</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>225</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e19c2d2b-f05b-48b3-a6c0-e6c368a0720b" name="Success" type="Data">
+    <subsheetid>6a9cff0d-c7c5-440a-bd8d-0007e15eae4d</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>90</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue>False</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2814638b-191d-44de-9e9d-e38ce3a2bdb5" name="Message" type="Data">
+    <subsheetid>6a9cff0d-c7c5-440a-bd8d-0007e15eae4d</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>120</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="677752c3-298c-4ea1-abaf-244b239d65d0" name="Lines" type="Collection">
+    <subsheetid>6a9cff0d-c7c5-440a-bd8d-0007e15eae4d</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>180</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e5bbb949-f610-4f45-bcb7-10a0fc6b123d" name="Line Count" type="Data">
+    <subsheetid>6a9cff0d-c7c5-440a-bd8d-0007e15eae4d</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>255</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="bf17d04b-65f1-4bf3-a12c-7121e3c2a075" name="Start" type="Start">
+    <subsheetid>6a9cff0d-c7c5-440a-bd8d-0007e15eae4d</subsheetid>
+    <loginhibit />
+    <preconditions>
+      <condition narrative="The text file exists and the user has appropriate privileges to allow reading it" />
+      <condition narrative="The Start Line argument is less than or equal to the End Line argument" />
+    </preconditions>
+    <postconditions>
+      <condition narrative="The lines between and including Start Line and End Line are returned" />
+      <condition narrative="EOF will indicate if the end of the file was reached before End Line was reached" />
+    </postconditions>
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Path" narrative="The file to read" stage="File Path" />
+      <input type="number" name="Start Line" narrative="The first line to read" stage="Start Line" />
+      <input type="number" name="End Line" narrative="The last line to read" stage="End Line" />
+    </inputs>
+    <onsuccess>4942f615-9ff9-497d-b3ff-dd697860c232</onsuccess>
+  </stage>
+  <stage stageid="76661ec7-b5b7-4cf5-9b34-27ca45c70b40" name="Read Lines" type="Code">
+    <subsheetid>6a9cff0d-c7c5-440a-bd8d-0007e15eae4d</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Path" expr="[File Path]" />
+      <input type="number" name="Start Line" expr="[Start Line]" />
+      <input type="number" name="End Line" expr="[End Line]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Success" stage="Success" />
+      <output type="text" name="Message" stage="Message" />
+      <output type="collection" name="Lines" stage="Lines" />
+      <output type="number" name="Line Count" stage="Line Count" />
+      <output type="flag" name="EOF" stage="EOF" />
+    </outputs>
+    <onsuccess>7d20fad4-4b50-4841-94e9-5f38571de063</onsuccess>
+    <code><![CDATA[' Assume success
+Success = True
+Message = ""
+
+Try
+	Lines = New DataTable()
+	Lines.Columns.Add("Line", GetType(String))
+
+	Using sr As New StreamReader(File_Path)
+
+		EOF = False
+		Start_Line = Math.Max(1, Start_Line)
+
+		Dim line as String
+		Dim lineNo As Integer = 0
+		Do
+			line = sr.ReadLine()
+			lineNo += 1
+
+			If line Is Nothing Then EOF = True : Exit Do
+			If lineNo >= Start_Line Then Lines.Rows.Add(line)
+			If lineNo = End_Line Then Exit Do
+
+		Loop Until line Is Nothing
+		Line_Count = Lines.Rows.Count
+
+	End Using
+
+Catch ex As Exception
+	Success = False
+	Message = ex.Message
+
+End Try
+]]></code>
+  </stage>
+  <stage stageid="bcb21a17-13b7-404f-b11f-16d75385411f" name="End" type="End">
+    <subsheetid>6a9cff0d-c7c5-440a-bd8d-0007e15eae4d</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Success" narrative="True is the read was successful" stage="Success" />
+      <output type="text" name="Message" narrative="The exception detail if the read was unsuccessful" stage="Message" />
+      <output type="collection" name="Lines" narrative="The lines read - the collection contains a single text column 'Line'" stage="Lines" />
+      <output type="number" name="Line Count" narrative="The number of lines read" stage="Line Count" />
+      <output type="flag" name="End of File" narrative="True if the end of the file was reached before the 'End Line' was reached" stage="EOF" />
+    </outputs>
+  </stage>
+  <stage stageid="4942f615-9ff9-497d-b3ff-dd697860c232" name="Start Line &gt; End Line?" type="Decision">
+    <subsheetid>6a9cff0d-c7c5-440a-bd8d-0007e15eae4d</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="[Start Line] &gt; [End Line]" />
+    <ontrue>fb13e8fc-442c-4cbb-87c1-b4ec596ee962</ontrue>
+    <onfalse>76661ec7-b5b7-4cf5-9b34-27ca45c70b40</onfalse>
+  </stage>
+  <stage stageid="fb13e8fc-442c-4cbb-87c1-b4ec596ee962" name="Semi-Exception" type="MultipleCalculation">
+    <subsheetid>6a9cff0d-c7c5-440a-bd8d-0007e15eae4d</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>362c841e-8d1e-4972-b0b5-710b7bdb1f27</onsuccess>
+    <steps>
+      <calculation expression="False" stage="Success" />
+      <calculation expression="&quot;Start Line (&quot; &amp; [Start Line] &amp; &quot;) cannot be later than End Line (&quot; &amp; [End Line] &amp; &quot;)&quot;" stage="Message" />
+    </steps>
+  </stage>
+  <stage stageid="362c841e-8d1e-4972-b0b5-710b7bdb1f27" name="anchor1" type="Anchor">
+    <subsheetid>6a9cff0d-c7c5-440a-bd8d-0007e15eae4d</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>0</displayy>
+    <displaywidth>10</displaywidth>
+    <displayheight>10</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>7d20fad4-4b50-4841-94e9-5f38571de063</onsuccess>
+  </stage>
+  <stage stageid="d049bf7c-ac22-489e-bf3d-f62d1b4b744a" name="Configure" type="SubSheetInfo">
+    <subsheetid>1e3c209b-a109-46a0-9ff0-e2dc6b8791fb</subsheetid>
+    <narrative>Configures this instance of the utility VBO. Calling it with no parameters will cause the configuration to be reset to default values.</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="1f64d939-b1af-4604-a33c-d730215d51aa" name="Start" type="Start">
+    <subsheetid>1e3c209b-a109-46a0-9ff0-e2dc6b8791fb</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Raise exception on any failure" narrative="Flag indicating if failure should cause an exception to be raised rather than a return of a success output value" stage="Raise exception on any failure" />
+    </inputs>
+    <onsuccess>63f0aaf5-553d-43fd-b40d-6b3196b7c075</onsuccess>
+  </stage>
+  <stage stageid="63f0aaf5-553d-43fd-b40d-6b3196b7c075" name="End" type="End">
+    <subsheetid>1e3c209b-a109-46a0-9ff0-e2dc6b8791fb</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="9e00cf6f-bf06-484e-bcc5-5c0ea5f2dcf1" name="Raise exception on any failure" type="Data">
+    <subsheetid>1e3c209b-a109-46a0-9ff0-e2dc6b8791fb</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue>False</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="e8d8821c-ea33-4e7e-a499-9095f71ab91f" name="Raise Exception If Appropriate" type="SubSheetInfo">
+    <subsheetid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="360a869a-24fc-4d19-abbe-b1444dd28c58" name="Start" type="Start">
+    <subsheetid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Success" narrative="Flag indicating success or otherwise" stage="Success" />
+      <input type="text" name="Error Message" narrative="The message detailing the lack of success, empty if the current state indicates success" stage="Error Message" />
+    </inputs>
+    <onsuccess>f72ef338-2cee-4c45-8a9a-31011244644f</onsuccess>
+  </stage>
+  <stage stageid="94d641fc-9887-40ca-8919-8613e5fafda0" name="End" type="End">
+    <subsheetid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="af41ccc8-b3bd-4925-84ba-5df075402e08" name="Success" type="Data">
+    <subsheetid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="fd0e1bfa-b960-4e5e-b8e5-9a24adfd36e1" name="Error Message" type="Data">
+    <subsheetid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>0</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f72ef338-2cee-4c45-8a9a-31011244644f" name="Should Raise Exception?" type="Decision">
+    <subsheetid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="[Success] = False AND [Raise exception on any failure]" />
+    <ontrue>f42fee03-c39b-416a-b55f-3d69a9ebe812</ontrue>
+    <onfalse>94d641fc-9887-40ca-8919-8613e5fafda0</onfalse>
+  </stage>
+  <stage stageid="f42fee03-c39b-416a-b55f-3d69a9ebe812" name="FAIL" type="Exception">
+    <subsheetid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <exception type="Action Failed" detail="[Error Message]" />
+  </stage>
+  <stage stageid="9cdf0f78-05d1-44d4-80a0-9f78ca0b22ae" name="Raise Exception If Appropriate" type="SubSheet">
+    <subsheetid>3a12dbad-57fd-45a4-b859-62df514a34d3</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Success" narrative="Flag indicating success or otherwise" expr="[Success]" />
+      <input type="text" name="Error Message" narrative="The message detailing the lack of success, empty if the current state indicates success" expr="[Message]" />
+    </inputs>
+    <onsuccess>3764ae17-85d7-4ebb-99b5-502b95d7abd6</onsuccess>
+    <processid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</processid>
+  </stage>
+  <stage stageid="3dde4f26-00a8-4e1a-af12-b8a14178d89c" name="Raise Exception If Appropriate" type="SubSheet">
+    <subsheetid>0bafee17-a81a-40f0-9b6b-80b78142dd87</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Success" narrative="Flag indicating success or otherwise" expr="[Success]" />
+      <input type="text" name="Error Message" narrative="The message detailing the lack of success, empty if the current state indicates success" expr="[Message]" />
+    </inputs>
+    <onsuccess>aa67216d-b83f-4c14-9f71-5ec6df626c08</onsuccess>
+    <processid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</processid>
+  </stage>
+  <stage stageid="060a1fdb-6243-40f1-96e0-1c0b54382bfa" name="Raise Exception If Appropriate" type="SubSheet">
+    <subsheetid>1ff30a41-e177-40c5-a756-a6b466004f32</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Success" narrative="Flag indicating success or otherwise" expr="[Success]" />
+      <input type="text" name="Error Message" narrative="The message detailing the lack of success, empty if the current state indicates success" expr="[Error Message]" />
+    </inputs>
+    <onsuccess>e061382f-4149-485b-9668-f2fc0ca334bd</onsuccess>
+    <processid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</processid>
+  </stage>
+  <stage stageid="8db31208-966a-494a-9315-8a4add93c64c" name="Raise Exception If Appropriate" type="SubSheet">
+    <subsheetid>d68f192f-eeb7-420e-b156-9636503b6082</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-45</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Success" narrative="Flag indicating success or otherwise" expr="[Success]" />
+      <input type="text" name="Error Message" narrative="The message detailing the lack of success, empty if the current state indicates success" expr="[Error Message]" />
+    </inputs>
+    <onsuccess>09677c01-2e36-4330-ae33-defa66a1e7b1</onsuccess>
+    <processid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</processid>
+  </stage>
+  <stage stageid="33ba9e06-b05b-4e51-baa6-7f6c9165c558" name="Raise Exception If Appropriate" type="SubSheet">
+    <subsheetid>0bad9bbd-7a9f-4791-b6a8-ff5a2c4c39b8</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Success" narrative="Flag indicating success or otherwise" expr="[Success]" />
+      <input type="text" name="Error Message" narrative="The message detailing the lack of success, empty if the current state indicates success" expr="[Error Message]" />
+    </inputs>
+    <onsuccess>167ee595-8609-4b40-9cbb-70394613201b</onsuccess>
+    <processid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</processid>
+  </stage>
+  <stage stageid="d0021635-222d-46f1-93ad-a7435640cf9f" name="Raise Exception If Appropriate" type="SubSheet">
+    <subsheetid>ed509af2-4b4a-447d-8196-18105ed12739</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Success" narrative="Flag indicating success or otherwise" expr="[Success]" />
+      <input type="text" name="Error Message" narrative="The message detailing the lack of success, empty if the current state indicates success" expr="[Message]" />
+    </inputs>
+    <onsuccess>82b919fe-64b2-4c2b-8173-5706f671c5ce</onsuccess>
+    <processid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</processid>
+  </stage>
+  <stage stageid="249acd28-3283-498f-aca8-76c67cb2295c" name="Raise Exception If Appropriate" type="SubSheet">
+    <subsheetid>70940cba-8680-4eb9-8066-9e383fc5b39b</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Success" narrative="Flag indicating success or otherwise" expr="[Success]" />
+      <input type="text" name="Error Message" narrative="The message detailing the lack of success, empty if the current state indicates success" expr="[Message]" />
+    </inputs>
+    <onsuccess>576295b9-757e-4588-948e-34aac5140c29</onsuccess>
+    <processid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</processid>
+  </stage>
+  <stage stageid="acf72cc7-cf73-466f-8c22-9fb633ed3c24" name="Raise Exception If Appropriate" type="SubSheet">
+    <subsheetid>e9dd304c-7d26-40f5-b193-eef36f0a370c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Success" narrative="Flag indicating success or otherwise" expr="[Success]" />
+      <input type="text" name="Error Message" narrative="The message detailing the lack of success, empty if the current state indicates success" expr="[Message]" />
+    </inputs>
+    <onsuccess>a7bae4fd-01fc-4447-8cf4-fbfd04353f72</onsuccess>
+    <processid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</processid>
+  </stage>
+  <stage stageid="acbc8cd8-d4ad-4eae-a7c3-ebbac1d3f4c7" name="Raise Exception If Appropriate" type="SubSheet">
+    <subsheetid>85156833-c61c-4c78-916f-0b75a9a83e8d</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Success" narrative="Flag indicating success or otherwise" expr="[Success]" />
+      <input type="text" name="Error Message" narrative="The message detailing the lack of success, empty if the current state indicates success" expr="[Message]" />
+    </inputs>
+    <onsuccess>2c8abe9a-1466-4283-999a-c5c7838a0e27</onsuccess>
+    <processid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</processid>
+  </stage>
+  <stage stageid="1e441202-3878-4eb6-b156-6f517be6de00" name="Raise Exception If Appropriate" type="SubSheet">
+    <subsheetid>d2530b0d-5530-4692-8a60-1f91d1c5a9c9</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Success" narrative="Flag indicating success or otherwise" expr="[Success]" />
+      <input type="text" name="Error Message" narrative="The message detailing the lack of success, empty if the current state indicates success" expr="[Message]" />
+    </inputs>
+    <onsuccess>39862014-df78-414b-9ccd-5c0d392aa282</onsuccess>
+    <processid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</processid>
+  </stage>
+  <stage stageid="7419fb71-5c79-4fb6-9e59-b9fbc1d63e45" name="Raise Exception If Appropriate" type="SubSheet">
+    <subsheetid>8eb61369-ddab-4205-9a55-81054c2e4afb</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Success" narrative="Flag indicating success or otherwise" expr="[Success]" />
+      <input type="text" name="Error Message" narrative="The message detailing the lack of success, empty if the current state indicates success" expr="[Message]" />
+    </inputs>
+    <onsuccess>0a76495e-bc0d-4cea-bae0-85da1e15c74f</onsuccess>
+    <processid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</processid>
+  </stage>
+  <stage stageid="7d20fad4-4b50-4841-94e9-5f38571de063" name="Raise Exception If Appropriate" type="SubSheet">
+    <subsheetid>6a9cff0d-c7c5-440a-bd8d-0007e15eae4d</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>0</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Success" narrative="Flag indicating success or otherwise" expr="[Success]" />
+      <input type="text" name="Error Message" narrative="The message detailing the lack of success, empty if the current state indicates success" expr="[Message]" />
+    </inputs>
+    <onsuccess>bcb21a17-13b7-404f-b11f-16d75385411f</onsuccess>
+    <processid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</processid>
+  </stage>
+  <stage stageid="9219c3c4-effd-4dfc-9020-8dafd054ea8f" name="Raise Exception If Appropriate" type="SubSheet">
+    <subsheetid>602b7aad-2626-40ba-8c4b-1ec926ae9098</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-30</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Success" narrative="Flag indicating success or otherwise" expr="[Success]" />
+      <input type="text" name="Error Message" narrative="The message detailing the lack of success, empty if the current state indicates success" expr="[Message]" />
+    </inputs>
+    <onsuccess>1aab3a10-a813-470b-97c8-57938a0d0024</onsuccess>
+    <processid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</processid>
+  </stage>
+  <stage stageid="aed480e9-2938-4d36-b400-a3bd2580921a" name="Raise Exception If Appropriate" type="SubSheet">
+    <subsheetid>842c79f8-aa64-4781-ad18-3982e21f0fd1</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Success" narrative="Flag indicating success or otherwise" expr="[Success]" />
+      <input type="text" name="Error Message" narrative="The message detailing the lack of success, empty if the current state indicates success" expr="[Message]" />
+    </inputs>
+    <onsuccess>709d1a16-f19e-4504-ae79-4a48d1e058c7</onsuccess>
+    <processid>8043916d-2ef9-45b8-ab66-f4c20ef1b8e3</processid>
+  </stage>
+</process>

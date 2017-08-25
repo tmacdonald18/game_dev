@@ -1,0 +1,938 @@
+﻿<process name="OnDemand Login" version="1.0" bpversion="5.0.24.0" narrative="Launch and Login to specified server under a specified User ID and Password" type="object" runmode="Exclusive" preferredid="428acde1-f853-4185-b67a-dd3a39e35155">
+  <appdef>
+    <element name="OnDemand">
+      <id>70658b98-dbab-49e2-8935-d3ab6ef919c5</id>
+      <element name="Logon Window">
+        <id>9bfdb95e-d3f2-479f-b297-e85aa78c665a</id>
+        <element name="Server Box">
+          <id>df382bfb-3bb9-4bf4-abd3-051f060cae25</id>
+          <type>ComboBox</type>
+          <basetype>ComboBox</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText">
+              <ProcessValue datatype="text" value="odprod.lmig.com" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="ComboBox" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="72" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="14" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="189" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="23" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="Logon to a Server &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="ComboBox" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:582,367,389,770" />
+            </attribute>
+            <attribute name="pWindowText" inuse="True">
+              <ProcessValue datatype="text" value="Logon to a Server" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="#32770" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="507" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="328" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="390" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="167" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="10" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <element name="User ID Field">
+          <id>8e6e8cf5-e147-4780-9d48-c697ee5454d6</id>
+          <type>Edit</type>
+          <basetype>Edit</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="Edit" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="72" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="49" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="172" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="22" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal" inuse="True">
+              <ProcessValue datatype="number" value="4" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="Logon to a Server &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="Edit" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:584,404,421,751" />
+            </attribute>
+            <attribute name="pWindowText" inuse="True">
+              <ProcessValue datatype="text" value="Logon to a Server" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="#32770" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="507" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="328" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="390" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="167" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="10" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <element name="Password Field">
+          <id>52f39e2e-cd54-446b-b8de-9193e6aae2dd</id>
+          <type>Edit</type>
+          <basetype>Edit</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText">
+              <ProcessValue datatype="text" value="" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="Edit" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="72" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="84" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="172" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="22" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal" inuse="True">
+              <ProcessValue datatype="number" value="6" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="Logon to a Server &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="Edit" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:584,439,456,751" />
+            </attribute>
+            <attribute name="pWindowText" inuse="True">
+              <ProcessValue datatype="text" value="Logon to a Server" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="#32770" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="507" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="328" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="390" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="167" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="10" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <element name="OK Button">
+          <id>0d5c6807-3f76-4c73-9b45-4f5389a0c498</id>
+          <type>Button</type>
+          <basetype>Button</basetype>
+          <datatype>text</datatype>
+          <diagnose>False</diagnose>
+          <attributes>
+            <attribute name="WindowText" inuse="True">
+              <ProcessValue datatype="text" value="&amp;OK" />
+            </attribute>
+            <attribute name="ClassName" inuse="True">
+              <ProcessValue datatype="text" value="Button" />
+            </attribute>
+            <attribute name="CtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="X">
+              <ProcessValue datatype="number" value="273" />
+            </attribute>
+            <attribute name="Y">
+              <ProcessValue datatype="number" value="12" />
+            </attribute>
+            <attribute name="Width">
+              <ProcessValue datatype="number" value="100" />
+            </attribute>
+            <attribute name="Height">
+              <ProcessValue datatype="number" value="26" />
+            </attribute>
+            <attribute name="Visible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="ScreenVisible" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Enabled" inuse="True">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="Active">
+              <ProcessValue datatype="flag" value="False" />
+            </attribute>
+            <attribute name="Ordinal">
+              <ProcessValue datatype="number" value="7" />
+            </attribute>
+            <attribute name="ChildCount">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="AncestorsText">
+              <ProcessValue datatype="text" value="Logon to a Server &lt;UNKNOWN&gt; " />
+            </attribute>
+            <attribute name="AncestorCount">
+              <ProcessValue datatype="number" value="2" />
+            </attribute>
+            <attribute name="TypeName">
+              <ProcessValue datatype="text" value="Button" />
+            </attribute>
+            <attribute name="ScreenBounds">
+              <ProcessValue datatype="text" value="RECT:783,365,390,882" />
+            </attribute>
+            <attribute name="pWindowText" inuse="True">
+              <ProcessValue datatype="text" value="Logon to a Server" />
+            </attribute>
+            <attribute name="pClassName">
+              <ProcessValue datatype="text" value="#32770" />
+            </attribute>
+            <attribute name="pCtrlID">
+              <ProcessValue datatype="number" value="0" />
+            </attribute>
+            <attribute name="pX">
+              <ProcessValue datatype="number" value="507" />
+            </attribute>
+            <attribute name="pY">
+              <ProcessValue datatype="number" value="328" />
+            </attribute>
+            <attribute name="pWidth">
+              <ProcessValue datatype="number" value="390" />
+            </attribute>
+            <attribute name="pHeight">
+              <ProcessValue datatype="number" value="167" />
+            </attribute>
+            <attribute name="pVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pScreenVisible">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pEnabled">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pActive">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+            <attribute name="pOrdinal">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="pChildCount">
+              <ProcessValue datatype="number" value="10" />
+            </attribute>
+            <attribute name="MatchIndex">
+              <ProcessValue datatype="number" value="1" />
+            </attribute>
+            <attribute name="MatchReverse">
+              <ProcessValue datatype="flag" value="True" />
+            </attribute>
+          </attributes>
+        </element>
+        <type>Window</type>
+        <basetype>Window</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="WindowText" inuse="True">
+            <ProcessValue datatype="text" value="Logon to a Server" />
+          </attribute>
+          <attribute name="ClassName" inuse="True">
+            <ProcessValue datatype="text" value="#32770" />
+          </attribute>
+          <attribute name="CtrlID">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="X">
+            <ProcessValue datatype="number" value="507" />
+          </attribute>
+          <attribute name="Y">
+            <ProcessValue datatype="number" value="328" />
+          </attribute>
+          <attribute name="Width">
+            <ProcessValue datatype="number" value="390" />
+          </attribute>
+          <attribute name="Height">
+            <ProcessValue datatype="number" value="167" />
+          </attribute>
+          <attribute name="Visible" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="ScreenVisible" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Enabled" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Active">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Ordinal">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="ChildCount">
+            <ProcessValue datatype="number" value="10" />
+          </attribute>
+          <attribute name="AncestorsText">
+            <ProcessValue datatype="text" value="&lt;UNKNOWN&gt; " />
+          </attribute>
+          <attribute name="AncestorCount">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="TypeName">
+            <ProcessValue datatype="text" value="#32770" />
+          </attribute>
+          <attribute name="ScreenBounds">
+            <ProcessValue datatype="text" value="RECT:510,353,491,893" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="MatchReverse">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+        </attributes>
+      </element>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+    <apptypeinfo>
+      <id>Win32Launch</id>
+      <parameters>
+        <parameter>
+          <name>Path</name>
+          <value>C:\Program Files\IBM\OnDemand32\arsgui32.exe</value>
+        </parameter>
+        <parameter>
+          <name>CommandLineParams</name>
+          <value>
+          </value>
+        </parameter>
+        <parameter>
+          <name>WorkingDirectory</name>
+          <value>
+          </value>
+        </parameter>
+        <parameter>
+          <name>NonInvasive</name>
+          <value>True</value>
+        </parameter>
+        <parameter>
+          <name>ProcessMode</name>
+          <value>Internal</value>
+        </parameter>
+        <parameter>
+          <name>ExternalProcessTimeout</name>
+          <value>0</value>
+        </parameter>
+      </parameters>
+    </apptypeinfo>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="64453437-7c3b-4515-8880-69c6582509a3" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="26f3c322-b222-405e-b1c4-e12c6fa7368d" type="Normal" published="True">
+    <name>Launch</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="28347a1e-c541-4114-b5a4-5f93cefedc89" type="Normal" published="True">
+    <name>Logon</name>
+    <view>
+      <camerax>-6</camerax>
+      <cameray>-15</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="86115a6f-12a9-4015-888e-99a1e4fbc0dd" name="Start" type="Start">
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>4ba218a4-40d7-4ad0-85a8-3ab8273b1c9e</onsuccess>
+  </stage>
+  <stage stageid="4ba218a4-40d7-4ad0-85a8-3ab8273b1c9e" name="End" type="End">
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="0dc47870-65fe-4d1e-9f5e-acebcf0dbed9" name="Stage1" type="ProcessInfo">
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <references>
+      <reference>System.dll</reference>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+    </imports>
+    <language>visualbasic</language>
+    <globalcode><![CDATA[]]></globalcode>
+    <code><![CDATA[]]></code>
+  </stage>
+  <stage stageid="f0990818-a7e8-43a4-be2f-e8b9a001f97a" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>64453437-7c3b-4515-8880-69c6582509a3</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="ac9ec6ec-e17c-4a02-9e3d-db931c16879a" name="Start" type="Start">
+    <subsheetid>64453437-7c3b-4515-8880-69c6582509a3</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>89e08716-c2ee-4706-b3b7-ff43c1036f0f</onsuccess>
+  </stage>
+  <stage stageid="89e08716-c2ee-4706-b3b7-ff43c1036f0f" name="End" type="End">
+    <subsheetid>64453437-7c3b-4515-8880-69c6582509a3</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="d0056713-c66a-48a0-be81-cd421220ab5e" name="Launch" type="SubSheetInfo">
+    <subsheetid>26f3c322-b222-405e-b1c4-e12c6fa7368d</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="abe7fdcb-347c-4ad0-9370-c3a124d7a5da" name="Start" type="Start">
+    <subsheetid>26f3c322-b222-405e-b1c4-e12c6fa7368d</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>6a720a03-d34e-478a-976a-febafbd0a4a2</onsuccess>
+  </stage>
+  <stage stageid="fb18e502-5af1-4899-95bf-19433b4f63cb" name="End" type="End">
+    <subsheetid>26f3c322-b222-405e-b1c4-e12c6fa7368d</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="b7353f69-c293-460a-8bc7-bc0ef18b06b5" name="Note1" type="Note">
+    <subsheetid>64453437-7c3b-4515-8880-69c6582509a3</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <displayx>-180</displayx>
+    <displayy>60</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>230</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="db8036bc-270c-483b-9c12-2e245e823b11" name="Note2" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <displayx>-180</displayx>
+    <displayy>60</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>230</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="6a720a03-d34e-478a-976a-febafbd0a4a2" name="Launch" type="Navigate">
+    <subsheetid>26f3c322-b222-405e-b1c4-e12c6fa7368d</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>fb18e502-5af1-4899-95bf-19433b4f63cb</onsuccess>
+    <step>
+      <element id="70658b98-dbab-49e2-8935-d3ab6ef919c5" />
+      <action>
+        <id>Launch</id>
+        <arguments>
+          <argument>
+            <id>Path</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>CommandLineParams</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>WorkingDirectory</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>NonInvasive</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ProcessMode</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="0a214096-1522-4ec6-ab70-c400f74d7c45" name="Logon" type="SubSheetInfo">
+    <subsheetid>28347a1e-c541-4114-b5a4-5f93cefedc89</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-225</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="36a49ef4-2afd-455e-8437-00e9739ade58" name="Start" type="Start">
+    <subsheetid>28347a1e-c541-4114-b5a4-5f93cefedc89</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>-195</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="User ID" stage="User ID" />
+      <input type="password" name="Password" stage="Password" />
+      <input type="text" name="Server" stage="Server" />
+    </inputs>
+    <onsuccess>652b0d14-bf73-47fb-8ecc-b2c2e1c73ed9</onsuccess>
+  </stage>
+  <stage stageid="af961698-6f96-403d-b43b-42254d663f64" name="End" type="End">
+    <subsheetid>28347a1e-c541-4114-b5a4-5f93cefedc89</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>165</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="120e0a1e-a5f4-4e89-877e-a286648e677f" name="User ID" type="Data">
+    <subsheetid>28347a1e-c541-4114-b5a4-5f93cefedc89</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>45</displayx>
+    <displayy>-195</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">N0286782</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c9941b7a-7e90-45a8-a5e4-53416ce8a988" name="Password" type="Data">
+    <subsheetid>28347a1e-c541-4114-b5a4-5f93cefedc89</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-75</displayx>
+    <displayy>-195</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>password</datatype>
+    <initialvalueenc>2,26,27,92,8,70,7,92</initialvalueenc>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="fbda0d66-739a-4b5f-a980-355cc6188206" name="Press OK" type="Navigate">
+    <subsheetid>28347a1e-c541-4114-b5a4-5f93cefedc89</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>af961698-6f96-403d-b43b-42254d663f64</onsuccess>
+    <step>
+      <element id="0d5c6807-3f76-4c73-9b45-4f5389a0c498" />
+      <action>
+        <id>Press</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="77b98751-6cd3-4dd6-9aa1-6507e23ee7f9" name="Input User ID" type="Write">
+    <subsheetid>28347a1e-c541-4114-b5a4-5f93cefedc89</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>42c305c5-0479-4ed3-b32f-933f0dfe8a01</onsuccess>
+    <step expr="[User ID]">
+      <element id="8e6e8cf5-e147-4780-9d48-c697ee5454d6" />
+    </step>
+  </stage>
+  <stage stageid="42c305c5-0479-4ed3-b32f-933f0dfe8a01" name="Input Password" type="Write">
+    <subsheetid>28347a1e-c541-4114-b5a4-5f93cefedc89</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>fbda0d66-739a-4b5f-a980-355cc6188206</onsuccess>
+    <step expr="[Password]">
+      <element id="52f39e2e-cd54-446b-b8de-9193e6aae2dd" />
+    </step>
+  </stage>
+  <stage stageid="7e41882f-fb69-4f13-9ae8-bfeaa7f63223" name="Time Out1" type="WaitEnd">
+    <subsheetid>28347a1e-c541-4114-b5a4-5f93cefedc89</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>60</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>83b9072a-c962-402e-8532-9a29c1fd2511</onsuccess>
+    <groupid>ead053b5-4475-49cb-8a00-4e2419d2e480</groupid>
+  </stage>
+  <stage stageid="652b0d14-bf73-47fb-8ecc-b2c2e1c73ed9" name="Wait1" type="WaitStart">
+    <subsheetid>28347a1e-c541-4114-b5a4-5f93cefedc89</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-75</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <groupid>ead053b5-4475-49cb-8a00-4e2419d2e480</groupid>
+    <choices>
+      <choice reply="True">
+        <name>Logon Window Check Exists</name>
+        <distance>60</distance>
+        <ontrue>d41c1b80-5c46-4c9e-a3af-580c89650311</ontrue>
+        <element id="9bfdb95e-d3f2-479f-b297-e85aa78c665a" />
+        <condition>
+          <id>CheckExists</id>
+        </condition>
+        <comparetype>Equal</comparetype>
+      </choice>
+    </choices>
+    <timeout>10</timeout>
+  </stage>
+  <stage stageid="83b9072a-c962-402e-8532-9a29c1fd2511" name="Missing Window" type="Exception">
+    <subsheetid>28347a1e-c541-4114-b5a4-5f93cefedc89</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <exception type="Missing" detail="&quot;Logon window not loaded in time&quot;" />
+  </stage>
+  <stage stageid="d41c1b80-5c46-4c9e-a3af-580c89650311" name="Input Server" type="Write">
+    <subsheetid>28347a1e-c541-4114-b5a4-5f93cefedc89</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>77b98751-6cd3-4dd6-9aa1-6507e23ee7f9</onsuccess>
+    <step expr="[Server]">
+      <element id="df382bfb-3bb9-4bf4-abd3-051f060cae25" />
+    </step>
+  </stage>
+  <stage stageid="7b3474a7-0b9a-4354-a676-98b1763f59ba" name="Server" type="Data">
+    <subsheetid>28347a1e-c541-4114-b5a4-5f93cefedc89</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>-195</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">odprod.lmig.com</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+</process>

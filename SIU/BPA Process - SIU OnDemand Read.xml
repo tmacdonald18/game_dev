@@ -1,0 +1,1423 @@
+﻿<process name="SIU OnDemand Read" version="1.0" bpversion="5.0.24.0" narrative="Given an input spreadsheet, read Doc IDs and search for them, then retrieve information from the document image and update the Excel workbook." preferredid="6bdf1021-0eef-4928-b782-32913a775446">
+  <view>
+    <camerax>195</camerax>
+    <cameray>150</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="89c05796-c082-4aea-830d-d41af4902da8" type="Normal" published="False">
+    <name>Start Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>-21</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="10744454-2673-412b-9580-c24489f5acf6" type="Normal" published="False">
+    <name>Search View Bill Image</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>-270</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="92deefdc-ea40-4a07-a9fe-1a72615c7233" type="Normal" published="False">
+    <name>Search MP-TDU</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>180</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2" type="Normal" published="False">
+    <name>Update Excel</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>84</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="e53b7711-8f85-4991-b9d6-d1c0cc8baa82" name="End" type="End">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>495</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="d5aef6f3-dc36-41e6-978e-d1d4a5a016db" name="Stage1" type="ProcessInfo">
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="16b9e986-b2f5-4eca-96e1-5f7073f34f40" name="Start" type="Start">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-180</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Excel Document File Path" narrative="Column A with header &quot;Claim Number' and Column B with header 'Search Criteria'" stage="Excel Document File Path" />
+    </inputs>
+    <onsuccess>60639cdd-ab56-4b86-8f90-a561a2b3ca81</onsuccess>
+  </stage>
+  <stage stageid="8a1290cd-b93d-493e-a9d4-a8a12eef738f" name="User ID" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">N0286782</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="da2474ce-0400-4f55-8faf-1a0c4ad50dac" name="Password" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>195</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>password</datatype>
+    <initialvalueenc>2,26,27,92,8,70,7,92</initialvalueenc>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ae7404c3-5d23-4ed9-b661-9c2ed38a5b0d" name="Server Name" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>255</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">odprod.lmig.com</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="01145f45-ec24-48ba-9ba3-6d20ea143df5" name="Excel Document File Path" type="Data">
+    <narrative>This is the file path for the excel document with the input for the program
+C:\Users\n0286782\Documents\BoAInput\Claim_Number&amp;BillDoc.xlsx
+C:\Users\n0286782\Documents\BoAInput\Claim_ID&amp;Number.xlsx</narrative>
+    <displayx>135</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">C:\Users\n0286782\Documents\SIU\SIU_Lookup.xlsx</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="60639cdd-ab56-4b86-8f90-a561a2b3ca81" name="Start Up" type="SubSheet">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="User ID" expr="[User ID]" />
+      <input type="password" name="Password" expr="[Password]" />
+      <input type="text" name="Server Name" expr="[Server Name]" />
+    </inputs>
+    <onsuccess>3c3f12cd-6c28-4a6c-9e8a-ae55db4f36ec</onsuccess>
+    <processid>89c05796-c082-4aea-830d-d41af4902da8</processid>
+  </stage>
+  <stage stageid="3c3f12cd-6c28-4a6c-9e8a-ae55db4f36ec" name="Populate with data" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Filepath" expr="[Excel Document File Path]" />
+      <input type="text" name="Worksheet name" expr="&quot;Sheet2&quot;" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="DataCollection" stage="InputData" />
+    </outputs>
+    <onsuccess>4d26a256-e807-4a48-a445-264f57b74283</onsuccess>
+    <resource object="Read_Data_Excel" action="ReadDataFromExcel" />
+  </stage>
+  <stage stageid="6debdfba-b196-428e-bc83-853a216bf527" name="InputData" type="Collection">
+    <narrative>
+    </narrative>
+    <displayx>-60</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="Claim Number" type="text" />
+      <field name="DOS" type="text" />
+      <field name="External_Bill_ID" type="text" />
+      <field name="Document_ID" type="text" />
+      <field name="Provider Name (Box 31)" type="text" />
+      <field name="Facility Name (Box 32)" type="text" />
+      <field name="Comments" type="text" />
+      <field name="Assigned to:" type="text" />
+      <field name="Column1" type="text" />
+    </collectioninfo>
+  </stage>
+  <stage stageid="2fdc8342-0e24-4d90-a375-0f01a8dfd90c" name="Start Up" type="SubSheetInfo">
+    <subsheetid>89c05796-c082-4aea-830d-d41af4902da8</subsheetid>
+    <narrative>Launches and logs into OnDemand</narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="78686a62-dfee-41f5-a8aa-55abb59b9e69" name="Start" type="Start">
+    <subsheetid>89c05796-c082-4aea-830d-d41af4902da8</subsheetid>
+    <preconditions>
+      <condition narrative="Provided with OnDemand credentials: User ID, Server name (Test vs. Prod), and Password " />
+    </preconditions>
+    <postconditions>
+      <condition narrative="OnDemand is launched and logged into, the folder selection window has appeared" />
+    </postconditions>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="User ID" stage="User ID" />
+      <input type="password" name="Password" stage="Password" />
+      <input type="text" name="Server Name" stage="Server" />
+    </inputs>
+    <onsuccess>24af04b8-96bf-4be4-a199-6dbfdb1c5f73</onsuccess>
+  </stage>
+  <stage stageid="be1b9f72-3b10-440b-9c90-6fdc2a1c1c56" name="End" type="End">
+    <subsheetid>89c05796-c082-4aea-830d-d41af4902da8</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="0c69010a-140d-482b-9331-2675e6f6d735" name="User ID" type="Data">
+    <subsheetid>89c05796-c082-4aea-830d-d41af4902da8</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-60</displayx>
+    <displayy>-150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="cb4cbfcc-d6d2-4ec4-87ec-17aa9696963d" name="Password" type="Data">
+    <subsheetid>89c05796-c082-4aea-830d-d41af4902da8</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-60</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>password</datatype>
+    <initialvalueenc>
+    </initialvalueenc>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="24af04b8-96bf-4be4-a199-6dbfdb1c5f73" name="Launch" type="Action">
+    <subsheetid>89c05796-c082-4aea-830d-d41af4902da8</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>83613715-78a3-42be-abc5-1e4fa3f4f94f</onsuccess>
+    <resource object="OnDemand Login" action="Launch" />
+  </stage>
+  <stage stageid="83613715-78a3-42be-abc5-1e4fa3f4f94f" name="Login" type="Action">
+    <subsheetid>89c05796-c082-4aea-830d-d41af4902da8</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="User ID" expr="[User ID]" />
+      <input type="password" name="Password" expr="[Password]" />
+      <input type="text" name="Server" expr="[Server]" />
+    </inputs>
+    <onsuccess>be1b9f72-3b10-440b-9c90-6fdc2a1c1c56</onsuccess>
+    <resource object="OnDemand Login" action="Logon" />
+  </stage>
+  <stage stageid="ba268acf-4bf0-4b17-98ad-71a120c279c3" name="Server" type="Data">
+    <subsheetid>89c05796-c082-4aea-830d-d41af4902da8</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="4d26a256-e807-4a48-a445-264f57b74283" name="Loop Start1" type="LoopStart">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>709d597d-8f54-4659-a189-73a6506c45ca</onsuccess>
+    <groupid>5d22555b-57ba-482b-bf8b-5f40a0d2a48a</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>InputData</loopdata>
+  </stage>
+  <stage stageid="48d28ce8-cef0-48b3-b0a7-271fe8bfc3d0" name="Loop End1" type="LoopEnd">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>435</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>e53b7711-8f85-4991-b9d6-d1c0cc8baa82</onsuccess>
+    <groupid>5d22555b-57ba-482b-bf8b-5f40a0d2a48a</groupid>
+  </stage>
+  <stage stageid="b0e741a6-029b-4198-9ae4-50d4a2dc055b" name="Search View Bill Image" type="SubSheetInfo">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="22fabf5d-c13b-4e90-bd20-dea102dd27cb" name="Start" type="Start">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-270</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Document ID" stage="Document ID" />
+    </inputs>
+    <onsuccess>50eadf87-fa15-4ae9-9494-14d6f0c67c31</onsuccess>
+  </stage>
+  <stage stageid="b1042ea9-d3ad-4463-8147-99d38518533b" name="End" type="End">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>555</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="Value1" stage="Value1" />
+      <output type="text" name="Value2" stage="Value2" />
+    </outputs>
+  </stage>
+  <stage stageid="709d597d-8f54-4659-a189-73a6506c45ca" name="Search View Bill Image" type="SubSheet">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Document ID" expr="[InputData.Document_ID]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Value1" stage="Value1" />
+      <output type="text" name="Value2" stage="Value2" />
+    </outputs>
+    <onsuccess>47b5cccc-ccd0-4d19-a5cc-d82026d991c3</onsuccess>
+    <processid>10744454-2673-412b-9580-c24489f5acf6</processid>
+  </stage>
+  <stage stageid="50adf1e7-e67b-41c9-a74f-64ba189f1809" name="Search Document Number" type="Action">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Document Number" expr="[Document ID]" />
+    </inputs>
+    <onsuccess>45c6c3e1-c2b6-47e0-b295-53f2ea03507f</onsuccess>
+    <resource object="OnDemand Search Criteria View Bill Image" action="Search by Document Number" />
+  </stage>
+  <stage stageid="45c6c3e1-c2b6-47e0-b295-53f2ea03507f" name="Check if Found" type="Action">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" expr="&quot;View_Bill_Image&quot;" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Found?" stage="Found?" />
+    </outputs>
+    <onsuccess>6e719ec6-d96e-4702-995e-b3001303e81d</onsuccess>
+    <resource object="OnDemand Document List" action="Check If Found" />
+  </stage>
+  <stage stageid="6e719ec6-d96e-4702-995e-b3001303e81d" name="Process Documents?" type="Decision">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[Found?]" />
+    <ontrue>aac2cc11-4429-4def-b71a-0715c9028ba2</ontrue>
+    <onfalse>21861547-e0c1-4383-813b-2e6aec5939d0</onfalse>
+  </stage>
+  <stage stageid="fdd34ccd-7fbe-4546-819a-95efddbf63aa" name="Found?" type="Data">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="aac2cc11-4429-4def-b71a-0715c9028ba2" name="Down" type="Action">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>9f177dfb-6b5c-41ff-af0d-81e2037e8bcb</onsuccess>
+    <resource object="OnDemand Document List" action="Keyboard Down" />
+  </stage>
+  <stage stageid="9f177dfb-6b5c-41ff-af0d-81e2037e8bcb" name="Up" type="Action">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>704352b5-d531-4bbe-93be-5081bc78fea8</onsuccess>
+    <resource object="OnDemand Document List" action="Keyboard Up" />
+  </stage>
+  <stage stageid="704352b5-d531-4bbe-93be-5081bc78fea8" name="View" type="Action">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>e7dc2b90-f0d1-4fac-a7e5-105e91155c84</onsuccess>
+    <resource object="OnDemand Document List" action="Select View All" />
+  </stage>
+  <stage stageid="57e5f84c-1640-4be4-9475-e74e8a9783b3" name="Read" type="Action">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>270</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="Value1" stage="Value1" />
+    </outputs>
+    <onsuccess>79d7de51-3fe0-4ef7-aad5-137054523989</onsuccess>
+    <resource object="Document Read" action="Read First" />
+  </stage>
+  <stage stageid="04429493-7cac-4459-9dd1-df1e58f1125f" name="Value1" type="Data">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>270</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="29a5b259-e7c5-46e1-986b-9244e994cf2d" name="Down" type="Action">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>225</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>57e5f84c-1640-4be4-9475-e74e8a9783b3</onsuccess>
+    <resource object="OnDemand Document List" action="Scroll Down" />
+  </stage>
+  <stage stageid="e7dc2b90-f0d1-4fac-a7e5-105e91155c84" name="Zoom" type="Action">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>165</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>29a5b259-e7c5-46e1-986b-9244e994cf2d</onsuccess>
+    <resource object="Document Read" action="Zoom" />
+  </stage>
+  <stage stageid="79d7de51-3fe0-4ef7-aad5-137054523989" name="Right" type="Action">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>330</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>9492c086-1773-4857-8d9d-5ea4779711ad</onsuccess>
+    <resource object="OnDemand Document List" action="Scroll Right" />
+  </stage>
+  <stage stageid="9492c086-1773-4857-8d9d-5ea4779711ad" name="Read2" type="Action">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>375</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="Value2" stage="Value2" />
+    </outputs>
+    <onsuccess>1aa53adb-83d0-480e-bda6-339e981f4a90</onsuccess>
+    <resource object="Document Read" action="Read Second" />
+  </stage>
+  <stage stageid="5048cd2c-4b02-43d4-aa97-ab4db992c93d" name="Value2" type="Data">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>375</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1aa53adb-83d0-480e-bda6-339e981f4a90" name="Close" type="Action">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>435</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>6041b206-6142-470c-b7dc-d6a86fe459a6</onsuccess>
+    <resource object="OnDemand Document List" action="Close Viewport" />
+  </stage>
+  <stage stageid="9bba2155-420b-4259-af8d-ac4adc47d157" name="End" type="End">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>165</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="Value1" stage="Value1" />
+      <output type="text" name="Value2" stage="Value2" />
+    </outputs>
+  </stage>
+  <stage stageid="6614e30b-a230-45b4-920d-14b6298fbc0e" name="Document ID" type="Data">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="6fee2c4b-5b39-4f39-99be-b45ed6226ddb" name="Reads" type="Collection">
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="Bill_Field_1" type="text" />
+      <field name="Bill_Field_2" type="text" />
+      <field name="TDU_Field_1" type="text" />
+      <field name="TDU_Field_2" type="text" />
+    </collectioninfo>
+  </stage>
+  <stage stageid="47b5cccc-ccd0-4d19-a5cc-d82026d991c3" name="Add Row" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Collection Name" narrative="The name of the collection to act upon" expr="&quot;Reads&quot;" />
+    </inputs>
+    <onsuccess>b4ecf66c-c86b-4743-9a3c-f72973bb06ad</onsuccess>
+    <resource object="Blueprism.AutomateProcessCore.clsCollectionActions" action="Add Row" />
+  </stage>
+  <stage stageid="b4ecf66c-c86b-4743-9a3c-f72973bb06ad" name="Set Reads" type="MultipleCalculation">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>0f0782d5-8e8b-4d68-b6b5-d610d99fab89</onsuccess>
+    <steps>
+      <calculation expression="[Value1]" stage="Reads.Bill_Field_1" />
+      <calculation expression="[Value2]" stage="Reads.Bill_Field_2" />
+    </steps>
+  </stage>
+  <stage stageid="c4a69a49-748a-4d74-b41c-85fb4487eec0" name="Value1" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="7eac0120-b02a-435d-9ab8-bebb847db15e" name="Value2" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>150</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="0f195548-3485-45d2-9e55-4584451fd25b" name="Search MP-TDU" type="SubSheetInfo">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="d4842c00-91c0-42e7-a6dd-b3ccb93679d7" name="Start" type="Start">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-165</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="External Bill ID" stage="External Bill ID" />
+    </inputs>
+    <onsuccess>8aa977c8-bdf0-4769-a57e-e8e2db421c93</onsuccess>
+  </stage>
+  <stage stageid="813a0128-df33-4548-a117-c50221d4ff09" name="End" type="End">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>465</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="Value1" stage="Value1" />
+      <output type="text" name="Value2" stage="Value2" />
+    </outputs>
+  </stage>
+  <stage stageid="0f0782d5-8e8b-4d68-b6b5-d610d99fab89" name="Search MP-TDU" type="SubSheet">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>225</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="External Bill ID" expr="[InputData.External_Bill_ID]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Value1" stage="TDU_Value1" />
+      <output type="text" name="Value2" stage="TDU_Value2" />
+    </outputs>
+    <onsuccess>bb8bf4e0-5212-4079-b58d-35298a956433</onsuccess>
+    <processid>92deefdc-ea40-4a07-a9fe-1a72615c7233</processid>
+  </stage>
+  <stage stageid="e6d65cbc-752b-4d24-87b9-f263682da343" name="External Bill ID" type="Data">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="dfbcf760-4440-42fc-b919-ec3cbab1711a" name="Search" type="Action">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="ICN" expr="[External Bill ID]" />
+    </inputs>
+    <onsuccess>f75754ab-6e72-4983-85c6-e2f73caf4be5</onsuccess>
+    <resource object="OnDemand Search Criteria MP-TDU" action="Search by ICN" />
+  </stage>
+  <stage stageid="f75754ab-6e72-4983-85c6-e2f73caf4be5" name="Check if Found" type="Action">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" expr="&quot;MP-TDU&quot;" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Found?" stage="Found?" />
+    </outputs>
+    <onsuccess>cc0d1acc-086b-44bd-b43e-8c23dd3ae19c</onsuccess>
+    <resource object="OnDemand Document List" action="Check If Found" />
+  </stage>
+  <stage stageid="cc0d1acc-086b-44bd-b43e-8c23dd3ae19c" name="Process Documents?" type="Decision">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[Found?]" />
+    <ontrue>aea8b1e4-f7d4-401c-b0b5-bc97b979a3e0</ontrue>
+    <onfalse>593d0109-2f13-4816-b6de-a06f91eb4c9a</onfalse>
+  </stage>
+  <stage stageid="783120db-43ab-4793-b9ac-ceab0a62bd3f" name="Found?" type="Data">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a60b52f5-e0bf-4f3d-8b59-9988ef2c0bc2" name="End" type="End">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="Value1" stage="Value1" />
+      <output type="text" name="Value2" stage="Value2" />
+    </outputs>
+  </stage>
+  <stage stageid="aea8b1e4-f7d4-401c-b0b5-bc97b979a3e0" name="Down" type="Action">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>f6b5cbd2-4b14-4da9-aa77-1739cfdef589</onsuccess>
+    <resource object="OnDemand Document List" action="Keyboard Down" />
+  </stage>
+  <stage stageid="f6b5cbd2-4b14-4da9-aa77-1739cfdef589" name="Up" type="Action">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>180</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>767d01cc-3226-408d-b681-abf40639ca4a</onsuccess>
+    <resource object="OnDemand Document List" action="Keyboard Up" />
+  </stage>
+  <stage stageid="767d01cc-3226-408d-b681-abf40639ca4a" name="View" type="Action">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>225</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>4cddaba2-ae94-43fc-b476-0ee22e539a37</onsuccess>
+    <resource object="OnDemand Document List" action="Select View All" />
+  </stage>
+  <stage stageid="14677ade-2383-40fe-aec0-94fe89aa8007" name="Close" type="Action">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>345</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>d658640b-8ec4-4d90-9e9c-ca544359e499</onsuccess>
+    <resource object="OnDemand Document List" action="Close Viewport" />
+  </stage>
+  <stage stageid="4cddaba2-ae94-43fc-b476-0ee22e539a37" name="Read" type="Action">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>285</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="Value1" stage="Value1" />
+      <output type="text" name="Value2" stage="Value2" />
+    </outputs>
+    <onsuccess>14677ade-2383-40fe-aec0-94fe89aa8007</onsuccess>
+    <resource object="Document Read" action="Read MP-TDU" />
+  </stage>
+  <stage stageid="26d864cd-7ae6-475f-a7bf-8765ecc384af" name="Value1" type="Data">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>285</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="389e4188-4695-4aac-9286-2abfb48f6fb5" name="Value2" type="Data">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>150</displayx>
+    <displayy>285</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="6041b206-6142-470c-b7dc-d6a86fe459a6" name="Exit Folder" type="Action">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>495</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>b1042ea9-d3ad-4463-8147-99d38518533b</onsuccess>
+    <resource object="OnDemand Search Criteria View Bill Image" action="Close" />
+  </stage>
+  <stage stageid="50eadf87-fa15-4ae9-9494-14d6f0c67c31" name="Open Folder" type="Action">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-210</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder Name" expr="&quot;View Bill Image&quot;" />
+    </inputs>
+    <onsuccess>50adf1e7-e67b-41c9-a74f-64ba189f1809</onsuccess>
+    <resource object="OnDemand Folder Selection" action="Open Folder" />
+  </stage>
+  <stage stageid="8aa977c8-bdf0-4769-a57e-e8e2db421c93" name="Open Folder" type="Action">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder Name" expr="&quot;MP-TDU&quot;" />
+    </inputs>
+    <onsuccess>dfbcf760-4440-42fc-b919-ec3cbab1711a</onsuccess>
+    <resource object="OnDemand Folder Selection" action="Open Folder" />
+  </stage>
+  <stage stageid="d658640b-8ec4-4d90-9e9c-ca544359e499" name="Exit Folder" type="Action">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>405</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>813a0128-df33-4548-a117-c50221d4ff09</onsuccess>
+    <resource object="OnDemand Search Criteria MP-TDU" action="Close" />
+  </stage>
+  <stage stageid="bb8bf4e0-5212-4079-b58d-35298a956433" name="Set TDU Reads" type="MultipleCalculation">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>285</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>10728308-ea51-4922-ac84-12db87f08ea8</onsuccess>
+    <steps>
+      <calculation expression="[TDU_Value1]" stage="Reads.TDU_Field_1" />
+      <calculation expression="[TDU_Value2]" stage="Reads.TDU_Field_2" />
+    </steps>
+  </stage>
+  <stage stageid="bb7e20d5-7784-4a0e-9ea7-26facce68bb9" name="TDU_Value1" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>225</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="dd5feb9d-c655-4aae-84c1-10553c210696" name="TDU_Value2" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>150</displayx>
+    <displayy>225</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="593d0109-2f13-4816-b6de-a06f91eb4c9a" name="Exit Folder" type="Action">
+    <subsheetid>92deefdc-ea40-4a07-a9fe-1a72615c7233</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>a60b52f5-e0bf-4f3d-8b59-9988ef2c0bc2</onsuccess>
+    <resource object="OnDemand Search Criteria MP-TDU" action="Close" />
+  </stage>
+  <stage stageid="21861547-e0c1-4383-813b-2e6aec5939d0" name="Exit Folder" type="Action">
+    <subsheetid>10744454-2673-412b-9580-c24489f5acf6</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>9bba2155-420b-4259-af8d-ac4adc47d157</onsuccess>
+    <resource object="OnDemand Search Criteria View Bill Image" action="Close" />
+  </stage>
+  <stage stageid="f3dc493d-a249-473b-bda1-31ff85ec1222" name="Update Excel" type="SubSheetInfo">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="8360cf64-8cbf-4b66-870b-4f485e0d9c09" name="Start" type="Start">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Bill_Field1" stage="Bill_Field1" />
+      <input type="text" name="Bill_Field2" stage="Bill_Field2" />
+      <input type="text" name="MP-TDU_Field1" stage="MP-TDU_Field1" />
+      <input type="text" name="MP-TDU_Field2" stage="MP-TDU_Field2" />
+    </inputs>
+    <onsuccess>59081285-5034-4ec6-b35b-b54d94635a52</onsuccess>
+  </stage>
+  <stage stageid="1a4c7857-b8e7-48ae-af26-65600569051e" name="End" type="End">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>315</displayx>
+    <displayy>390</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="10728308-ea51-4922-ac84-12db87f08ea8" name="Update Excel" type="SubSheet">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>360</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Bill_Field1" expr="[Reads.Bill_Field_1]" />
+      <input type="text" name="Bill_Field2" expr="[Reads.Bill_Field_2]" />
+      <input type="text" name="MP-TDU_Field1" expr="[Reads.TDU_Field_1]" />
+      <input type="text" name="MP-TDU_Field2" expr="[Reads.TDU_Field_2]" />
+    </inputs>
+    <onsuccess>48d28ce8-cef0-48b3-b0a7-271fe8bfc3d0</onsuccess>
+    <processid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</processid>
+  </stage>
+  <stage stageid="8e69288e-50e3-49ec-aa03-7ae7b44bb6c5" name="Bill_Field1" type="Data">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a74f0b75-88fb-4f04-9b3e-c4f9f039b9c0" name="Bill_Field2" type="Data">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>150</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="60d28c35-918d-4fae-95ae-acf66674f906" name="MP-TDU_Field1" type="Data">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>210</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="af5b6d44-cb85-46b4-9bc8-0436641868d3" name="MP-TDU_Field2" type="Data">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>270</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="bdced108-fa7c-4c7b-be57-8df62304460f" name="Go To Next Empty Cell Down" type="Action">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>This is the cell where the data is pasted</narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the required cell should be sought. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Direction" narrative="The direction in which the next empty cell is required. This should start with any of &quot;U&quot;, &quot;D&quot;, &quot;L&quot; or &quot;R&quot; to find a cell up, down, left or right respectively. The direction parameter is not case-sensitive." expr="&quot;D&quot;" />
+      <input type="flag" name="Activate Cell?" narrative="True to activate the cell which is found; False to just return the reference and leave the active cell as it was before. Default is False." expr="True" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Cell Reference" narrative="The cell reference identifying the next empty cell from the active cell in the direction given. An empty value indicates that there were no empty cells between the active cell and a boundary." stage="Cell Reference" />
+    </outputs>
+    <onsuccess>886c75f9-5996-4160-856d-50cc3db7b5d2</onsuccess>
+    <resource object="MS Excel VBO" action="Find Next Empty Cell" />
+  </stage>
+  <stage stageid="73abf5d9-49b9-4672-81cb-ea94962ce619" name="Go To Cell &quot;B2&quot;" type="Action">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>This is the cell where the data is pasted</narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the required cell should be navigated to. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Cell Reference" narrative="The cell reference on the currently active sheet within the specified instance which should be navigated to." expr="&quot;A2&quot;" />
+    </inputs>
+    <onsuccess>bdced108-fa7c-4c7b-be57-8df62304460f</onsuccess>
+    <resource object="MS Excel VBO" action="Go To Cell" />
+  </stage>
+  <stage stageid="59081285-5034-4ec6-b35b-b54d94635a52" name="Open Workbook" type="Action">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the required workbook should be opened. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="File name" narrative="The path and name of the file which should be opened." expr="&quot;C:\Users\n0286782\Documents\SIU\SIU_Results.xlsx&quot;" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Workbook Name" narrative="The name used by Excel to identify the workbook - usually this is the file name (without the path)." stage="Workbook Name" />
+    </outputs>
+    <onsuccess>73abf5d9-49b9-4672-81cb-ea94962ce619</onsuccess>
+    <resource object="MS Excel VBO" action="Open Workbook" />
+  </stage>
+  <stage stageid="854f289f-af39-4713-80f3-70d822e128c1" name="Save Current Workbook" type="Action">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>315</displayx>
+    <displayy>300</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>912fc3f9-d6f4-48f2-a5db-cef01d486a96</onsuccess>
+    <resource object="MS Excel VBO" action="Save Current Workbook" />
+  </stage>
+  <stage stageid="c3bdd6e7-aca3-4842-bda8-7475fcfe75f0" name="handle" type="Data">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="274d92a0-7958-4a86-aca5-1c1fada5067c" name="Workbook Name" type="Data">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-60</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f3deb4f0-a4cc-403b-bd0a-8bce91053994" name="Cell Reference" type="Data">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-60</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="886c75f9-5996-4160-856d-50cc3db7b5d2" name="Set Bill Field 1" type="Action">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the required cell value should be set. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Cell Reference" narrative="The reference on the speficied sheet identifying the cell which should be set." expr="[Cell Reference]" />
+      <input type="text" name="Value" narrative="The value to which the specified cell should be set." expr="[Bill_Field1]" />
+    </inputs>
+    <onsuccess>2533ed22-0e36-4520-b470-ad91e1dbc062</onsuccess>
+    <resource object="MS Excel VBO" action="Set Cell Value" />
+  </stage>
+  <stage stageid="2533ed22-0e36-4520-b470-ad91e1dbc062" name="Go To Next Empty Cell Right" type="Action">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>This is the cell where the data is pasted</narrative>
+    <displayx>90</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the required cell should be sought. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Direction" narrative="The direction in which the next empty cell is required. This should start with any of &quot;U&quot;, &quot;D&quot;, &quot;L&quot; or &quot;R&quot; to find a cell up, down, left or right respectively. The direction parameter is not case-sensitive." expr="&quot;R&quot;" />
+      <input type="flag" name="Activate Cell?" narrative="True to activate the cell which is found; False to just return the reference and leave the active cell as it was before. Default is False." expr="True" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Cell Reference" narrative="The cell reference identifying the next empty cell from the active cell in the direction given. An empty value indicates that there were no empty cells between the active cell and a boundary." stage="Cell Reference" />
+    </outputs>
+    <onsuccess>1ca0bbb6-f7bf-49ac-b4e9-36ddac384aae</onsuccess>
+    <resource object="MS Excel VBO" action="Find Next Empty Cell" />
+  </stage>
+  <stage stageid="1ca0bbb6-f7bf-49ac-b4e9-36ddac384aae" name="Set Bill Field 2" type="Action">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the required cell value should be set. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Cell Reference" narrative="The reference on the speficied sheet identifying the cell which should be set." expr="[Cell Reference]" />
+      <input type="text" name="Value" narrative="The value to which the specified cell should be set." expr="[Bill_Field2]" />
+    </inputs>
+    <onsuccess>b0c8f820-dcae-41e5-a27b-514a9477be65</onsuccess>
+    <resource object="MS Excel VBO" action="Set Cell Value" />
+  </stage>
+  <stage stageid="b0c8f820-dcae-41e5-a27b-514a9477be65" name="Go To Next Empty Cell Right" type="Action">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>This is the cell where the data is pasted</narrative>
+    <displayx>165</displayx>
+    <displayy>120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the required cell should be sought. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Direction" narrative="The direction in which the next empty cell is required. This should start with any of &quot;U&quot;, &quot;D&quot;, &quot;L&quot; or &quot;R&quot; to find a cell up, down, left or right respectively. The direction parameter is not case-sensitive." expr="&quot;R&quot;" />
+      <input type="flag" name="Activate Cell?" narrative="True to activate the cell which is found; False to just return the reference and leave the active cell as it was before. Default is False." expr="True" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Cell Reference" narrative="The cell reference identifying the next empty cell from the active cell in the direction given. An empty value indicates that there were no empty cells between the active cell and a boundary." stage="Cell Reference" />
+    </outputs>
+    <onsuccess>1b4b1b7b-5333-436c-8a25-be8d49914b83</onsuccess>
+    <resource object="MS Excel VBO" action="Find Next Empty Cell" />
+  </stage>
+  <stage stageid="1b4b1b7b-5333-436c-8a25-be8d49914b83" name="Set MP-TDU Field 1" type="Action">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>165</displayx>
+    <displayy>165</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the required cell value should be set. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Cell Reference" narrative="The reference on the speficied sheet identifying the cell which should be set." expr="[Cell Reference]" />
+      <input type="text" name="Value" narrative="The value to which the specified cell should be set." expr="[MP-TDU_Field1]" />
+    </inputs>
+    <onsuccess>8627fc98-b010-444a-80b9-0e02608f81fe</onsuccess>
+    <resource object="MS Excel VBO" action="Set Cell Value" />
+  </stage>
+  <stage stageid="8627fc98-b010-444a-80b9-0e02608f81fe" name="Go To Next Empty Cell Right" type="Action">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>This is the cell where the data is pasted</narrative>
+    <displayx>240</displayx>
+    <displayy>165</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the required cell should be sought. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Direction" narrative="The direction in which the next empty cell is required. This should start with any of &quot;U&quot;, &quot;D&quot;, &quot;L&quot; or &quot;R&quot; to find a cell up, down, left or right respectively. The direction parameter is not case-sensitive." expr="&quot;R&quot;" />
+      <input type="flag" name="Activate Cell?" narrative="True to activate the cell which is found; False to just return the reference and leave the active cell as it was before. Default is False." expr="True" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Cell Reference" narrative="The cell reference identifying the next empty cell from the active cell in the direction given. An empty value indicates that there were no empty cells between the active cell and a boundary." stage="Cell Reference" />
+    </outputs>
+    <onsuccess>1139e232-b3ed-4ac2-b78a-3eeace2c47b7</onsuccess>
+    <resource object="MS Excel VBO" action="Find Next Empty Cell" />
+  </stage>
+  <stage stageid="1139e232-b3ed-4ac2-b78a-3eeace2c47b7" name="Set MP-TDU Field 2" type="Action">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>240</displayx>
+    <displayy>210</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the required cell value should be set. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Cell Reference" narrative="The reference on the speficied sheet identifying the cell which should be set." expr="[Cell Reference]" />
+      <input type="text" name="Value" narrative="The value to which the specified cell should be set." expr="[MP-TDU_Field2]" />
+    </inputs>
+    <onsuccess>5413bb10-3778-4f4d-82f7-93422559bd38</onsuccess>
+    <resource object="MS Excel VBO" action="Set Cell Value" />
+  </stage>
+  <stage stageid="5413bb10-3778-4f4d-82f7-93422559bd38" name="Go To Next Empty Cell Right" type="Action">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>This is the cell where the data is pasted</narrative>
+    <displayx>315</displayx>
+    <displayy>210</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the required cell should be sought. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Direction" narrative="The direction in which the next empty cell is required. This should start with any of &quot;U&quot;, &quot;D&quot;, &quot;L&quot; or &quot;R&quot; to find a cell up, down, left or right respectively. The direction parameter is not case-sensitive." expr="&quot;R&quot;" />
+      <input type="flag" name="Activate Cell?" narrative="True to activate the cell which is found; False to just return the reference and leave the active cell as it was before. Default is False." expr="True" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Cell Reference" narrative="The cell reference identifying the next empty cell from the active cell in the direction given. An empty value indicates that there were no empty cells between the active cell and a boundary." stage="Cell Reference" />
+    </outputs>
+    <onsuccess>854f289f-af39-4713-80f3-70d822e128c1</onsuccess>
+    <resource object="MS Excel VBO" action="Find Next Empty Cell" />
+  </stage>
+  <stage stageid="d4d32cc9-f439-4750-8484-c3cf1e69d957" name="Paste Image" type="Action">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>This is the cell where the data is pasted</narrative>
+    <displayx>375</displayx>
+    <displayy>255</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Handle" expr="[handle]" />
+      <input type="text" name="Workbook" expr="[Workbook Name]" />
+      <input type="flag" name="Values Only" expr="False" />
+    </inputs>
+    <onsuccess>854f289f-af39-4713-80f3-70d822e128c1</onsuccess>
+    <resource object="MS Excel VBO" action="Paste" />
+  </stage>
+  <stage stageid="912fc3f9-d6f4-48f2-a5db-cef01d486a96" name="Close" type="Action">
+    <subsheetid>2647c5a6-3cf2-4731-a522-bd0c6d7dc3a2</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>315</displayx>
+    <displayy>345</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the workbook which should be closed resides. The default of zero indicates the currently active instance." expr="[handle]" />
+    </inputs>
+    <onsuccess>1a4c7857-b8e7-48ae-af26-65600569051e</onsuccess>
+    <resource object="MS Excel VBO" action="Close Current Workbook" />
+  </stage>
+</process>
